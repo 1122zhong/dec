@@ -1,0 +1,18 @@
+/*修改*/
+.user-header-box{height: 11rem !important;}
+.proli_top_cart{position: relative;width: 90%;background: #ffffff;border-radius: 1rem;margin-left: 5%;top: 2.5rem;}
+.user-header-box .shezhi{left:1.3rem;border-radius:100%;padding:0 .4rem;height:2.6rem;width:2.6rem}
+.user-header-box  .shezhi {left: 1rem;border-radius: 100%;padding: 0 .4rem;height: 2.6rem;width: 2.6rem;}
+.position-rel>a:first-child {position: absolute;top:0.3rem;}
+.position-rel>a{color: #fff;}
+.fla-right{display: block;float: right;}
+.shousuo{margin-right: 1.5rem;}
+.user-img-style{height: 4rem !important;}
+.user_position{position: relative;}
+.user-header{overflow: visible !important;}
+.user-header .user_name{font-weight:bold;width: 15rem;height: 2rem;font-size: 2rem;line-height: 2rem;position: absolute;float: right;color: #1a1a1a;top: 0rem;left:4.4rem;}
+.user_sta{width: 10rem;height: 2rem;line-height: 2rem;position: absolute;float: right;font-size: 1.5rem;color: #808080;top: 2rem;left:5rem;}
+.user-liulan{width: 100%;display: flex;justify-content:center;margin-top: 1rem;}
+.liulan-demo{width: 33.3%;}
+.liulan-demo>div{text-align: center;font-size: 1.5rem;color: #1a1a1a;}
+.liulan-demo>span{display: block;width: 100%;text-align: center;font-size: 1.5rem;color: #1a1a1a;}
