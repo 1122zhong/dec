@@ -1,95 +1,384 @@
-{include file="page_header"}
-<div class="con user_profile_safe">
-    <header class="f-03 col-7">
-        建议您启动全部安全设置，以保障账户及资金安全。
-    </header>
-    <section>
-        {if $is_connect_user == 0}
-        <div class="padding-all user_profile_safe_list ">
-            <a href="{url('user/index/edit_password')}">
-                <i class="iconfont icon-zhaohuimima safe-icon col-9"></i>
-                <h4 class="f-05 col-3">修改登录密码</h4>
-                <p class="f-02 col-7 m-top04">互联网账号存在被盗风险，建议您定期更改密码。</p>
-                <i class="iconfont icon-jiantou tf-180"></i>
-            </a>
-        </div>
-        {/if}
-        <div class="padding-all  user_profile_safe_list m-top1px">
-            <a href="{url('user/profile/user_edit_mobile')}">
-                <h4 class="f-05 col-3">
-                    {if $info.mobile_phone ==''}
-                    <i class="iconfont icon-shoujiyanzheng1 safe-icon col-9"></i>
-                    立即手机验证
-                    {else}
-                    <i class="iconfont icon-yanzheng safe-icon color-red"></i>
-                    <label class="color-red">已验证手机 {$info.mobile_phone}</label>
-                    {/if}
-                </h4>
-                <p class="f-02 col-7 m-top04">验证后，可用于快速找回登录密码，接收消息提醒。</p>
-                <i class="iconfont icon-jiantou tf-180"></i>
-            </a>
-        </div>
-        <div class="padding-all  user_profile_safe_list m-top1px">
-            <a href="{url('user/profile/user_edit_email')}">
-                <h4 class="f-05 col-3">
-                    {if $info.email == '' || $is_validated == 0}
-                    <i class="iconfont icon-youxiangrenzheng safe-icon col-9"></i>
-                    立即邮箱验证
-                    {else}
-                    <i class="iconfont icon-yanzheng safe-icon color-red"></i>
-                    <label class="color-red">已验证邮箱 {$info.email}</label>
-                    {/if}
-                </h4>
-                <p class="f-02 col-7 m-top04">验证后，可用于快速找回登录密码等。</p>
-                <i class="iconfont icon-jiantou tf-180"></i>
-            </a>
-        </div>
-        <div class="padding-all  user_profile_safe_list m-top1px">
-            <a href="{url('user/profile/user_edit_paypwd')}">
-                <h4 class="f-05 col-3">
-                    {if $users_paypwd == 0}
-                    <i class="iconfont icon-zhaohuimima safe-icon col-9"></i>
-                    启用支付密码
-                    {else}
-                    <i class="iconfont icon-yanzheng safe-icon color-red"></i>
-                    <label class="color-red">已启用支付密码</label>
-                    {/if}
-                </h4>
-                <p class="f-02 col-7 m-top06">启用后，购物需验证支付密码，增加安全性。</p>
-                <i class="iconfont icon-jiantou tf-180"></i>
-            </a>
-        </div>
-    </section>
-    <section class="m-top10">
-        <div class="padding-all user_profile_safe_list m-top1px">
-            <a href="{url('user/profile/accountbind')}">
-                <i class="iconfont icon-disanfang01 safe-icon col-9"></i>
-                <h4 class="f-05 col-3">授权管理</h4>
-                <p class="f-02 col-7 m-top04">第三方登录授权信息。</p>
-                <i class="iconfont icon-jiantou tf-180"></i>
-            </a>
-        </div>
-    </section>
-</div>
-<!--快捷导航-->
-{include file="no_search_nav"}
-<li>
-    <a href="{url('user/profile/index')}">
-        <i class="iconfont icon-qudiandianpumingpianicon"></i>
-        <p>个人资料</p>
-    </a>
-</li>
-{include file="float_nav_footer"}
-<script>
-    $(function($) {
-        $(".onclik-safetips").click(function() {
-            $(".my-safetips-box").addClass("current");
-        });
-        $(".my-safetips-close").click(function() {
-            $(".my-safetips-box").removeClass("current");
-        });
-    });
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>我的收藏</title>
+    <link rel="stylesheet" href="../../../public/css/book.css">
+    <script src="../../../public/js/jquery-1.12.4.js"></script>
+</head>
+<body>
+<header>
+    <div class="book_top_img"><img src="../../../public/img/book_left.png" alt=""></div>
+    <div class="book_content">
+        <ul>
+            <li class="book_content_biaoji">商品</li>
+            <li>店铺</li>
+            <li>内容</li>
+        </ul>
+    </div>
+    <div class="book_manage">
+        <img src="../../../public/img/book_manage.png" alt="">
+        管理
+    </div>
+</header>
+<section class="book_content_section">
+    <div class="book_search">
+        <div class="search_type search_color" id="search_type"><span>全部分类</span> <img class="xuanzhuan xuanz" src="../../../public/img/jiantou.png" alt=""></div>
+        <div class="search_stu">销量</div>
+        <img class="img_change" id="img_change" src="../../../public/img/bookmark_style1.png" alt="">
+    </div>
+    <div class="select_content_one select_content" id="select_content_one">
+        <ul>
+            <li><span>美食</span></li>
+            <li><span>保健产品</span></li>
+            <li><span>娱乐项目</span></li>
+            <li><span>电子产品</span></li>
+        </ul>
+    </div>
+    <div class="select_hidden"></div>
+    <div class="describe">
+        <ul>
+            <li class="describe_li_sty1">
+                <div class="describe_checkbox">
+                    <input type="checkbox" name="btn"><label></label>
+                </div>
+                <div class="describe_img"><img src="../../../public/img/bookmark_pg1.png" alt=""></div>
+                <div class="product_describe">
+                    <div class="describe_text">美味鲜辣披萨"披萨"萨"披萨一种由特殊的 饼底、乳一种由特殊的 饼底、乳一种由特殊的 饼底、乳是一种由特殊的 饼底、乳酪、酱汁...美味鲜辣披萨"披萨"是一种由特殊的 饼底、乳酪、酱汁...</div>
+                    <div class="describe_price">￥59.30</div>
+                    <div class="describe_collect"><span>2545</span>已收藏</div>
+                    <div class="describe_like">找相似</div>
+                </div>
+            </li>
+            <li class="describe_li_sty1">
+                <div class="describe_checkbox">
+                    <input type="checkbox" name="btn" ><label ></label>
+                </div>
+                <div class="describe_img"><img src="../../../public/img/bookmark_pg1.png" alt=""></div>
+                <div class="product_describe">
+                    <div class="describe_text">美味鲜辣披萨"披萨"萨"披萨一种由特殊的 饼底、乳一种由特殊的 饼底、乳一种由特殊的 饼底、乳是一种由特殊的 饼底、乳酪、酱汁...美味鲜辣披萨"披萨"是一种由特殊的 饼底、乳酪、酱汁...</div>
+                    <div class="describe_price">￥59.30</div>
+                    <div class="describe_collect"><span>2545</span>已收藏</div>
+                    <div class="describe_like">找相似</div>
+                </div>
+            </li>
+            <li class="describe_li_sty1">
+                <div class="describe_checkbox">
+                    <input type="checkbox" name="btn" id=""><label></label>
+                </div>
+                <div class="describe_img"><img src="../../../public/img/bookmark_pg1.png" alt=""></div>
+                <div class="product_describe">
+                    <div class="describe_text">美味鲜辣披萨"披萨"萨"披萨一种由特殊的 饼底、乳一种由特殊的 饼底、乳一种由特殊的 饼底、乳是一种由特殊的 饼底、乳酪、酱汁...美味鲜辣披萨"披萨"是一种由特殊的 饼底、乳酪、酱汁...</div>
+                    <div class="describe_price">￥59.30</div>
+                    <div class="describe_collect"><span>2545</span>已收藏</div>
+                    <div class="describe_like">找相似</div>
+                </div>
+            </li>
+            <li class="describe_li_sty1">
+                <div class="describe_checkbox">
+                    <input type="checkbox" name="btn" ><label ></label>
+                </div>
+                <div class="describe_img"><img src="../../../public/img/bookmark_pg1.png" alt=""></div>
+                <div class="product_describe">
+                    <div class="describe_text">美味鲜辣披萨"披萨"萨"披萨一种由特殊的 饼底、乳一种由特殊的 饼底、乳一种由特殊的 饼底、乳是一种由特殊的 饼底、乳酪、酱汁...美味鲜辣披萨"披萨"是一种由特殊的 饼底、乳酪、酱汁...</div>
+                    <div class="describe_price">￥59.30</div>
+                    <div class="describe_collect"><span>2545</span>已收藏</div>
+                    <div class="describe_like">找相似</div>
+                </div>
+            </li>
+            <li class="describe_li_sty1">
+                <div class="describe_checkbox">
+                    <input type="checkbox" name="btn" ><label ></label>
+                </div>
+                <div class="describe_img"><img src="../../../public/img/bookmark_pg1.png" alt=""></div>
+                <div class="product_describe">
+                    <div class="describe_text">美味鲜辣披萨"披萨"萨"披萨一种由特殊的 饼底、乳一种由特殊的 饼底、乳一种由特殊的 饼底、乳是一种由特殊的 饼底、乳酪、酱汁...美味鲜辣披萨"披萨"是一种由特殊的 饼底、乳酪、酱汁...</div>
+                    <div class="describe_price">￥59.30</div>
+                    <div class="describe_collect"><span>2545</span>已收藏</div>
+                    <div class="describe_like">找相似</div>
+                </div>
+            </li>
+            <li class="describe_li_sty1">
+                <div class="describe_checkbox">
+                    <input type="checkbox" name="btn" ><label ></label>
+                </div>
+                <div class="describe_img"><img src="../../../public/img/bookmark_pg1.png" alt=""></div>
+                <div class="product_describe">
+                    <div class="describe_text">美味鲜辣披萨"披萨"萨"披萨一种由特殊的 饼底、乳一种由特殊的 饼底、乳一种由特殊的 饼底、乳是一种由特殊的 饼底、乳酪、酱汁...美味鲜辣披萨"披萨"是一种由特殊的 饼底、乳酪、酱汁...</div>
+                    <div class="describe_price">￥59.30</div>
+                    <div class="describe_collect"><span>2545</span>已收藏</div>
+                    <div class="describe_like">找相似</div>
+                </div>
+            </li>
 
+            <div style="clear:both;"></div>
+        </ul>
+    </div>
+    <div class="tuijian">
+        <div class="tuijian_top">推荐商品</div>
+        <div class="tuijian_product">
+            <img src="../../../public/img/bookmark_pg1.png" alt="">
+            <div class="tuijian_product_describe">
+                <div class="tuijian_describe_text">美味鲜辣披酪、酱汁...美味鲜辣披萨"披萨"披酪、酱汁...美味鲜辣披萨"披萨"是一种由特殊的 饼底、乳酪、酱汁...</div>
+                <div class="tuijian_describe_price">￥59.30</div>
+                <div class="tuijian_describe_collect"><span>2545</span>已收藏</div>
+                <div class="tuijian_describe_like">找相似</div>
+                <div style="clear:both;"></div>
+            </div>
+        </div>
+        <div class="tuijian_product">
+            <img src="../../../public/img/bookmark_pg1.png" alt="">
+            <div class="tuijian_product_describe">
+                <div class="tuijian_describe_text">美味鲜辣披酪、酱汁...美味鲜辣披萨"披萨"披酪、酱汁...美味鲜辣披萨"披萨"是一种由特殊的 饼底、乳酪、酱汁...</div>
+                <div class="tuijian_describe_price">￥59.30</div>
+                <div class="tuijian_describe_collect"><span>2545</span>已收藏</div>
+                <div class="tuijian_describe_like">找相似</div>
+                <div style="clear:both;"></div>
+            </div>
+        </div>
+        <div style="clear:both;"></div>
+    </div>
+    <div class="manage_del">
+        <input type="checkbox" id="btn1"><label id="btn1_label" for="btn1">全选</label>
+        <div class="manage_del_sty" >
+            <button class="manage_del_btn" >删除</button>
+        </div>
+
+    </div>
+</section>
+
+<section class="book_section display_none">
+    <div class="book_search">
+        <div class="search_type search_color" id="search_type1"><span>全部分类</span><img class="xuanzhuan xuanz" src="img/jiantou.png" alt=""></div>
+        <div></div>
+    </div>
+    <div class=" select_content_one select_content_one1 select_content" id="select_content_one1">
+        <ul>
+            <li><span>旗舰店</span></li>
+            <li><span>专卖店</span></li>
+            <li><span>零售店</span></li>
+            <li><span>商铺街</span></li>
+        </ul>
+    </div>
+    <div class="select_hidden"></div>
+    <div class="sc_shop_detail">
+        <ul>
+            <li>
+                <img src="img/sc_shop1.png" alt="">
+                <div>
+                    <div>女装旗舰店</div>
+                    <div><span>5</span><p>新产品</p> </div>
+                </div>
+            </li>
+            <li>
+                <img src="img/sc_shop1.png" alt="">
+                <div>
+                    <div>女装旗舰店</div>
+                    <div><span>5</span><p>新产品</p> </div>
+                </div>
+            </li>
+            <li>
+                <img src="img/sc_shop1.png" alt="">
+                <div>
+                    <div>女装旗舰店</div>
+                    <div><span>5</span><p>新产品</p> </div>
+                </div>
+            </li>
+            <li>
+                <img src="img/sc_shop1.png" alt="">
+                <div>
+                    <div>女装旗舰店</div>
+                    <div><span>5</span><p>新产品</p> </div>
+                </div>
+            </li>
+            <div style="clear: both"></div>
+        </ul>
+    </div>
+    <div class="no_more">没有更多了</div>
+</section>
+
+<script>
+
+    $("#search_type").click(function () {
+        $("#search_type").addClass("search_color");
+        $("#search_type>img").removeClass("xuanzhuan");
+        $(".search_stu").removeClass("search_color");
+        $(".select_hidden").css("display","block");
+        $(".select_content_one").animate({"height":"12rem"},300);
+        $(".select_content_one>ul>li").animate({"height":"3rem"},300);
+        $(".select_content_one1>ul>li").animate({"height":"3rem"},300);
+
+        <!--收藏的商品分类-->
+        var num=$("#select_content_one>ul>li").size();
+        for(var i=0;i<num;i++){
+            if($("#select_content_one>ul>li>span").eq(i).html()==$("#search_type>span").html()){
+                $("#select_content_one>ul>li>span").eq(i).css("color","red");
+                $("#select_content_one>ul>li>span:gt("+i+")").css("color","#000000");
+                $("#select_content_one>ul>li>span:lt("+i+")").css("color","#000000");
+            }
+        }
+    })
+    $("#search_type1").click(function () {
+        $(".search_type").addClass("search_color");
+        $(".search_type>img").removeClass("xuanzhuan");
+        $(".search_stu").removeClass("search_color");
+        $(".select_hidden").css("display","block");
+        $(".select_content_one").animate({"height":"12rem"},300);
+        $(".select_content_one>ul>li").animate({"height":"3rem"},300);
+        $(".select_content_one1>ul>li").animate({"height":"3rem"},300);
+
+        <!--收藏的店铺分类-->
+        var num1=$("#select_content_one1>ul>li").size();
+        for(var i=0;i<num1;i++){
+            if($("#select_content_one1>ul>li>span").eq(i).html()==$("#search_type1>span").html()){
+                $("#select_content_one1>ul>li>span").eq(i).css("color","red");
+                $("#select_content_one1>ul>li>span:gt("+i+")").css("color","#000000");
+                $("#select_content_one1>ul>li>span:lt("+i+")").css("color","#000000");
+            }
+        }
+    })
+    <!--按其它种类筛选-->
+    $(".search_stu").click(function () {
+        $(".search_type>img").addClass("xuanzhuan");
+        $(".search_stu").addClass("search_color");
+        $(".search_type").removeClass("search_color");
+        $(".select_hidden").css("display","none");
+        $(".select_content_one").animate({"height":"0rem"},300);
+        $(".select_content_one>ul>li").animate({"height":"0rem"},300);
+    })
+    <!--收藏商品选择类型-->
+    $("#select_content_one>ul>li").on("click",function(){
+        var index = $(this).index();
+        var text=$("#select_content_one>ul>li").eq(index).text();
+        console.log(text);
+        $("#search_type>span").html(text);
+        $("#search_type>img").addClass("xuanzhuan");
+        $(".select_hidden").css("display","none");
+        $(".select_content_one").animate({"height":"0rem"},300);
+        $("#select_content_one>ul>li").animate({"height":"0rem"},300);
+    })
+    <!--收藏商铺选择类型-->
+    $("#select_content_one1>ul>li").on("click",function(){
+        var index = $(this).index();
+        var text=$("#select_content_one1>ul>li").eq(index).text();
+        console.log(text)
+        $("#search_type1>span").html(text);
+        $("#search_type1>img").addClass("xuanzhuan");
+        $(".select_hidden").css("display","none");
+        $("#select_content_one1").animate({"height":"0rem"},300);
+        $("#select_content_one1>ul>li").animate({"height":"0rem"},300);
+    })
+    <!--遮罩层-->
+    $(".select_hidden").click(function () {
+        $(".search_type>img").addClass("xuanzhuan");
+        console.log("13");
+        $(".select_hidden").css("display","none");
+        $(".select_content_one").animate({"height":"0rem"},300);
+        $(".select_content_one>ul>li").animate({"height":"0em"},300);
+    })
+    <!--切换商品列表-->
+    var clicknum=0;
+    $(".img_change").click(function (){
+        chang_img();
+    })
+    function chang_img(){
+        if(clicknum%2==0){
+            $(".describe>ul>li").css("width","47%");
+            $(".describe>ul>li").css("height","18rem");
+            $(".describe>ul>li").removeClass("describe_li_sty1");
+            $(".describe>ul>li").addClass("describe_li_sty2");
+            $(".product_describe").css("width","100%");
+            $(".describe_img").css("width","100%");
+            $(".book_manage").css("display","none");
+            $(".img_change").attr("src","../../../public/img/bookmark_style2.png");
+            clicknum++;
+            console.log(clicknum);
+        }
+        else{
+            $(".describe>ul>li").css("width","98%");
+            $(".describe>ul>li").css("height","8rem");
+            $(".describe>ul>li").addClass("describe_li_sty1");
+            $(".describe>ul>li").removeClass("describe_li_sty2");
+            $(".product_describe").css("width","68%");
+            $(".book_manage").css("display","block");
+            $(".describe_img").css("width","30%");
+            $(".img_change").attr("src","../../../public/img/bookmark_style1.png");
+            clicknum++;
+            console.log(clicknum);
+        }
+    }
+    <!--切换主列表-->
+    $(".book_content>ul>li").on("click",function () {
+        var index = $(this).index();
+        console.log(index);
+        $(".select_content").animate({"height":"0rem"},0);
+        $("#select_content>ul>li").animate({"height":"0rem"},0);
+        $("section").eq(index).removeClass("display_none").addClass("display_block");
+        $("section:gt("+index+")").removeClass("display_block").addClass("display_none");
+        $("section:lt("+index+")").removeClass("display_block").addClass("display_none");
+        $(".book_content>ul>li").eq(index).addClass("book_content_biaoji");
+        $(".book_content>ul>li:gt("+index+")").removeClass("book_content_biaoji");
+        $(".book_content>ul>li:lt("+index+")").removeClass("book_content_biaoji");
+        $(".select_hidden").css("display","none");
+        var dw1=$(".describe").width();
+        var dw2=$(".describe>ul>li").width();
+        console.log(dw1+" "+dw2);
+        if(index!=0){
+            $(".book_manage").css("display","none");
+            $(".describe_checkbox").css("width","0%");
+            $(".img_change").css("display","block");
+            $(".manage_del").css("bottom","-10%");
+        }
+        else if(index==0&&(dw1/dw2)<2){
+            $(".book_manage").css("display","block");
+        }
+    })
+    <!--收藏商品管理-->
+    var manage_num=0;
+    $(".book_manage").click(function () {
+        manage()
+    })
+    function manage() {
+        if(manage_num%2==0){
+            $(".describe_checkbox").css("width","10%");
+            $(".product_describe ").css("width","58%");
+            $(".img_change").css("display","none");
+            $(".manage_del").css("bottom","0");
+            $(".describe_checkbox>input[type='checkbox']").prop("checked",false);
+            manage_num++;
+        }else{
+            $(".describe_checkbox").css("width","0%");
+            $(".product_describe ").css("width","68%");
+            $(".img_change").css("display","block")
+            $(".manage_del").css("bottom","-10%");
+            manage_num++;
+            $(".describe_checkbox>input[type='checkbox']").prop("checked",false);
+        }
+    }
+    <!--商品点击全选-->
+    $("#btn1").click(function () {
+        if($("#btn1").is(':checked')){
+            console.log("1")
+            $(".describe_checkbox>input[type='checkbox']").prop("checked",true);
+            console.log("2")
+        }
+        if(!$("#btn1").is(':checked')){
+            $(".describe_checkbox>input[type='checkbox']").prop("checked",false);
+        }
+    })
+    $(".describe_checkbox>input[type='checkbox']").click(function () {
+        var l=$(".describe_checkbox>input[type='checkbox']").length;
+        var lg=$(".describe_checkbox>input[type='checkbox']:checked").length;
+        console.log(l+" "+lg)
+        if($(".describe_checkbox>input[type='checkbox']:checked").length==$(".describe_checkbox>input[type='checkbox']").length){
+            $("#btn1").prop("checked",true);
+        }else{
+            $("#btn1").prop("checked",false);
+        }
+    })
 </script>
 </body>
 </html>
