@@ -6,26 +6,26 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>浏览记录</title>
-    <link rel="stylesheet" href="css/browse_records.css">
-    <script src="js/jquery-1.12.4.js"></script>
+    <link rel="stylesheet" href="../../../public/css/browse_records.css">
+    <script src="../../../public/js/jquery-1.12.4.js"></script>
 </head>
 <body>
 <div class="br_hidden"></div>
 <div class="br_alert_del">
-    <div><img src="img/del_warn.png" alt=""></div>
+    <div><img src="../../../public/img/del_warn.png" alt=""></div>
     <span>是否删除浏览记录</span>
-    <div>
+    <div class="del_sure">
         <button>删除</button>
         <button>取消</button>
     </div>
 </div>
 <header>
-    <div class=br_top_img"><img src="img/book_left.png" alt=""></div>
+    <div class="br_top_img"><a href=""><img src="../../../public/img/book_left.png" alt=""></a></div>
     <div class="br_content">
        浏览记录
     </div>
     <div class="br_del">
-        <img src="img/br_del_pg.png" alt="">
+        <img src="../../../public/img/br_del_pg.png" alt="">
     </div>
 </header>
 <nav class="nav_search">
@@ -42,19 +42,19 @@
     <div class="history_content">
         <ul>
             <li>
-                <div><img src="img/bookmark_pg1.png" alt=""></div>
+                <div><img src="../../../public/img/bookmark_pg1.png" alt=""></div>
                 <div>我的德哈斯达拉斯你发顺丰好啦是否www.25658.comdaspodpasjdpsajdsajd</div>
             </li>
             <li>
-                <div><img src="img/bookmark_pg1.png" alt=""></div>
+                <div><img src="../../../public/img/bookmark_pg1.png" alt=""></div>
                 <div>我的德哈斯达拉斯你发顺丰好啦是否www.25658.comdaspodpasjdpsajdsajd</div>
             </li>
             <li>
-                <div><img src="img/bookmark_pg1.png" alt=""></div>
+                <div><img src="../../../public/img/bookmark_pg1.png" alt=""></div>
                 <div>我的德哈斯达拉斯你发顺丰好啦是否www.25658.comdaspodpasjdpsajdsajd</div>
             </li>
             <li>
-                <div><img src="img/bookmark_pg1.png" alt=""></div>
+                <div><img src="../../../public/img/bookmark_pg1.png" alt=""></div>
                 <div>我的德哈斯达拉斯你发顺丰好啦是否www.25658.comdaspodpasjdpsajdsajd</div>
             </li>
         </ul>
@@ -63,15 +63,15 @@
     <div class="history_content">
         <ul>
             <li>
-                <div><img src="img/bookmark_pg1.png" alt=""></div>
+                <div><img src="../../../public/img/bookmark_pg1.png" alt=""></div>
                 <div>我的德哈斯达拉斯你发顺丰好啦是否www.25658.comdaspodpasjdpsajdsajd</div>
             </li>
             <li>
-                <div><img src="img/bookmark_pg1.png" alt=""></div>
+                <div><img src="../../../public/img/bookmark_pg1.png" alt=""></div>
                 <div>我的德哈斯达拉斯你发顺丰好啦是否www.25658.comdaspodpasjdpsajdsajd</div>
             </li>
             <li>
-                <div><img src="img/bookmark_pg1.png" alt=""></div>
+                <div><img src="../../../public/img/bookmark_pg1.png" alt=""></div>
                 <div>我的德哈斯达拉斯你发顺丰好啦是否www.25658.comdaspodpasjdpsajdsajd</div>
             </li>
 
@@ -81,7 +81,7 @@
     <div class="history_content">
         <ul>
             <li>
-                <div><img src="img/bookmark_pg1.png" alt=""></div>
+                <div><img src="../../../public/img/bookmark_pg1.png" alt=""></div>
                 <div>我的德哈斯达拉斯你发顺丰好啦是否www.25658.comdaspodpasjdpsajdsajd</div>
             </li>
 
@@ -98,6 +98,22 @@
         $(".nav_search>ul>li:gt("+index+")").removeClass("nav_search_sty");
         $(".nav_search>ul>li:lt("+index+")").removeClass("nav_search_sty");
 
+    })
+    $(".br_del").click(function () {
+        console.log("13")
+        $(".br_alert_del").animate({"width": "60%"},200);
+        $(".br_alert_del").animate({"height": "20%"},200);
+        $(".br_hidden").css("display","block")
+    })
+    $(".br_hidden").click(function () {
+        $(".br_alert_del").animate({"width": "0%"},10);
+        $(".br_alert_del").animate({"height": "0%"},10);
+        $(".br_hidden").css("display","none")
+    })
+    $(".del_sure>button").click(function () {
+        $(".br_alert_del").animate({"width": "0%"},10);
+        $(".br_alert_del").animate({"height": "0%"},10);
+        $(".br_hidden").css("display","none")
     })
 </script>
 </body>

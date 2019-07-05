@@ -27,7 +27,7 @@ img{border:0;}
     display: block;
 }
 .book_top_img{
-    padding-top:0.5rem;
+    padding-top:1rem;
     padding-left:1rem;
     width:4%;
     float: left;
@@ -46,13 +46,13 @@ img{border:0;}
     height:2rem;
     line-height:2rem;
     padding-right:0.2rem;
+    padding-top: 0.8rem;
 }
 .book_manage>img{
     width:25%;
     padding-top:2px;
 }
 header{
-    padding-top:1rem;
     width: 100%;
     height: 3rem;
     border-bottom:1px solid #cccccc;
@@ -69,8 +69,8 @@ header>div:last-child{
     float: left;
     text-align: center;
     font-size:1rem;
-    padding-bottom: 0.6rem;
-    padding-top:0.3rem;
+    padding-bottom: 0.2rem;
+    padding-top:1rem;
 }
 .book_content_section{
     position: relative;
@@ -231,13 +231,18 @@ input[type="checkbox"]:checked::before{
     bottom: 0.4rem;
     right:0.5rem;
     font-size:0.7rem;
-    color: #808080;
     width: 2.5rem;
     height: 1rem;
-    border:1px solid;
+    border:1px solid #cccccc;
     line-height:1rem;
     text-align: center;
     border-radius: 0.5rem;
+}
+.describe_like>a{
+    display: block;
+    width: 100%;
+    height: 100%;
+    color: #808080;
 }
 .describe_li_sty1{
     padding-top:1.5rem;
@@ -298,7 +303,7 @@ input[type="checkbox"]:checked::before{
     display: block;
 }
 .tuijian_describe_text{
-    font-size:1rem;
+    font-size:0.9rem;
     margin-top:0.5rem;
     line-height:1.2rem;
     width:98%;
@@ -327,14 +332,20 @@ input[type="checkbox"]:checked::before{
     bottom: 0.5rem;
     right:0.3rem;
     font-size:0.6rem;
-    color: #808080;
     width: 2.5rem;
     height: 1rem;
-    border:1px solid;
+    border:1px solid #cccccc;
     line-height:1rem;
     text-align: center;
     border-radius: 0.5rem;
 }
+.tuijian_describe_like>a{
+    display: block;
+    width: 100%;
+    height: 100%;
+    color: #808080;
+}
+
 .tuijian_product:nth-child(odd){
     margin-left:1rem;
 }
