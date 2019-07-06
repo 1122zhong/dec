@@ -1,11 +1,92 @@
+<style>
+    .tab-title{
+        position: static !important;
+    }
+    .goods-info{
+        padding-top: 0 !important;
+
+    }
+    .myheader{
+        background-color: #fff;
+        height: 3rem;
+    }
+    .tab-title{
+        border:none !important;
+    }
+    .tab-title li{
+        border-right:none !important;
+
+    }
+    .tab-title-a{
+        padding-bottom: 0.5rem;
+        border-bottom: 1px solid #EC5151;
+    }
+    .myheader-img{
+        height: 3rem;
+        width: 10%;
+        float: left;
+    }
+    .myheader-img>img{
+        height: 1.8rem;
+        margin-top: 0.6rem;
+        margin-left: 13%;
+    }
+    .product-div-link-bg{
+        background: #ffffff !important;
+    }
+    .myheader-text{
+        height: 3rem;
+        width: 50%;
+        margin: 0 auto;
+        text-align: center;
+        line-height: 3rem;
+        font-size: 1.5rem;
+    }
+    .flow-checkout-pro span.t-jiantou:first-child{
+
+        height: 50%;
+        margin-top: 0rem !important;
+    }
+    .flow-checkout-pro span.t-jiantou{
+
+    }
+    .jiantou{ float: right;
+        top: 0;
+        display: block;
+        position: relative;
+        font-size: 2rem;
+        padding-right: 1.3rem;
+        color: #777;
+    }
+    .user-order-money{
+        border-top: none !important;
+    }
+    .m-top1px{
+        margin-top: 0 !important;
+    }
+    .ect-button-more>a{
+        border-radius: 1rem;
+    }
+    .ect-button-more>a:last-child{
+        border: 1px solid #d83c15;
+        color: #d83c15;
+    }
+</style>
+
 {include file="page_header"}
+<div class="myheader">
+    <div class="myheader-img"><img src="/mobile/public/img/book_left.png" alt=""></div>
+    <div class="myheader-text">我的订单</div>
+</div>
 <div class="con">
-    <div class="goods-info user-order of-hidden ts-3" style="padding-top:4rem">
+    <div class="goods-info user-order of-hidden ts-3">
         <nav class="tab-title b-color-f of-hidden" style="position:fixed">
             <ul class="dis-box">
-                <li class="box-flex {if empty($status)}active{/if}"><a status="0" >全部订单({$order_num.all_order})</a></li>
+                <li class="box-flex  {if empty($status)}active{/if}"><a status="0" class="tab-title-a" >全部({$order_num.all_order})</a></li>
                 <li class="box-flex {if $status ==1}active{/if}"><a status="1" >待付款({$order_num.pay_count})</a></li>
+                <li class="box-flex"><a>待发货</a></li>
                 <li class="box-flex {if $status == 2}active{/if}"><a status="2" >待收货({$order_num.confirmed_count})</a></li>
+                <li class="box-flex"><a>已完成</a></li>
             </ul>
         </nav>
         <section class="store_info">
@@ -23,28 +104,30 @@
                         </span>
                         <em class="j-goods-coupon t-first f-04"><%order.order_status%></em>
                     </header>
-                    <div class="f-c-p-orderid padding-all m-top1px b-color-f">
+                 <!--<div class="f-c-p-orderid padding-all m-top1px b-color-f">
                         <a class="product-div-link" href="<%order.order_url%>"></a>
-
                         <h4 class="t-remark2">
                             <label class="t-remark">订单号：</label><%order.order_sn%>
+                   -->
                             <!--拼团标识-->
-                            <%if order.team_id > 0%>
-                            <em class="em-promotion b-tag">拼团订单</em>
-                            <%/if%>
-                            <!--拼团标识 end-->
+                    <!-- <%if order.team_id > 0%>
+                     <em class="em-promotion b-tag">拼团订单</em>
+                     <%/if%>
+                    -->
+                     <!--拼团标识 end-->
                             <!--砍价标识-->
-                            <%if order.extension_code == 'bargain_buy'%>
-                            <em class="em-promotion b-tag">砍价订单</em>
-                            <%/if%>
-                            <!--砍价标识 end-->
+                    <!--    <%if order.extension_code == 'bargain_buy'%>
+                        <em class="em-promotion b-tag">砍价订单</em>
+                        <%/if%>
+                        -->
+                        <!--砍价标识 end-->
 
-                             <span class="t-jiantou"></span>
+                    <!--         <span class="t-jiantou"></span>
                         </h4>
                         <p class="t-remark3 m-top04"><%order.order_time%></p>
                     </div>
-
-                    <div class="padding-all user-orderlist-shop dis-box text-all-select">
+                       -->
+                    <div class="padding-all user-orderlist-shop dis-box text-all-select product-div-link-bg">
                         <a class="product-div-link" href="<%order.order_url%>"></a>
                         <ul class="flow-checkout-smallpic box-flex">
                             <%each order.order_goods as val %>
@@ -65,8 +148,9 @@
                             <%/if%>
                             <%/each%>
                         </ul>
-                        <span class="t-jiantou">
-                            <span class="f-c-a-count">共 <%order.order_goods_num%>款</span><i class="iconfont icon-jiantou tf-180"></i>
+                        <span class="t-jiantou" style="padding-right: 0;margin-top: 0rem;font-size: 1.5rem;color: #fd4404;display: block;text-align: center;">
+                            <span class="f-c-a-count"><%#order.total_fee%></span>
+                            <p class="f-c-a-count" style="color: #808080;margin-top: 2.3rem;display: block;text-align: center;">X<%order.order_goods_num%></p><!--<i class="iconfont icon-jiantou tf-180"></i>-->
                         </span>
                     </div>
 					<div class="padding-all f-05 user-order-money b-color-f">共<%order.order_goods_num%>款商品 合计：<em class="t-first"><%#order.total_fee%></em></div>
@@ -202,6 +286,13 @@
                 no: function() {}
             });
         });
+        $(".dis-box>li").click(function () {
+            var i=$(this).index();
+            $(".dis-box>li>a").eq(i).addClass("tab-title-a");
+            $(".dis-box>li>a:lt("+i+")").removeClass("tab-title-a");
+            $(".dis-box>li>a:gt("+i+")").removeClass("tab-title-a");
+
+        })
     </script>
 </body>
 </html>
