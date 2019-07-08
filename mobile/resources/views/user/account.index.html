@@ -3,6 +3,25 @@
 	.box-flex p{
 		padding-top: 0 !important;
 	}
+    .my-nav-box>a>div{
+        background: #ffffff;
+        line-height: 100%;
+    }
+    .my-nav-box>a>div>h3,.my-nav-box>a>div>p{
+        padding-top: 0.3rem;
+    }
+    .my-nav-box>a:first-child>div>h3{
+        color: #e68c3b;
+    }
+    .my-nav-box>a>div:first-child>div>img{
+        width: 1.9rem;
+        margin-right: 0.5rem;
+    }
+    .my-nav-box>a>div>p{
+        font-size: 0.6rem;
+        color: #808080;
+        line-height: normal;
+    }
 </style>
 		<section class="purse-header-box text-center purse-f">
 			<div style="width: 100%;padding-top: 0.6rem;">
@@ -40,7 +59,7 @@
 						<div class="purse-ts-box" style="display:none"></div>
 					</a>
 					-->
-					<a href="" class="box-flex text-center" style="color: #ffffff">
+					<a href="/mobile/resources/views/user/yundou.detail.html" class="box-flex text-center" style="color: #ffffff">
 						<p class="t-remark3" style="color: #ffffff;margin-bottom: 0.5rem;">
 							<div style="position: relative;width: 100%;height: 24px;">
 						       <div style="position: relative;width: 47%;float: left;text-align: right;height: 24px;">
@@ -77,6 +96,7 @@
 				</div>
 			</section>
 		</section>
+<!--
 <div class="user-pur-box">
 	<div class="user-nav-1-box g-s-i-title-2 dis-box text-center">
 		<a href="{url('user/account/deposit')}" class="box-flex">
@@ -86,26 +106,63 @@
 			<h4 class="ellipsis-one purse-f"><i class="iconfont icon-wodetixian is-money-color"></i>提现</h4>
 		</a>
 	</div>
-</div>
-		<section class="b-color-f my-nav-box m-top10">
-			<a href="{url('user/account/detail')}">
+</div>-->
+		<section class="my-nav-box">
+            <a href="{url('user/account/detail')}">
+                <div class="dis-box padding-all my-bottom" style="margin-bottom: 1.2rem;">
+                    <div><img src="/mobile/public/img/account_detail_pg.png" alt=""></div>
+                    <h3 class="box-flex text-all-span my-u-title-size">{$lang.account_detail}</h3>
+                    <p>2320789696@qq.com</p>
+                    <div class="f-04"><span class="t-jiantou"><i class="iconfont icon-jiantou tf-180 jian-top"></i></span></div>
+                </div>
+            </a>
+            <a href="" >
+                <div class="dis-box padding-all my-bottom">
+                    <div><img src="/mobile/public/img/account_manage_pg.png" alt=""></div>
+                    <h3 class="box-flex text-all-span my-u-title-size">账户管理</h3>
+                    <p>修改密码，银行卡，手机号码</p>
+                    <div class="f-04"><span class="t-jiantou"><i class="iconfont icon-jiantou tf-180 jian-top"></i></span></div>
+                </div>
+            </a>
+			<a href="{url('user/account/deposit')}" >
 				<div class="dis-box padding-all my-bottom">
-					<h3 class="box-flex text-all-span my-u-title-size">{$lang.account_detail}</h3>
+                    <div><img src="/mobile/public/img/recharge.png" alt=""></div>
+					<h3 class="box-flex text-all-span my-u-title-size">充值</h3>
+                    <p>支持支付宝，微信，银联，财付通</p>
 					<div class="f-04"><span class="t-jiantou"><i class="iconfont icon-jiantou tf-180 jian-top"></i></span></div>
 				</div>
 			</a>
+            <a href={url('user/account/accountraply')}">
+                <div class="dis-box padding-all my-bottom">
+                    <div><img src="/mobile/public/img/tixian.png" alt=""></div>
+                    <h3 class="box-flex display_block text-all-span my-u-title-size">提现</h3>
+                    <p>将余额提现到银行卡</p>
+                    <div class="f-04"><span class="t-jiantou"><i class="iconfont icon-jiantou tf-180 jian-top"></i></span></div>
+                </div>
+            </a>
+            <a href={url('user/account/accountraply')}">
+                <div class="dis-box padding-all my-bottom">
+                    <div><img src="/mobile/public/img/zhuanzhang.png" alt=""></div>
+                    <div class="box-flex text-all-span my-u-title-size">转账</div>
+                    <p>会员转账及时到账</p>
+                    <div class="f-04"><span class="t-jiantou"><i class="iconfont icon-jiantou tf-180 jian-top"></i></span></div>
+                </div>
+            </a>
+            <!--
 			<a href="{url('user/account/log')}">
 				<div class="dis-box padding-all my-bottom">
+                    <div><img src="/mobile/public/img/account_detail_pg.png" alt=""></div>
 					<h3 class="box-flex text-all-span my-u-title-size">{$lang.account_apply_record}</h3>
 					<div class="f-04"><span class="t-jiantou"><i class="iconfont icon-jiantou tf-180 jian-top"></i></span></div>
 				</div>
 			</a>
             <a href="{url('user/index/inv_info')}">
 				<div class="dis-box padding-all my-bottom">
+                    <div><img src="/mobile/public/img/account_detail_pg.png" alt=""></div>
 					<h3 class="box-flex text-all-span my-u-title-size">{$lang.inv_info}</h3>
 					<div class="f-04"><span class="t-jiantou"><i class="iconfont icon-jiantou tf-180 jian-top"></i></span></div>
 				</div>
-			</a>
+			</a>-->
 		</section>
 
     <!--快捷导航-->
