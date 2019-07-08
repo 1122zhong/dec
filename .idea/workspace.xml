@@ -2,14 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5d1e67ba-15f5-4899-8a1d-58859f74f975" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/mobile/public/img/account_bg.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mobile/public/img/account_uu_pg.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mobile/public/img/account_yundou_pg.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mobile/public/img/user_prolie.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mobile/resources/assets/img/account_bg.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mobile/resources/views/user/account.index.html" beforeDir="false" afterPath="$PROJECT_DIR$/mobile/resources/views/user/account.index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mobile/resources/views/user/order.index.html" beforeDir="false" afterPath="$PROJECT_DIR$/mobile/resources/views/user/order.index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/temp/caches/1/homeindex_A7CD55E8.php" beforeDir="false" afterPath="$PROJECT_DIR$/temp/caches/1/homeindex_A7CD55E8.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/temp/compiled/category_tree_nav.lbi.php" beforeDir="false" afterPath="$PROJECT_DIR$/temp/compiled/category_tree_nav.lbi.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/temp/query_caches/sqlcache_config_file_25ab26ba4043c81abef1a44e1987fa13.php" beforeDir="false" afterPath="$PROJECT_DIR$/temp/query_caches/sqlcache_config_file_25ab26ba4043c81abef1a44e1987fa13.php" afterDir="false" />
@@ -28,8 +21,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/mobile/resources/views/user/account.index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="201">
-              <caret line="35" column="25" lean-forward="true" selection-start-line="35" selection-start-column="25" selection-end-line="35" selection-end-column="25" />
+            <state relative-caret-position="259">
+              <caret line="40" column="24" lean-forward="true" selection-start-line="40" selection-start-column="24" selection-end-line="40" selection-end-column="24" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#section#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#div#0;n#section#0;n#!!top" expanded="true" />
@@ -51,7 +44,6 @@
                 <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#0;n#a#0;n#div#0;n#section#0;n#section#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#1;n#div#0;n#a#0;n#div#0;n#section#0;n#section#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#h4#0;n#a#0;n#div#0;n#section#0;n#section#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#a#0;n#div#0;n#section#0;n#section#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#a#1;n#div#0;n#section#0;n#section#0;n#!!top" expanded="true" />
                 <element signature="n#a#1;n#div#0;n#section#0;n#section#0;n#!!top" />
                 <element signature="n#style#0;n#p#0;n#a#1;n#div#0;n#section#0;n#section#0;n#!!top" expanded="true" />
@@ -61,17 +53,7 @@
                 <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#0;n#a#1;n#div#0;n#section#0;n#section#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#1;n#div#0;n#a#1;n#div#0;n#section#0;n#section#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#h4#0;n#a#1;n#div#0;n#section#0;n#section#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#a#1;n#div#0;n#section#0;n#section#0;n#!!top" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mobile/resources/assets/css/ectouch.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="236">
-              <caret line="1625" column="58" lean-forward="true" selection-start-line="1625" selection-start-column="58" selection-end-line="1625" selection-end-column="58" />
             </state>
           </provider>
         </entry>
@@ -108,8 +90,8 @@
         <option value="$PROJECT_DIR$/mobile/resources/views/user/index.html" />
         <option value="$PROJECT_DIR$/mobile/resources/views/user/order.detail.html" />
         <option value="$PROJECT_DIR$/mobile/resources/views/user/order.index.html" />
-        <option value="$PROJECT_DIR$/mobile/resources/views/user/account.index.html" />
         <option value="$PROJECT_DIR$/mobile/resources/assets/css/ectouch.css" />
+        <option value="$PROJECT_DIR$/mobile/resources/views/user/account.index.html" />
       </list>
     </option>
   </component>
@@ -218,6 +200,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -228,54 +211,12 @@
             <path>
               <item name="dec" type="b2602c69:ProjectViewProjectNode" />
               <item name="dec" type="462c0819:PsiDirectoryNode" />
-              <item name="mobile" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dec" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dec" type="462c0819:PsiDirectoryNode" />
-              <item name="mobile" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dec" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dec" type="462c0819:PsiDirectoryNode" />
-              <item name="mobile" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
-              <item name="img" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dec" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dec" type="462c0819:PsiDirectoryNode" />
-              <item name="mobile" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dec" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dec" type="462c0819:PsiDirectoryNode" />
-              <item name="mobile" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dec" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dec" type="462c0819:PsiDirectoryNode" />
-              <item name="mobile" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dec" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dec" type="462c0819:PsiDirectoryNode" />
-              <item name="mobile" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="user" type="462c0819:PsiDirectoryNode" />
+              <item name="data" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -318,18 +259,19 @@
       <option name="presentableId" value="Default" />
       <updated>1562305483767</updated>
       <workItem from="1562305486475" duration="15454000" />
-      <workItem from="1562376854897" duration="17053000" />
+      <workItem from="1562376854897" duration="17555000" />
+      <workItem from="1562550853827" duration="1570000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="32507000" />
+    <option name="totallyTimeSpent" value="34579000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25266525" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2553305" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -534,10 +476,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/data/log.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/mobile/resources/views/user/account.index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="201">
-          <caret line="35" column="25" lean-forward="true" selection-start-line="35" selection-start-column="25" selection-end-line="35" selection-end-column="25" />
+        <state relative-caret-position="259">
+          <caret line="40" column="24" lean-forward="true" selection-start-line="40" selection-start-column="24" selection-end-line="40" selection-end-column="24" />
           <folding>
             <element signature="n#style#0;n#div#0;n#section#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#div#0;n#section#0;n#!!top" expanded="true" />
@@ -559,7 +504,6 @@
             <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#0;n#a#0;n#div#0;n#section#0;n#section#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#1;n#div#0;n#a#0;n#div#0;n#section#0;n#section#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#h4#0;n#a#0;n#div#0;n#section#0;n#section#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#a#0;n#div#0;n#section#0;n#section#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#a#1;n#div#0;n#section#0;n#section#0;n#!!top" expanded="true" />
             <element signature="n#a#1;n#div#0;n#section#0;n#section#0;n#!!top" />
             <element signature="n#style#0;n#p#0;n#a#1;n#div#0;n#section#0;n#section#0;n#!!top" expanded="true" />
@@ -569,7 +513,6 @@
             <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#0;n#a#1;n#div#0;n#section#0;n#section#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#1;n#div#0;n#a#1;n#div#0;n#section#0;n#section#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#h4#0;n#a#1;n#div#0;n#section#0;n#section#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#a#1;n#div#0;n#section#0;n#section#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
