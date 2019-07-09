@@ -26,7 +26,7 @@
 <body>
 <header>
     <div class="jiaotou_left"><i class="iconfont icon-jiantou tf-180 jian-top"></i></div>
-    <div class="content_text">云豆记录</div>
+    <div class="content_text">UU信用</div>
     <div class="manage_sty"><i class="iconfont icon-caidan tf-180 jian-top "></i></div>
 </header>
 <div class="saixuan">
@@ -122,10 +122,10 @@
 </section>
 <div class="hidden_mian"></div>
 <div class="manage_select">
-        <div class="manage_select_header">
-            <div class="cancel_manage">X</div>
-            <div>云豆分类</div>
-        </div>
+    <div class="manage_select_header">
+        <div class="cancel_manage">X</div>
+        <div>云豆分类</div>
+    </div>
     <section>
         <ul>
             <li class="active">全部 <i class="iconfont icon-gou tf-180 jian-top" style="color: red;font-size: 2.8rem;"></i></li>
@@ -172,8 +172,8 @@
         $(".manage_select>section>ul>li:gt("+i+")").removeClass("active");
         $(".manage_select>section>ul>li:lt("+i+")").removeClass("active");
 
-       var text=$(".manage_select>section>ul>li").eq(i).text();
-       text1=text+"<i class=\"iconfont icon-gou tf-180 jian-top\" style=\"color: red;font-size: 2.8rem;\"></i>"
+        var text=$(".manage_select>section>ul>li").eq(i).text();
+        text1=text+"<i class=\"iconfont icon-gou tf-180 jian-top\" style=\"color: red;font-size: 2.8rem;\"></i>"
         $(".manage_select>section>ul>li").eq(i).html(text1);
         $(".manage_select>section>ul>li:gt("+i+")").children().remove();
         $(".manage_select>section>ul>li:lt("+i+")").children().remove();
