@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="/mobile/public/css/detail-style.css">
+    <link rel="stylesheet" href="/mobile/public/css/app.min.css">
+    <link rel="stylesheet" href="/mobile/public/css/bank/bank.css">
+    <link rel="stylesheet" href="/mobile/public/css/bank/bind_bank_cart.css">
+    <script src="/mobile/public/js/jquery-1.12.4.js"></script>
+
+    <title>银行卡管理</title>
+    <style>
+        .jiaotou_left{width: 15%;float: left;padding-left: 1rem;padding-bottom: 0.3rem;}
+        .content_text{width: 50%;margin: 0 auto;text-align: center;font-weight: 600;}
+        header{border-bottom: 0}
+        .text-all>label{min-width: 25%;padding-left:1.5rem;}
+        .flow-consignee{margin-top:0 !important;}
+        .text-all{border-bottom: 1px solid #cccccc !important;}
+        .input-text input{width: 85%}
+        .t-jiantou i{
+            margin-top: 1rem;}
+        .con{min-height: 30vh !important;}
+        .j-text-all>label{color:#808080 !important;}
+
+    </style>
+</head>
+<body>
+<div class="content">
+    <header>
+        <div class="jiaotou_left"><i class="iconfont icon-jiantou tf-180 jian-top"></i></div>
+        <div class="content_text">绑定银行卡</div>
+    </header>
+    <section class="bank_cart">
+        <span>请输入您的身份信息</span>
+        <form action="" method="post" class="validation">
+            <div class="con b-color-f" id="checkPage">
+                <div class="flow-consignee margin-lr">
+                    <div class="text-all dis-box j-text-all">
+                        <label>银行</label>
+                        <div class="box-flex input-text">
+                            <input name='consignee' class="j-input-text" type="text" placeholder="请选择银行" value=""/>
+                            <span class="t-jiantou"><i class="iconfont icon-jiantou tf-180 jian-top" ></i></span>
+                        </div>
+                    </div>
+                    <div class="text-all dis-box j-text-all">
+                        <label>卡号</label>
+                        <div class="box-flex input-text">
+                            <input class="j-input-text"  placeholder="请输入卡号" value=""/>
+                        </div>
+                    </div>
+                    <div class="text-all dis-box j-text-all">
+                        <label>持卡人</label>
+                        <div class="box-flex input-text">
+                            <input class="j-input-text"  placeholder="请输入卡号" value=""/>
+                        </div>
+                    </div>
+                    <div class="text-all dis-box j-text-all">
+                        <label>卡类型</label>
+                        <div class="box-flex input-text">
+                            <input class="j-input-text"  placeholder="请输入卡号" value=""/>
+                            <span class="t-jiantou"><i class="iconfont icon-jiantou tf-180 jian-top" ></i></span>
+                        </div>
+                    </div>
+                    <div class="text-all dis-box j-text-all">
+                        <label>手机号</label>
+                        <div class="box-flex input-text">
+                            <input class="j-input-text"  placeholder="请输入卡号" value=""/>
+                        </div>
+                    </div>
+                    <div class="text-all dis-box j-text-all">
+                        <label>验证码</label>
+                        <div class="box-flex input-text">
+                            <input class="j-input-text"  placeholder="请输入卡号" value=""/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+        <div class="checkbox_agree">
+            <input type="checkbox" id="checkbox" >
+            <label for="checkbox">
+                <div><i class="iconfont icon-gou tf-180 jian-top dis-none"></i></div>
+                同意<span>《服务协议》</span>
+            </label>
+        </div>
+        <button class="bind_bank_next">下一步</button>
+    </section>
+</div>
+<div class="hidden_mian">
+
+</div>
+<div class="hidden_mian_content">
+    <div>
+        <div class="jiaotou_left" id="back"><i class="iconfont icon-jiantou tf-180 jian-top"></i></div>
+        <div class="content_text">确认绑卡</div>
+    </div>
+
+    <ul>
+        <li>
+            <div>持卡人</div>
+            <div>张三</div>
+        </li>
+        <li>
+            <div>卡号</div>
+            <div>225285858585858(中国银行)</div>
+        </li>
+        <li>
+            <div>电话</div>
+            <div>13584895995</div>
+        </li>
+        <li>
+            <div>备注</div>
+            <div> <input name='consignee' class="j-input-text" type="text" placeholder="选填" value=""/></div>
+        </li>
+    </ul>
+    <button class="bind_bank_finish" id="bind_ok">确认绑卡</button>
+</div>
+<script>
+    //遮罩层——确认框
+    $(".checkbox_agree").click(function () {
+        if($(".checkbox_agree>input").is(":checked")){
+            $(".bind_bank_next").css("background","#ec5151");
+            $(".checkbox_agree>label>div>i").removeClass("dis-none");
+            $(".bind_bank_next").click(function () {
+                if($(".checkbox_agree>input").is(":checked")){
+                    $(".hidden_mian").css("display","block");
+                    $(".hidden_mian_content").css("bottom","0");
+                    $(".hidden_mian").click(function () {
+                        $(".hidden_mian").css("display","none");
+                        $(".hidden_mian_content").css("bottom","-28rem");
+                    })
+                }
+
+            })
+        }else{
+            $(".bind_bank_next").css("background","#cccccc");
+            $(".checkbox_agree>label>div>i").addClass("dis-none");
+        }
+    })
+    //点击取消绑卡
+    $("#back").click(function () {
+        $(".hidden_mian").css("display","none");
+        $(".hidden_mian_content").css("bottom","-28rem");
+    })
+
+    //点击确认绑卡按钮
+      $("#bind_ok").click(function () {
+        $(".hidden_mian").css("display","none");
+        $(".hidden_mian_content").css("bottom","-28rem");
+        location.href="/mobile/resources/views/user/bank_cart_manage.html"
+    })
+
+</script>
+</body>
+
+</html>

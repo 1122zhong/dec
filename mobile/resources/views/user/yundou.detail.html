@@ -123,7 +123,7 @@
 <div class="hidden_mian"></div>
 <div class="manage_select">
         <div class="manage_select_header">
-            <div class="cancel_manage">X</div>
+            <div class="cancel_manage"><i class="iconfont icon-jiantou tf-180 jian-top"></i></div>
             <div>云豆分类</div>
         </div>
     <section>
@@ -193,12 +193,13 @@
         var length=$(".give_detail ul li div:odd").size();
         for(var i=0;i<length;i++){
             var lang=$(".give_detail>ul>li>div:odd").eq(i).html().length;
+            console.log(lang)
             if($(".give_detail>ul>li>div:odd").eq(i).html().substring(0,1)=="+"){
-                sum1+=parseInt($(".give_detail>ul>li>div:odd").eq(i).html().substring(1,(length-1)));
+                sum1+=parseInt($(".give_detail>ul>li>div:odd").eq(i).html().substring(1,(lang-1)));
             }
 
             if($(".give_detail>ul>li>div:odd").eq(i).html().substring(0,1)=="-"){
-                sum2+=parseInt($(".give_detail>ul>li>div:odd").eq(i).html().substring(1,(length-1)));
+                sum2+=parseInt($(".give_detail>ul>li>div:odd").eq(i).html().substring(1,(lang-1)));
             }
         }
         console.log(sum1)

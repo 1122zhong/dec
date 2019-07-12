@@ -142,7 +142,7 @@ header,.describe>ul>li,.book_search{
 
 .describe>ul>li{
     width: 98%;
-    height: 8rem;
+    height: 7rem;
     float: left;
 }
 .describe_checkbox{
@@ -192,7 +192,7 @@ input[type="checkbox"]:checked::before{
 .describe_img>img{
     border-radius: 1rem;
     width: 100%;
-    background: #eeeeee;
+    background: #dfdfdf;
 
 }
 .product_describe{
@@ -245,18 +245,21 @@ input[type="checkbox"]:checked::before{
     color: #808080;
 }
 .describe_li_sty1{
-    padding-top:1.5rem;
+    padding-top:0.5rem;
     padding-left:2%;
     width:98%;
     float: left;
 }
 .describe_li_sty2{
-    margin-top:1.5rem;
+    margin-top:1rem;
     margin-left:2%;
     padding: 0;
     width:99%;
     float: left;
     border-radius: 1rem;
+}
+.describe>ul>li{
+    transition: all 0.3s;
 }
 .describe>ul>li:not(:last-child){
     border-bottom:1px solid #cccccc;

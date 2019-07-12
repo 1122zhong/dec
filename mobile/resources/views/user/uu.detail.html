@@ -39,8 +39,8 @@
         </div>
     </div>
     <div>
-        <span>获得:150</span>
-        <p>消耗:150</p>
+        <span>获得:00</span>
+        <p>消耗:00</p>
     </div>
 </div>
 
@@ -52,15 +52,15 @@
                 <p>2019年6月18日  17:06:30</p>
                 <p>备注</p>
             </div>
-            <div>+584个</div>
+            <div>+2个</div>
         </li>
         <li>
             <div>
-                <span>预约商品</span>
+                <span>签到</span>
                 <p>2019年6月18日  17:06:30</p>
                 <p>备注</p>
             </div>
-            <div>-200个</div>
+            <div>+1个</div>
         </li>
         <li>
             <div>
@@ -68,7 +68,7 @@
                 <p>2019年6月18日  17:06:30</p>
                 <p>备注</p>
             </div>
-            <div>-584个</div>
+            <div>-200个</div>
         </li>
         <li>
             <div>
@@ -76,39 +76,23 @@
                 <p>2019年6月18日  17:06:30</p>
                 <p>备注</p>
             </div>
-            <div>-584个</div>
+            <div>-10个</div>
         </li>
         <li>
             <div>
-                <span>购买商品赠送</span>
+                <span>邀请新用户</span>
                 <p>2019年6月18日  17:06:30</p>
                 <p>备注</p>
             </div>
-            <div>+584个</div>
+            <div>+8个</div>
         </li>
         <li>
             <div>
-                <span>购买商品赠送</span>
+                <span>评论</span>
                 <p>2019年6月18日  17:06:30</p>
                 <p>备注</p>
             </div>
-            <div>+584个</div>
-        </li>
-        <li>
-            <div>
-                <span>购买商品赠送</span>
-                <p>2019年6月18日  17:06:30</p>
-                <p>备注</p>
-            </div>
-            <div>+584个</div>
-        </li>
-        <li>
-            <div>
-                <span>购买商品赠送</span>
-                <p>2019年6月18日  17:06:30</p>
-                <p>备注</p>
-            </div>
-            <div>+584个</div>
+            <div>+1个</div>
         </li>
         <li>
             <div>
@@ -123,15 +107,18 @@
 <div class="hidden_mian"></div>
 <div class="manage_select">
     <div class="manage_select_header">
-        <div class="cancel_manage">X</div>
-        <div>云豆分类</div>
+        <div class="cancel_manage"><i class="iconfont icon-jiantou tf-180 jian-top"></i></div>
+        <div>uu分类</div>
     </div>
     <section>
         <ul>
             <li class="active">全部 <i class="iconfont icon-gou tf-180 jian-top" style="color: red;font-size: 2.8rem;"></i></li>
-            <li>赠送</li>
+            <li>购买赠送</li>
             <li>预约</li>
             <li>兑换</li>
+            <li>秒杀</li>
+            <li>秒杀</li>
+            <li>秒杀</li>
             <li>秒杀</li>
         </ul>
     </section>
@@ -194,11 +181,11 @@
         for(var i=0;i<length;i++){
             var lang=$(".give_detail>ul>li>div:odd").eq(i).html().length;
             if($(".give_detail>ul>li>div:odd").eq(i).html().substring(0,1)=="+"){
-                sum1+=parseInt($(".give_detail>ul>li>div:odd").eq(i).html().substring(1,(length-1)));
+                sum1+=parseInt($(".give_detail>ul>li>div:odd").eq(i).html().substring(1,(lang-1)));
             }
 
             if($(".give_detail>ul>li>div:odd").eq(i).html().substring(0,1)=="-"){
-                sum2+=parseInt($(".give_detail>ul>li>div:odd").eq(i).html().substring(1,(length-1)));
+                sum2+=parseInt($(".give_detail>ul>li>div:odd").eq(i).html().substring(1,(lang-1)));
             }
         }
         console.log(sum1)

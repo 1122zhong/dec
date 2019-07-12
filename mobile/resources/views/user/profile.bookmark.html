@@ -294,18 +294,20 @@
             $(".describe_img").css("width","100%");
             $(".book_manage").css("display","none");
             $(".img_change").attr("src","../../../public/img/bookmark_style2.png");
+            $(".describe>ul>li:even").css("margin-top","0.3rem");
             clicknum++;
             console.log(clicknum);
         }
         else{
             $(".describe>ul>li").css("width","98%");
-            $(".describe>ul>li").css("height","8rem");
+            $(".describe>ul>li").css("height","7rem");
             $(".describe>ul>li").addClass("describe_li_sty1");
             $(".describe>ul>li").removeClass("describe_li_sty2");
             $(".product_describe").css("width","68%");
             $(".book_manage").css("display","block");
             $(".describe_img").css("width","30%");
             $(".img_change").attr("src","../../../public/img/bookmark_style1.png");
+            $(".describe>ul>li:even").css("margin-top","0rem");
             clicknum++;
             console.log(clicknum);
         }

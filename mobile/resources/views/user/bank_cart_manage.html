@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="/mobile/public/css/detail-style.css">
+    <link rel="stylesheet" href="/mobile/public/css/app.min.css">
+    <link rel="stylesheet" href="/mobile/public/css/bank/bank.css">
+    <script src="/mobile/public/js/jquery-1.12.4.js"></script>
+    <script src="/mobile/public/js/jquery.min.js.js"></script>
+    <script src="/mobile/public/js/setPassword/fastclick.js"></script>
+
+    <title>银行卡管理</title>
+    <style>
+        .jiaotou_left{width: 15%;float: left;padding-left: 1rem;padding-bottom: 0.3rem;}
+        .content_text{width: 50%;margin: 0 auto;text-align: center;font-weight: 500;}
+        header{border-bottom: 0}
+    </style>
+</head>
+<body>
+<div class="content">
+<header>
+    <div class="jiaotou_left"><i class="iconfont icon-jiantou tf-180 jian-top"></i></div>
+    <div class="content_text">银行账户</div>
+</header>
+<section class="bank_cart">
+    <a href="">
+        <div class="bank_cart_list">
+            <div>
+                <div><img src="/mobile/public/img/bank/bank_china.png" alt=""></div>
+                <div>
+                    <span>中国银行</span>
+                    <p>储蓄卡</p>
+                </div>
+
+            </div>
+            <div>6512 3256 5884 6525</div>
+            <div><img src="/mobile/public/img/bank/bank_china_bg.png" alt=""></div>
+
+            <div class="box-shadow"></div>
+        </div>
+    </a>
+    <a href="">
+        <div class="bank_cart_list">
+            <div>
+                <div><img src="/mobile/public/img/bank/bank_jianse.png" alt=""></div>
+                <div>
+                    <span>中国建设银行</span>
+                    <p>储蓄卡</p>
+                </div>
+            </div>
+            <div>6512 3256 5884 6525</div>
+            <div><img src="/mobile/public/img/bank/bank_jianse_bg.png" alt=""></div>
+            <div class="box-shadow"></div>
+        </div>
+    </a>
+    <a href="">
+        <div class="bank_cart_list">
+            <div>
+                <div><img src="/mobile/public/img/bank/bank_gongs.png" alt=""></div>
+                <div>
+                    <span>中国工商银行</span>
+                    <p>储蓄卡</p>
+                </div>
+
+            </div>
+            <div>6512 3256 5884 6525</div>
+            <div><img src="/mobile/public/img/bank/bank_gongs_bg.png" alt=""></div>
+
+            <div class="box-shadow"></div>
+        </div>
+    </a>
+    <button id="addBankCart">添加银行卡</button>
+    <span id="addCartD">支持信用卡/储蓄卡</span>
+</section>
+</div>
+<div class="content1">
+    <header>
+        <div class="content_text">密码验证</div>
+    </header>
+    <section class="add_bank_cart">
+            <span>添加银行卡</span>
+            <p>输入交易密码。验证身份</p>
+        <div style="padding-top: 20px;text-align: center;">
+            <form id="password" >
+                <input readonly class="pass" type="password"maxlength="1"value=""><input readonly class="pass" type="password"maxlength="1"value=""><input readonly class="pass" type="password"maxlength="1"value=""><input readonly class="pass" type="password"maxlength="1"value=""><input readonly class="pass" type="password"maxlength="1"value=""><input readonly class="pass pass_right" type="password"maxlength="1"value="">
+            </form>
+        </div>
+        <div id="keyboardDIV"></div>
+            <button></button>
+    </section>
+</div>
+<script src="/mobile/public/js/ladingPasswordConfirm.js"></script>
+<script>
+    var length=$(".bank_cart_list>div>div>span").size();
+    console.log(length)
+    for(var i=0;i<length;i++){
+       var html=$(".bank_cart_list>div:nth-child(2)").eq(i).html();
+       html="**** **** ****"+" "+html.substring(html.length-4,html.length);
+        $(".bank_cart_list>div:nth-child(2)").eq(i).html(html);
+        if($(".bank_cart_list>div>div>span").eq(i).html()=="中国银行"){
+            $(".bank_cart>a>div").eq(i).css("background","#e60012");
+        }
+        if($(".bank_cart_list>div>div>span").eq(i).html()=="中国建设银行"){
+            $(".bank_cart>a>div").eq(i).css("background","#003b90");
+        }
+        if($(".bank_cart_list>div>div>span").eq(i).html()=="中国工商银行"){
+            $(".bank_cart>a>div").eq(i).css("background","#349463");
+        }
+    }
+    window.addEventListener('load', function() {
+        FastClick.attach(document.body);
+    }, false);
+</script>
+</body>
+</html>
