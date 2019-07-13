@@ -1,9 +1,154 @@
 {include file="page_header"}
+<style>
+	header{
+		position: absolute;
+		top: 0;
+		left: 0;
+		height: 3rem;
+		padding: 1rem;
+		width: 100%;
+		z-index: 40;
+	}
+	.jiaotou_left{width: 15%;float: left;padding-left: 1rem;padding-bottom: 0.3rem;}
+	.manage_sty{width: 12.3rem;float:right;position: absolute;top:1rem;right: 0;
+		border:1px solid #cccccc;
+		border-radius: 1rem;
+	}
+	.manage_sty>input{
+		width: 10rem;
+		height: 1.8rem;
+		background: none;
+
+		padding-left: 1rem;
+		color: #ffffff;
+	}
+.manage_sty>div{
+	height: 1.5rem;
+	float: right;
+	width: 2rem;
+}
+	.content_text{width: 50%;margin: 0 auto;text-align: center;font-weight: 600;
+		font-size: 1.6rem;color: #ffffff}
+	.brand-cont-box .bg-img img{
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
+	.brand-cont-box{
+		margin-top: 3rem !important;
+	}
+	.brand-cont-box .cont-box{
+		top:3rem
+	}
+	body{
+		position: relative;
+	}
+	.bg-bg-img{
+		background: url("/mobile/public/img/tese_top_bg.png");
+		position: absolute;
+		background-size: cover;
+		width: 100%;
+		height: 13rem;
+		top: 0;
+	}
+	.box-flex> .cont>h5{
+		color: #000000 !important;
+	}
+	.box-flex> .cont>span{
+		font-size: 1.3rem !important;
+	}
+	.brand-cont-header{
+		border-radius: 1rem !important;
+	}
+	.brand-left-list-box>a>img,.brand-right-list-box img{
+		border-radius: 1rem;
+	}
+	.content_text>span>i{
+		display: inline-block;
+		transition: all 0.3s;
+	}
+	.content_text_i{
+		transform-origin: 50% 50%;
+		transform: rotate(180deg) !important;
+	}
+	.select_hidden{
+		position: fixed;
+		z-index: 20;
+		left:0;
+		width: 100%;
+		transition: all 0.3s;
+		height:0%;
+		overflow: hidden;
+		background-color: rgba(0, 0, 0, .5);
+	}
+	.select_hidden>div{
+		position: absolute;
+		width: 100%;
+		min-height: 25%;
+		z-index: 23;
+		transition: all 0.3s;
+		bottom: 0;
+		background: #ffffff;
+	}
+	.select_hidden>div>span{
+		display: inline-block;
+		border-bottom: 1px solid #cccccc;
+		width: 100%;
+		padding:1rem;
+		text-align: center;
+	}
+	.select_hidden>div>ul>li{
+		width: 18%;
+		float: left;
+		height: 3rem;
+		line-height: 3rem;
+		text-align: center;
+		margin: 1rem;
+	}
+	.active_li{
+		background: #ec5151;
+		border-radius: 1.5rem;
+		color: #F0F0F0;
+	}
+
+</style>
+<div class="select_hidden">
+	<div>
+		<span>其它地区</span>
+		<ul>
+			<li class="active_li">重庆</li>
+			<li>贵州</li>
+			<li>四川</li>
+			<li>广西</li>
+			<li>云南</li>
+			<li>关东</li>
+			<li>湖南</li>
+			<li>湖北</li>
+			<li>甘肃</li>
+			<li>陕西</li>
+			<li>宁夏</li>
+			<li>青海</li>
+			<li>西藏</li>
+		</ul>
+	</div>
+
+</div>
+<header class="header-top">
+	<div class="jiaotou_left"><i class="iconfont icon-jiantou tf-180 jian-top" style="font-size: 1.6rem;color: #ffffff"></i></div>
+	<div class="content_text">重庆特产<span class=""><i class="iconfont icon-xiajiantou" style="color: #ffffff;font-size: 1rem;"></i></span></div>
+	<div class="manage_sty">
+		<input type="text" placeholder="输入商铺名">
+		<div><i class="iconfont icon-sousuo tf-180 jian-top" style="font-size: 1.6rem;color: #ffffff"></i></div>
+	</div>
+</header>
+<div class="bg-bg-img"></div>
 <div class="con">
+
 		{foreach $list.top as $top}
 		<div class="brand-cont-box">
+
 			<div class="bg-img">
-				<img src="{elixir('img/brand_header_bg.jpg')}" />
+
 			</div>
 			<div class="dis-box cont-box">
 				<div class="box-flex">
@@ -11,11 +156,9 @@
 				</div>
 				<div class="box-flex">
 					<div class="cont">
-						<h4>今日最大牌</h2>
-						<p>每日精选  品牌大促</p>
-					</div>
-					<div class="cont">
-						<h5>日期：<label class="color-red">{$mon}-{$mday}</label></h5>
+						<h5>特色产品</h5>
+						<span>重庆特色麻辣火锅底料</span>
+						<!--<h5>日期：<label class="color-red">{$mon}-{$mday}</label></h5>-->
 						<span>品牌：<label class="col-3">{$top.brand_name}</label></span>
 						<!--<p class="fourlist-hidden">{$top.brand_desc}</p>-->
 					</div>
@@ -59,7 +202,7 @@
 					</h3>
 				</div>
 				<!--轮播图-->
-				<div class="padding-all hot-brand_street">
+				<div class="padding-all hot-brand_street" style="background: #ffffff">
 					<div class="swiper-container h-b-swiper-container">
 						<div class="swiper-wrapper">
 							<!--one-->
@@ -153,6 +296,40 @@
 				paginationClickable: true,
 			});
 		});
+		//特产地区选择
+		$(".content_text").click(function () {
+			$(".content_text>span>i").addClass("content_text_i");
+			$(".select_hidden").css("height","100%");
+			var lenght=$(".select_hidden>div>ul>li").size();
+			for(var i=0;i<lenght;i++){
+				if($(".content_text").text()==$(".select_hidden>div>ul>li").eq(i)){
+					$(".select_hidden>div>ul>li").eq(i).addClass("active_li");
+					$(".select_hidden>div>ul>li:gt("+i+")").removeClass("active_li");
+					$(".select_hidden>div>ul>li:lt("+i+")").removeClass("active_li");
+				}
+		}
+		});
+		//取消选择
+		$(".select_hidden").click(function () {
+			$(".content_text>span>i").removeClass("content_text_i");
+			$(".select_hidden").css("height","0%");
+		})
+
+		//选择地区特产
+		$(".select_hidden>div>ul>li").click(function () {
+			$(".content_text>span>i").removeClass("content_text_i");
+			$(".select_hidden").css("height","0%");
+			var i=$(this).index();
+			$(".select_hidden>div>ul>li").eq(i).addClass("active_li");
+			$(".select_hidden>div>ul>li:gt("+i+")").removeClass("active_li");
+			$(".select_hidden>div>ul>li:lt("+i+")").removeClass("active_li");
+			var text=$(".content_text").text();
+
+			text=$(".content_text").text().substring(text.length-2,text.length);
+			text=$(".select_hidden>div>ul>li").eq(i).html()+text;
+			$(".content_text").html(text+"<span class=\"\"><i class=\"iconfont icon-xiajiantou\" style=\"color: #ffffff;font-size: 1rem;\"></i></span>")
+		})
+
 	</script>
 </body>
 </html>

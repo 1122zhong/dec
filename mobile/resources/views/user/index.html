@@ -106,7 +106,7 @@
 			<a href="{url('user/order/index', array('status'=>1))}" class="box-flex">
 
 				<li>
-					<h4><img class="user-order-list-img" src="/mobile/public/img/uer_1.png" alt=""></h4>
+					<h4><img class="user-order-list-img" src="/mobile/public/img/prolie_img/daifukuan.png" alt=""></h4>
 					<p class="t-remark3">待付款</p>
 					{if $pay_count > 0}
 					<div class="user-list-num">{$pay_count}</div>
@@ -115,7 +115,7 @@
 			</a>
 			<a href="{url('user/order/index',array('status'=>2))}" class="box-flex">
 				<li>
-					<h4><img  class="user-order-list-img" src="/mobile/public/img/use_2.png" alt=""></h4>
+					<h4><img  class="user-order-list-img" src="/mobile/public/img/prolie_img/daishouhuo.png" alt=""></h4>
 					<p class="t-remark3">待收货</p>
 					{if $confirmed_count > 0}
 					<div class="user-list-num">{$confirmed_count}</div>
@@ -124,7 +124,7 @@
 			</a>
 			<a href="{url('user/index/comment_list')}" class="box-flex">
 				<li>
-					<h4><img class="user-order-list-img" src="/mobile/public/img/use_3.png" alt=""></h4>
+					<h4><img class="user-order-list-img" src="/mobile/public/img/prolie_img/daipingjia.png" alt=""></h4>
 					<p class="t-remark3">待评价</p>
 					{if $not_comment > 0}
 					<div class="user-list-num">{$not_comment}</div>
@@ -135,7 +135,7 @@
 			<a href="{url('team/user/index')}" class="box-flex">
 
 				<li>
-					<h4><img class="user-order-list-img" src="/mobile/public/img/use_4.png" alt=""></h4>
+					<h4><img class="user-order-list-img" src="/mobile/public/img/prolie_img/daifahuo.png" alt=""></h4>
 					<p class="t-remark3">待发货</p>
 					<!--待处理
 					<div class="user-list-num">{$team_num}</div>
@@ -144,7 +144,7 @@
 			</a>
 			<a href="{url('user/refound/index')}" class="box-flex">
 				<li>
-					<h4><img class="user-order-list-img" src="/mobile/public/img/use_5.png" alt=""></h4>
+					<h4><img class="user-order-list-img" src="/mobile/public/img/prolie_img/tuihuanhuo.png" alt=""></h4>
 					<p class="t-remark3">退换货</p>
 					{if $return_count > 0}
 					<div class="user-list-num">{$return_count}</div>
@@ -165,32 +165,32 @@
 		<ul class="user-order-list  dis-box text-center">
 			<a href="{url('user/account/index')}" class="box-flex">
 				<li>
-					<h4 ><img class="user-order-list-img" src="/mobile/public/img/zijin_1.png" alt=""></h4>
+					<h4 ><img class="user-order-list-img" src="/mobile/public/img/prolie_img/yue.png" alt=""></h4>
 					<p class="t-remark3">余额</p>
 				</li>
 			</a>
 			<a href="" class="box-flex">
 
 				<li>
-					<h4><img class="user-order-list-img" src="/mobile/public/img/zijin_2.png" alt=""></h4>
+					<h4><img class="user-order-list-img" src="/mobile/public/img/prolie_img/yundou.png" alt=""></h4>
 					<p class="t-remark3">云豆</p>
 				</li>
 			</a>
 			<a href="javascript:;" class="box-flex">
 				<li>
-					<h4><img class="user-order-list-img" src="/mobile/public/img/zijin_3.png" alt=""></h4>
+					<h4><img class="user-order-list-img" src="/mobile/public/img/prolie_img/uuxinyong.png" alt=""></h4>
 					<p class="t-remark3">uu信用</p>
 				</li>
 			</a>
 			<a href="{url('user/account/bonus')}" class="box-flex">
 				<li>
-					<h4><img class="user-order-list-img" src="/mobile/public/img/zijin_4.png" alt=""></h4>
+					<h4><img class="user-order-list-img" src="/mobile/public/img/prolie_img/hongbao.png" alt=""></h4>
 					<p class="t-remark3">红包</p>
 				</li>
 			</a>
 			<a href="{url('user/account/coupont')}" class="box-flex">
 				<li>
-					<h4><img class="user-order-list-img" src="/mobile/public/img/zijin_5.png" alt=""></h4>
+					<h4><img class="user-order-list-img" src="/mobile/public/img/prolie_img/youhuiquan.png" alt=""></h4>
 					<p class="t-remark3">优惠券</p>
 				</li>
 			</a>
@@ -207,20 +207,25 @@
 			</div>
 	</section>
 	<!--function-nav-list-->
-	<nav class="b-color-f user-nav-box m-top08">
+	<nav class="b-color-f user-nav-box m-top08  user-function-list">
+		<a href="">
+			<div class="dis-box padding-all wallet-bt">
+				<h3 class="box-flex">我的工具</h3>
+			</div>
+		</a>
 		<div class="box ul-4 text-c b-color-f">
 			{if $share}
 			<a href="{url('user/index/affiliate')}">
-				<label><img class="user-prolie-list-img" src="/mobile/public/img/prolie_1.png" alt=""></label>
+				<label><img class="user-prolie-list-img" src="/mobile/public/img/prolie_img/yaoqingma.png" alt=""></label>
 				<p class="f-02 col-7">我的邀请码</p>
 			</a>
 			{/if}
 			<a href="#">
-				<label><img class="user-prolie-list-img" src="/mobile/public/img/prolie_2.png" alt=""></label>
+				<label><img class="user-prolie-list-img" src="/mobile/public/img/prolie_img/shequn.png" alt=""></label>
 				<p class="f-02 col-7">我的社群</p>
 			</a>
 
-			<a href="{url('user/index/collectionlist')}">
+		<!--	<a href="{url('user/index/collectionlist')}">
 				<label><img  class="user-prolie-list-img" src="/mobile/public/img/prolie_3.png" alt=""></label>
 				<p class="f-02 col-7">收藏的商品</p>
 			</a>
@@ -228,42 +233,42 @@
 				<label><img class="user-prolie-list-img" src="/mobile/public/img/prolie_4.png" alt=""></label>
 				<p class="f-02 col-7">关注的店铺</p>
 			</a>
-
+			-->
 			<!--<a href="{url('user/index/service')}">-->
 				<!--<label><i class="iconfont icon-3shouce color-f9c"></i></label>-->
 				<!--<p class="f-02 col-7">服务中心</p>-->
 			<!--</a>-->
 			<a href="{url('merchants/index/index')}">
-				<label><img class="user-prolie-list-img" src="/mobile/public/img/prolie_5.png" alt=""></label>
+				<label><img class="user-prolie-list-img" src="/mobile/public/img/prolie_img/ruzu.png" alt=""></label>
 				<p class="f-02 col-7">商家入驻</p>
 			</a>
 			<a href="#">
-				<label><img class="user-prolie-list-img" src="/mobile/public/img/prolie_6.png" alt=""></label>
+				<label><img class="user-prolie-list-img" src="/mobile/public/img/prolie_img/fuwushang.png" alt=""></label>
 				<p class="f-02 col-7">服务商</p>
 			</a>
 			<a href="#">
-				<label><img class="user-prolie-list-img" src="/mobile/public/img/prolie_7.png" alt=""></label>
+				<label><img class="user-prolie-list-img" src="/mobile/public/img/prolie_img/hehuoren.png" alt=""></label>
 				<p class="f-02 col-7">合伙人</p>
 			</a>
 			<a href="#">
-				<label><img class="user-prolie-list-img" src="/mobile/public/img/prolie_8.png" alt=""></label>
+				<label><img class="user-prolie-list-img" src="/mobile/public/img/prolie_img/chaka.png" alt=""></label>
 				<p class="f-02 col-7">我的茶咖</p>
 			</a>
 			<a href="#">
-				<label><img class="user-prolie-list-img" src="/mobile/public/img/prolie_9.png" alt=""></label>
+				<label><img class="user-prolie-list-img" src="/mobile/public/img/prolie_img/yuyue.png" alt=""></label>
 				<p class="f-02 col-7">我的预约</p>
 			</a>
 			<a href="#">
-				<label><img class="user-prolie-list-img" src="/mobile/public/img/prolie_10.png" alt=""></label>
+				<label><img class="user-prolie-list-img" src="/mobile/public/img/prolie_img/shoumai.png" alt=""></label>
 				<p class="f-02 col-7">我的售卖</p>
 			</a>
 			<a href="#">
-				<label><img class="user-prolie-list-img" src="/mobile/public/img/prolie_11.png" alt=""></label>
+				<label><img class="user-prolie-list-img" src="/mobile/public/img/prolie_img/tongji.png" alt=""></label>
 				<p class="f-02 col-7">统计消费</p>
 			</a>
 			{if $team}
 			<a href="{url('team/index/index')}">
-				<label><img class="user-prolie-list-img" src="/mobile/public/img/prolie_12.png" alt=""></label>
+				<label><img class="user-prolie-list-img" src="/mobile/public/img/prolie_img/pingtuan.png" alt=""></label>
 				<p class="f-02 col-7">拼团频道</p>
 			</a>
 			{/if}

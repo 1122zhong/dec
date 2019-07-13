@@ -589,8 +589,8 @@ h4.title-hrbg span {background: #fff;padding: 1rem .6rem;font-size: 1.4rem; z-in
 h4.title-hrbg hr {background: #f6f6f9;height: 1px;border: 0;position: absolute;left: 0;right: 0;top: 50%;margin-top: 1px;z-index: -1;}
 /*title-hrbg*/
 h5.title-hrbg {font-size: 1.3rem;position: relative; z-index:1; height: 4rem;line-height: 4rem;overflow: hidden;color: #888;text-align: center;margin-top: 5rem;}
-h5.title-hrbg span {background: #f3f3f3;padding: 1rem .6rem;font-size: 1.4rem; z-index: 10;}
-h5.title-hrbg hr {background: #ddd;height: 1px;border: 0;position: absolute;left: 0;right: 0;top: 50%;margin-top: 1px;z-index: -1;}
+h5.title-hrbg span {color:#000000;padding: 1rem .6rem;font-size: 1.4rem; z-index: 10;}
+h5.title-hrbg hr {background: #cccccc;height: 1px;border: 0;position: absolute;left: 0;right: 0;top: 50%;margin-top: 1px;z-index: -1;}
 /*加减文本*/
 .div-num{border:1px solid #d6d6d6;  width:12rem; margin-bottom: .1rem;}
 .div-num input{border:0;border-left:1px solid #d6d6d6; border-right: 1px solid #d6d6d6; border-radius: 0; height:3rem; padding:.5rem; font-size:1.2rem; text-align: center;}
@@ -1764,7 +1764,7 @@ input:-webkit-autofill {
  * ========================================*/
 /*shi - star*/
 /*用户中心*/
-.user-header-box{background:#fff url(../img/profile_top_bg.png);
+.user-header-box{background:#ec5151;
     width: 100%;
     height: 13rem;
     margin-bottom: 4.6rem;
@@ -2015,7 +2015,7 @@ transform: rotate(45deg);-ms-transform: rotate(45deg);-webkit-transform: rotate(
 .brand-cont-box .cont-box .cont{padding:8% 0 0 1rem;}
 .brand-cont-box .cont-box .cont h4{font-size:2rem;color:#fff}
 .brand-cont-box .cont-box .cont p{font-size:1.3rem;color:rgba(255,255,255,0.5);margin-top:.4rem}
-.brand-cont-box .cont-box .cont h5{color:#999;padding-top:18%;font-size:1.4rem}
+.brand-cont-box .cont-box .cont h5{color:#999;padding-top:36%;font-size:1.4rem}
 .brand-cont-box .cont-box .cont span{display: block;color:#999;font-size:1.4rem;margin-top:.4rem}
 @media (min-width:700px){.brand-cont-box .cont-box .cont{padding:12% 0 0 1rem;}}
 @media (min-width:800px){.brand-cont-box .cont-box .cont{padding:17% 0 0 1rem;}}
@@ -2067,7 +2067,7 @@ transform: rotate(45deg);-ms-transform: rotate(45deg);-webkit-transform: rotate(
 
 /*拍卖活动*/
 .auction-cont-box{padding-top:0.15rem;font-size:1.6rem;}
-.my-auction-small{color:#777777;margin-left:0.5rem;font-size:1.1rem;}
+.my-auction-small{color:#777777;font-size:1.1rem;}
 .product-text-auction h4 {padding-right:0rem; margin-top: -0.2rem;  overflow: hidden;}
 .product-list-small .product-text-auction {margin-left: 11rem;height: 9.2rem;padding:0;}
 .auction-but-cont{border-radius:0.2rem;color:#fff;font-size:1.1rem;padding:0.3rem 0.5rem;}
@@ -3063,7 +3063,7 @@ span.t-jiantou-2 i.icon-jiantou{position:absolute;right:1.3rem;font-size:1.4rem;
 .j-all-raise,.j-cate-raise{display:none;}
 .j-all-raise.active,.j-cate-raise.active{display:block;}*/
 .raise-button{padding:0.2rem 1.3rem;    border-top: 1px solid #f6f6f9;}
-.raise-button-1{background:#ec5151;padding:0.5rem 1.4rem;border-radius:0.5rem;    position: absolute;right: 0;top: 50%;margin-top: -1.7rem;}
+.raise-button-1{background:#ec5151;padding:0.5rem 1.4rem;border-radius:1.5rem;    position: absolute;right: 0;top: 50%;margin-top: -1.7rem;}
 .raise-progressBar .txt{font-size:1.3rem;text-align: right;color:#777;line-height: 0.5rem;padding-left: 1rem;}
 .raise-progressBar .wrap{margin-bottom:12px}
 .raise-progressBar .wrap{position:relative;margin-bottom:2px;height:5px;border-radius:5px;background-color:#efeeee;overflow:hidden}

@@ -1,4 +1,64 @@
 {include file="page_header"}
+<style>
+	body{
+		background: #f2f2f2;
+	}
+	header{
+		background: #ffffff;
+	}
+	.jiaotou_left{width: 15%;float: left;padding-left: 1rem;
+		height: 2rem;
+		margin-top: 1rem;}
+	.manage_sty{width: 3.3rem;float:right;position: absolute;top:1rem;right: 0;
+		border:1px solid #cccccc;
+		border-radius: 1rem;
+		transition: all 0.3s;
+	}
+	.manage_sty>input{
+		width: 0rem;
+		height: 2rem;
+		background: none;
+		padding-left: 1rem;
+		transition: all 0.3s;
+	}
+	.manage_sty>div{
+		height: 2rem;
+		float: right;
+		width: 2rem;
+	}
+	.content_text{width: 50%;margin: 0 auto;text-align: center;font-weight: 600;
+		height: 4rem;
+		line-height: 4rem;
+		font-size: 1.6rem;color: #000000}
+	.product-list-small ul{
+		background: #f2f2f2;
+	}
+	.product-list-small ul li{
+		width: 96%;
+		margin: 0 auto;
+		background: #ffffff;
+		border-radius: 1rem;
+		overflow: hidden;
+		margin-top: 1rem;
+	}
+	.product-list-small .product-div img{
+		border-radius: 1rem;
+	}
+	.duihuan{
+		float: right;
+		border-radius: 1.2rem;
+		margin-top: -0.4rem;
+	}
+</style>
+<header>
+	<div class="jiaotou_left"><i class="iconfont icon-jiantou tf-180 jian-top" style="font-size: 1.6rem;color: #cccccc"></i></div>
+	<div class="content_text">兑换商城</div>
+	<div class="manage_sty">
+		<input type="text" placeholder="输入商品名">
+		<div><i class="iconfont icon-sousuo tf-180 jian-top" style="font-size: 1.6rem;color: #cccccc"></i></div>
+	</div>
+</header>
+
 <section class="product-sequence dis-box">
 	<a class="box-flex active " sort="goods_id" order="DESC">默认<i class="iconfont icon-xiajiantou"></i></a>
 	<a class="box-flex" sort="amount" order="DESC">兑换量<i class="iconfont icon-xiajiantou"></i></a>
@@ -17,12 +77,18 @@
 									<img class="product-list-img" src="<%list.goods_thumb%>">
 								</div>
 								<div class="product-text-auction">
-									<h5 class="f-06 col-3 onelist-hidden"><%list.goods_name%></h5>
-									<span class="t-first auction-cont-box f-07 m-top04"><%list.exchange_integral%></span><small class="my-auction-small">积分</small>
-									<p class="f-02 col-9">市场价：
+									<h5 class="f-06 col-3 onelist-hidden" style="margin-top: 0.5rem;margin-bottom: 0.5rem;"><%list.goods_name%></h5>
+									<span class="t-first auction-cont-box f-07 m-top04"><%list.exchange_integral%></span>
+									<small class="my-auction-small">UU+</small>
+									<span class="t-first auction-cont-box f-07 m-top04">54</span>
+									<small class="my-auction-small">云豆+</small>
+									<small class="my-auction-small">￥</small>
+									<span class="t-first auction-cont-box f-07 m-top04">50</span>
+									<p class="f-02 col-9" style="margin-top: 2rem;">市场价：
 										<%#list.market_price%>
+										<span class="auction-but-cont a-col-red duihuan">立即兑换</span>
 									</p>
-									<div class="m-top02"><span class="auction-but-cont a-col-red">立即兑换</span></div>
+
 								</div>
 							</div>
 						</li>
@@ -61,8 +127,22 @@
 			$(this).attr("order", "DESC");
 			$(this).addClass("a-change");
 		}
-
 	})
+	var count=0;
+
+		$(".manage_sty>div").click(function () {
+			if(count%2==0){
+			$(".manage_sty>input").css("width","9rem");
+			$(".manage_sty").css("width","12.3rem");
+				count++;
+			}else{
+				$(".manage_sty>input").css("width","0rem");
+				$(".manage_sty").css("width","3.3rem");
+				count++;
+			}
+		})
+
+
 </script>
 
 </html>

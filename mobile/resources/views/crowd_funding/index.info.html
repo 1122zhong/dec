@@ -1,11 +1,41 @@
 {include file="page_header"}
+<style>
+	.box-flex>div:first-child{
+		width: 100%;
+		height: 3.5rem;
+		border-bottom: 1px solid #cccccc;
+	}
+	.header-menu{
+		height:8rem;
+	}
+	.jiaotou_left{width: 15%;float: left;
+		position: relative;
+		height: 3rem;
+		}
+	.posi-a{
+		position: absolute;
+		top: -0.45rem;
+		left: 1rem;
+	}
+	.content_text{width: 50%;margin: 0 auto;text-align: center;font-weight: 600;
+		height: 3.5rem;
+		line-height: 3.5rem;
+		font-size: 1.6rem;color: #000000}
+	.goods-photo .goods-num{
+		bottom: 5.3rem;
+	}
+</style>
 <div class="con goods">
 	<header class="dis-box header-menu n-header-menu new-goods-nav ts-5">
         <h3 class="box-flex">
+			<div>
+				<div class="jiaotou_left"><i class="iconfont icon-jiantou posi-a" style="font-size: 1.6rem;"></i></div>
+				<div class="content_text">项目详情</div>
+			</div>
         <nav class="n-goods-shop-list-nav box-flex swiper-container-horizontal ">
             <ul class="swiper-wrapper  dis-box text-c">
                 <li class="div1 box-flex swiper-slide active position-rel swiper-slide-active" category="1">
-                    <a class="product-div-link" href="{url('info',array('id'=> $goods.id))}"></a>商品</li>
+                    <a class="product-div-link" href="{url('info',array('id'=> $goods.id))}"></a>项目</li>
                 <li class="div3 box-flex swiper-slide  position-rel swiper-slide-next" category="3">
                     <a class="product-div-link" href="{url('properties',array('id'=> $goods.id))}"></a>详情</li>
                 <li class="div4 box-flex swiper-slide position-rel" category="4">
@@ -14,7 +44,7 @@
         </nav>
         </h3>
     </header>
-		<div class="goods-photo j-show-goods-img new-crowd-img">
+		<div class="goods-photo j-show-goods-img new-crowd-img" style="border-radius:1rem;margin-bottom: 1rem ">
 			<span class="goods-num" id="goods-num"><span id="g-active-num"></span>/<span id="g-all-num"></span></span>
 			<div class="swiper-wrapper my-gallery-box" data-pswp-uid="10">
 						<figure class="swiper-slide tb-lr-center">
@@ -27,28 +57,23 @@
 					</div>
 			<!-- Add Pagination -->
 			<div class="swiper-pagination"></div>
-		</div>
-
-		<!--raise-list-->
-		<section class="raise-list-default">
-			<div class="dis-box raise-header padding-all b-color-f">
-				<div class="raise-admin-left">
-					<div class="raise-admin-img">
-						<div class="img-commom p-r"><img src="{$init.img}"></div>
-					</div>
-				</div>
-				<div class="box-flex"><label class="color-red f-06 name">{$init.name}</label></div>
+			<span class="dis-box raise-header padding-all b-color-f">
+				<div class="box-flex"><label class="color-red f-06 name">U客茶咖</label></div>
 
 				<div class="box-flex raise-goods-btn-box p-r">
 					<label class="fr color-whie f-04 raise-button-1 text-c ">
 						{if $kefu}
-			                <a class="filter-btn-kefu" href="{$kefu}">咨询</a>
-			            {/if}
+						<a class="filter-btn-kefu" href="{$kefu}">立即咨询</a>
+						{/if}
 					</label>
 				</div>
-			</div>
-			<div class="b-color-f raise-cont m-top08 raise-category">
-				<h4 class="col-3 f-06">{$goods.title}</h4>
+			</span>
+		</div>
+
+		<!--raise-list-->
+		<section class="raise-list-default" style="border-radius: 1rem 1rem 0rem 0rem;overflow: hidden;">
+			<div class="b-color-f raise-cont raise-category">
+				<h4 class="col-3 f-06">重庆市渝中区化龙桥企业天地</h4>
 				<p class=" dis-box g-p-tthree m-top06">
 					<span class="box-flex text-right">
 									{if $goods.result == 2}
@@ -95,7 +120,7 @@
 				</div>
 			</ul>
 		</section>
-		<section class="m-top1px padding-all b-color-f goods-promotion">
+		<section class="m-top1px padding-all b-color-f goods-promotion" style="border-radius:  0 0 1rem 1rem">
 			<a href="{url('properties',array('id'=> $goods.id))}">
 				<div class="t-remark text-c color-red"><label>查看项目详情</label> <i class="iconfont icon-jiantouyou"></i></div>
 			</a>
@@ -109,7 +134,7 @@
 				<p class=" dis-box g-p-tthree"><span class="box-flex text-left f-03">发货时间: <em class="col-3">7月18日</em></span></p>
 			</div>
 		</section>
-		<section class="m-top08 goods-evaluation rsise_detail-time">
+		<section class="m-top08 goods-evaluation rsise_detail-time" style="border-radius: 1rem;overflow: hidden;">
 			<div class="dis-box padding-all b-color-f  g-evaluation-title">
 				<label class="col-3 f-06">方案回报</label>
 			</div>

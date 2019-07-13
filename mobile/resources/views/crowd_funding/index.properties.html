@@ -1,11 +1,37 @@
 {include file="page_header"}
+<style>
+	.box-flex>div:first-child{
+		width: 100%;
+		height: 3.5rem;
+		border-bottom: 1px solid #cccccc;
+	}
+	.header-menu{
+		height:8rem;
+	}
+	.jiaotou_left{width: 15%;float: left;
+		height: 3rem;
+	}
+	.posi-a{
+		position: absolute;
+		top: -0.45rem;
+		left: 1rem;
+	}
+	.content_text{width: 50%;margin: 0 auto;text-align: center;font-weight: 600;
+		height: 3.5rem;
+		line-height: 3.5rem;
+		font-size: 1.6rem;color: #000000}
+</style>
 <div class="con">
 	<header class="dis-box header-menu n-header-menu new-goods-nav ts-5">
         <h3 class="box-flex">
+			<div>
+				<div class="jiaotou_left"><i class="iconfont icon-jiantou posi-a" style="font-size: 1.6rem;"></i></div>
+				<div class="content_text">项目详情</div>
+			</div>
         <nav class="n-goods-shop-list-nav box-flex swiper-container-horizontal ">
             <ul class="swiper-wrapper  dis-box text-c">
                 <li class="div1 box-flex swiper-slide  position-rel swiper-slide-active" category="1">
-                    <a class="product-div-link" href="{url('crowd_funding/index/info',array('id'=> $id))}"></a>商品</li>
+                    <a class="product-div-link" href="{url('crowd_funding/index/info',array('id'=> $id))}"></a>项目</li>
                 <li class="div3 box-flex swiper-slide active position-rel swiper-slide-next" category="3">
                     <a class="product-div-link" href="{url('crowd_funding/index/properties',array('id'=> $id))}"></a>详情</li>
                 <li class="div4 box-flex swiper-slide position-rel" category="4">

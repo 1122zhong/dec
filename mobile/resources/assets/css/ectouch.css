@@ -1761,7 +1761,7 @@ transform: rotate(45deg);-ms-transform: rotate(45deg);-webkit-transform: rotate(
 
 /*拍卖活动*/
 .auction-cont-box{padding-top:0.15rem;font-size:1.6rem;}
-.my-auction-small{color:#777777;margin-left:0.5rem;font-size:1.1rem;}
+.my-auction-small{color:#777777;font-size:1.1rem;}
 .product-text-auction h4 {padding-right:0rem; margin-top: -0.2rem;  overflow: hidden;}
 .product-list-small .product-text-auction {margin-left: 11rem;height: 9.2rem;padding:0;}
 .auction-but-cont{border-radius:0.2rem;color:#fff;font-size:1.1rem;padding:0.3rem 0.5rem;}

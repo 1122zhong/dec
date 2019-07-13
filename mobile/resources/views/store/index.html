@@ -6,24 +6,61 @@
 .all-category i{
     font-size: 2rem;    
 }
+.con>header{
+    background: #ffffff;
+    padding: 1rem;
+}
+.n-g-s-info-add{
+    margin-top: 0;
+    padding-top: 0.5rem;
+}
+.jiaotou_left{width: 15%;float: left;padding-left: 1rem;padding-bottom: 0.3rem;}
+.manage_sty{width: 34%;float:right;position: absolute;top:1rem;right: 0;
+    }
+.content_text{width: 50%;margin: 0 auto;text-align: center;font-weight: 600;
+    font-size: 1.6rem;}
+.g-s-info-add>p{
+    display:block;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+.manage_sty>input{
+    width: 67%;
+    font-size: 1.4rem;
+    border:1px solid #cccccc;
+    margin: 0;
+    padding: 0;
+    float: left;
+    border-right: none;
+}
+    .manage_sty>button{
+        font-size: 1.4rem;
+        margin: 0;
+        padding: 0;
+        float: left;
+        border: 1px solid #cccccc;
+        border-left: none;
+        background:rgb(30, 159, 255);
+    }
 </style>
 <div class="con">
-
+    <header>
+        <div class="jiaotou_left"><i class="iconfont icon-jiantou tf-180 jian-top" style="font-size: 1.6rem;"></i></div>
+        <div class="content_text">商铺</div>
+        <div class="manage_sty">
+            <input type="text" placeholder="输入商铺名">
+            <button>搜索</button>
+        </div>
+    </header>
     <section class="store-nav-list padding-all b-color-f">
         <div class="product-one-list product-one-list-nav of-hidden scrollbar-none j-g-s-p-con swiper-container-horizontal">
             <div class="swiper-wrapper store-nav-box  j-catid">
                 <li data-catid="0" class="swiper-slide swiper-slide-active active">
-                    <div class="store-box all-category">
-                        <i class="iconfont icon-caidan"></i>
-                    </div>
-                    <h5 class="text-c col-6 m-top04 f-5">{$lang.all_category}</h5>
+                    <h5 class="text-c  m-top04 f-5">{$lang.all_category}</h5>
                 </li>
                 {foreach $category as $list}
                     <li data-catid="{$list.cat_id}" class="swiper-slide swiper-slide-active">
-                        <div class="store-box">
-                            <img class="img" src="{$list.touch_icon}">
-                        </div>
-                        <h5 class="text-c col-6 m-top04 f-5">{$list.cat_alias_name}</h5>
+                        <h5 class="text-c  m-top04 f-5">{$list.cat_alias_name}</h5>
                     </li>
                 {/foreach}
             </div>
@@ -90,16 +127,19 @@
                         <section class="dis-box">
                             <div class="g-s-i-img"><img src="<%key.shop_logo%>" /></div>
                             <div class="g-s-i-title box-flex">
-                                <h3 class="ellipsis-one"><%key.shop_name%></h3>
+                                <h3 class="ellipsis-one"><%key.shop_name%><%if key.self_run == 1%><span class="self-run-tag">{$lang.self_run}</span><%/if%></h3>
 
-                                <%if key.self_run == 1%><p class="t-remark m-top04"><span class="self-run-tag">{$lang.self_run}</span></p><%/if%>
 
+                                <p class="f-02 col-9 m-top02" style="padding: 0.3rem"><i class="iconfont icon-dingwei tf-180 jian-top"></i>重庆市渝中区重庆天地</p>
                                 <p class="f-02 col-9 m-top02">已经有 <span class="num<% key.user_id %>"><%key.gaze_number%></span> 人关注</p>
-                                <%if key.distance >0%>
-                                <p class="f-02 t-first m-top02">距离<%key.distance%>km </p>
-                                <%/if%>
+                                <!--距离-->
+                               <!-- <%if key.distance >0%>
+                                <p class="f-02 t-first m-top02">距离<%key.distance%>1111km </p>
+                                <%/if%>-->
+
                             </div>
                             <div class="g-s-info-add n-g-s-info-add">
+                                <p class="f-02 t-first m-top02">距离11km </p>
                                <a href="javascript:void(0)" class="gaze<% key.user_id %> <% key.gaze_status %>"  onclick="addgaze(<% key.user_id %>)" ><span id="store-list"><%if key.gaze_status =='active'%>已关注<%else%><i class="iconfont icon-aixin"></i>关注 <%/if%></span></a>
                             </div>
                         </section>

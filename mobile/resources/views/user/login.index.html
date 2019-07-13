@@ -1,20 +1,66 @@
 {include file="page_header"}
+<style>
+    .bg_pg{
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        background: url("/mobile/public/img/login_bg.png") no-repeat;
+        background-size:cover;
+        opacity: 0.5;
+    }
+    .con>div:first-child{
+        width: 100%;
+        padding: 1rem;
+        z-index: 13;
+        position: relative;
+        height: 4rem;
+        font-size: 2rem;
+        line-height: 4rem;
+        font-weight: 600;
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+    .user-login-ul-after:after{
+        display: none;
+    }
+    .user-login-ul{
+        border:none
+    }
+    .user-login-ul input{
+        border:none;
+    }
+    .user-login-ul .login-li, .user-login-ul .login-li input{
+        background: none;
+    }
+    .user-login-ul .login-li, .user-login-ul .login-li input:-webkit-autofill{
+        -webkit-box-shadow: 0 0 0px 0px #f3f3f3 inset;
+    }
+    .user-login-ul .login-li{
+        border:none;
+        border-radius: 0;
+        border-bottom: 1px solid #cccccc;
+    }
+</style>
+<div class="bg_pg"></div>
 <div class="con">
+    <div>用户登录</div>
     <section class="user-center user-login margin-lr p-r">
         <form class="login-form validation" action="{url('index')}" method="post">
         <div class="user-login-header-box">
             <div class="user-login-header"><div class="user-login-header-img"><div class="img-commom"><img style="border-radius:100%" src="{elixir('img/get_avatar.png')}"/></div></div></div>
         </div>
-            <div class="b-color-f  user-login-ul user-login-ul-after">
+            <div class="user-login-ul user-login-ul-after">
                 <div class="text-all dis-box j-text-all login-li " name="usernamediv">
-                    <i class="iconfont icon-huiyuan"></i>
+                    <i class="iconfont icon-shouji" style="color: #000000;font-size: 1.5rem;"></i>
+                    <div style="height: 2.4rem;line-height: 2.4rem;font-size: 1.5rem;">+86</div>
+                    <i class="iconfont icon-xiajiantou" style="color: #000000;font-size: 1.5rem;"></i>
                     <div class="box-flex input-text">
-                        <input class="j-input-text" name="username" datatype="*" nullmsg="请输入用户名" errormsg="请输入用户名" type="text" placeholder="请输入您的用户名/手机号"/>
+                        <input class="j-input-text" style="border-left: 1px solid #cccccc;margin-left: 1rem; padding-left: 1rem;" name="username" datatype="*" nullmsg="请输入用户名" errormsg="请输入用户名" type="text" placeholder="请输入您的手机号"/>
                         <i class="iconfont icon-guanbi1 close-common j-is-null"></i>
                     </div>
                 </div>
                 <div class="text-all dis-box j-text-all login-li m-top10" name="passworddiv">
-                    <i class="iconfont icon-password"></i>
+                    <i class="iconfont icon-password" style="color: #000000;font-size: 1.5rem;"></i>
                     <div class="box-flex input-text">
                         <input class="j-input-text" name="password" type="password" datatype="*6-20" nullmsg="请输入密码" errormsg="密码至少6位数" placeholder="请输入6-20位登录密码"/>
                         <i class="iconfont icon-guanbi1 close-common j-is-null"></i>
@@ -26,7 +72,7 @@
             <button type="submit" class="btn-submit min-two-btn br-5">立即登录</button>
         </form>
         {if $sms_signin == 1}
-        <div class="text-right m-top10"><a href="{url('user/login/mobile_quick')}" class="f-04" >手机号快捷登录</a></div>
+        <!--<div class="text-right m-top10"><a href="{url('user/login/mobile_quick')}" class="f-04" >手机号快捷登录</a></div>-->
         {/if}
         <div class="dis-box user-login-list">
             <div class="box-flex">
@@ -47,6 +93,11 @@
                         <img src="{elixir('img/oauth/sns_'.$vo['type'].'.png')}" alt="" width="60">
                         </a>
                     </li>
+                <li class="box-flex"><a href="">
+                    <img src="/mobile/public/img/weixin_pg1.png" alt="" width="60">
+                </a>
+                </li>
+
                 {/foreach}
             </ul>
         </div>

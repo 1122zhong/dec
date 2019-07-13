@@ -1,13 +1,81 @@
 {include file="page_header"}
+<style>
+	header{
+		position: absolute;
+		top: 0;
+		left: 0;
+		height: 3rem;
+		padding: 1rem;
+		width: 100%;
+		z-index: 40;
+	}
+	.jiaotou_left{width: 15%;float: left;padding-left: 1rem;
+		height: 2rem;
+		margin-top: 1rem;}
+	.manage_sty{width: 12.3rem;float:right;position: absolute;top:1rem;right: 0;
+		border:1px solid #cccccc;
+		border-radius: 1rem;
+	}
+	.manage_sty>input{
+		width: 10rem;
+		height: 2rem;
+		background: none;
+        border-right: 1px solid #cccccc;
+		padding-left: 1rem;
+	}
+	.manage_sty>div{
+		height: 2rem;
+		float: right;
+		width: 2rem;
+	}
+	.content_text{width: 50%;margin: 0 auto;text-align: center;font-weight: 600;
+		height: 4rem;
+		line-height: 4rem;
+		font-size: 1.6rem;color: #000000}
+	.search{
+		background: #ffffff;
+		height: 4rem;
+		border:1px solid #cccccc;
+	}
+	.category-header-box{
+		padding-bottom: 1rem;
+		background: #ffffff;
+	}
+	.product-div{
+		border-radius: 1rem;
+	}
+	.product-text>h4>span:first-child{
+		display: inline-block;
+		width: 41%;
+		font-size: 1.8rem;
+		color: #000000;
+	}
+	.product-text>h4>span:last-child{
+		width: 59%;
+		display: inline-block;
+		text-align: right;
+		font-size: 1.2rem;
+		color: #808080;
+		overflow:hidden;
+		white-space: nowrap;
+		text-overflow: ellipsis;
+	}
+</style>
 		<div class="con mb-7">
 			<div class="category">
 				<div class="category-header-box active">
 				<section class="search">
-					<div class="text-all dis-box j-text-all text-all-back">
+					<div class="jiaotou_left"><i class="iconfont icon-jiantou tf-180 jian-top" style="font-size: 1.6rem;color: #cccccc"></i></div>
+					<div class="content_text">项目列表</div>
+					<div class="manage_sty">
+						<input type="text" placeholder="输入商铺名">
+						<div><i class="iconfont icon-sousuo tf-180 jian-top" style="font-size: 1.6rem;color: #cccccc"></i></div>
+					</div>
+				<!--	<div class="text-all dis-box j-text-all text-all-back">
 						<a href="{url('crowd_funding/index/search')}" class="box-flex input-text n-input-text i-search-input">
 	                        <div class="j-input-text nav-soso"><i class="iconfont icon-sousuo"></i>商品/店铺搜索</div>
                     	</a>
-					</div>
+					</div>-->
 				</section>
 				<section>
 					<ul class="raise-cate-nav dis-box">
@@ -83,7 +151,7 @@
 								<a class="product-div-link" href="<%goods.url%>"></a>
 								<img class="product-list-img" src="<%goods.title_img%>" />
 								<div class="product-text raise-category">
-									<h4><%goods.title%></h4>
+									<h4><span>U客茶咖</span><span>重庆市渝中区化龙桥企业天地<i class="iconfont icon-dingwei2" style="font-size: 2rem;color:#ec5151"></i></span></h4>
 									<p class="col-9 f-03 raise-category-num">支持人数<em class="color-red"><%goods.join_num%></em><em class="col-9 f-02">人</em><em class="fr col-9"><i class="iconfont icon-shijian f-02"></i> 剩余时间：<%goods.shenyu_time%>天</em></p>
 									<div class="raise-progressBar dis-box">
 										<p class="wrap box-flex">
