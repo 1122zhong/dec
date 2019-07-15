@@ -143,3 +143,16 @@ body{
     color: red;
     background: #f2f2f2;
 }
+.yuyue_list_bottom>div:last-child>span{
+    background: #000000;
+    color:#ffffff;
+    padding-left: 0.3rem;
+    padding-right: 0.3rem;
+    border-radius:1rem;
+}
+.yuyue_list_bottom>div:last-child{
+    height: 1.5rem;
+    line-height: 1.5rem;
+    margin-top: 0.5rem;
+
+}

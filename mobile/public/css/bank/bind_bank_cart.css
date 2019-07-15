@@ -97,7 +97,17 @@ input[type="checkbox"]:focus{
  }
 .hidden_mian_content>ul>li>div:last-child{
     float: right;
-
+}
+.hidden_mian_content>ul>li:last-child>div:first-child{
+     width: 30%;
+ }
+.hidden_mian_content>ul>li:last-child>div:last-child{
+    width: 70%;
+    height: 100%;
+}
+.hidden_mian_content>ul>li:last-child>div:last-child>input{
+    height: 100%;
+    display: inline-block;
 }
 .bind_bank_finish{
     width: 96%;

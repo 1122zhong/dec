@@ -71,12 +71,21 @@
         border: 1px solid #d83c15;
         color: #d83c15;
     }
+    .jiaotou_left{width: 15%;float: left;
+        height: 3rem;padding-left: 1rem;
+        line-height: 3rem;
+        font-size: 1.4rem;}
+    .content_text{width: 50%;margin: 0 auto;
+        line-height: 3rem;
+        font-size: 1.5rem;text-align: center;font-weight: 600;}
 </style>
 
 {include file="page_header"}
 <div class="myheader">
-    <div class="myheader-img"><img src="/mobile/public/img/book_left.png" alt=""></div>
-    <div class="myheader-text">我的订单</div>
+    <header>
+        <a href="/mobile/index.php?m=user" class="jiaotou_left"><i class="iconfont icon-jiantou tf-180 jian-top" style="font-size: 1.5rem;"></i></a>
+        <div class="content_text">我的订单</div>
+    </header>
 </div>
 <div class="con">
     <div class="goods-info user-order of-hidden ts-3">

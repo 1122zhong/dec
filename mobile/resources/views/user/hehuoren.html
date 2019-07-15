@@ -18,17 +18,15 @@
     <link href="/mobile/public/css/date/css/mobiscroll_003.css" rel="stylesheet" type="text/css">
     <style>
         .jiaotou_left{width: 15%;float: left;padding-left: 1rem;padding-bottom: 0.3rem;}
-        .manage_sty{width: 9%;height: 50%;float:right;padding-right: 1rem;position: absolute;top:0.6rem;right: 0;}
         .content_text{width: 50%;margin: 0 auto;text-align: center;font-weight: 600;
             font-size: 1.5rem;}
     </style>
-    <title>Document</title>
+    <title>合伙人分润</title>
 </head>
 <body>
 <header>
     <a href="/mobile/index.php?m=user" class="jiaotou_left"><i class="iconfont icon-jiantou tf-180 jian-top" style="font-size: 1.5rem;"></i></a>
-    <div class="content_text">云豆记录</div>
-    <div class="manage_sty"><i class="iconfont icon-caidan tf-180 jian-top "style="font-size: 1.5rem;"></i></div>
+    <div class="content_text">合伙人分分润</div>
 </header>
 <div class="saixuan">
     <div class="content">
@@ -40,8 +38,8 @@
         </div>
     </div>
     <div>
-        <span>获得:150</span>
-        <p>消耗:150</p>
+        <span>累计分润:00</span>
+        <p>本月分润:00</p>
     </div>
 </div>
 
@@ -49,94 +47,62 @@
     <ul>
         <li>
             <div>
-                <span>购买商品赠送</span>
+                <span>张三</span>
                 <p>2019年6月18日  17:06:30</p>
                 <p>备注</p>
             </div>
-            <div>+584个</div>
+            <div>+222元</div>
         </li>
         <li>
             <div>
-                <span>预约商品</span>
+                <span>张三</span>
                 <p>2019年6月18日  17:06:30</p>
                 <p>备注</p>
             </div>
-            <div>-200个</div>
+            <div>+1元</div>
         </li>
         <li>
             <div>
-                <span>兑换商品</span>
+                <span>张三</span>
                 <p>2019年6月18日  17:06:30</p>
                 <p>备注</p>
             </div>
-            <div>-584个</div>
+            <div>+589元</div>
         </li>
         <li>
             <div>
-                <span>秒杀活动</span>
+                <span>张三</span>
                 <p>2019年6月18日  17:06:30</p>
                 <p>备注</p>
             </div>
-            <div>-584个</div>
+            <div>+589元</div>
         </li>
         <li>
             <div>
-                <span>购买商品赠送</span>
+                <span>张三</span>
                 <p>2019年6月18日  17:06:30</p>
                 <p>备注</p>
             </div>
-            <div>+584个</div>
+            <div>+589元</div>
         </li>
         <li>
             <div>
-                <span>购买商品赠送</span>
+                <span>张三</span>
                 <p>2019年6月18日  17:06:30</p>
                 <p>备注</p>
             </div>
-            <div>+584个</div>
+            <div>+589元</div>
         </li>
         <li>
             <div>
-                <span>购买商品赠送</span>
+                <span>张三</span>
                 <p>2019年6月18日  17:06:30</p>
                 <p>备注</p>
             </div>
-            <div>+584个</div>
-        </li>
-        <li>
-            <div>
-                <span>购买商品赠送</span>
-                <p>2019年6月18日  17:06:30</p>
-                <p>备注</p>
-            </div>
-            <div>+584个</div>
-        </li>
-        <li>
-            <div>
-                <span>购买商品赠送</span>
-                <p>2019年6月18日  17:06:30</p>
-                <p>备注</p>
-            </div>
-            <div>+584个</div>
+            <div>+589元</div>
         </li>
     </ul>
 </section>
-<div class="hidden_mian"></div>
-<div class="manage_select">
-        <div class="manage_select_header">
-            <div class="cancel_manage"><i class="iconfont icon-jiantou tf-180 jian-top"></i></div>
-            <div>云豆分类</div>
-        </div>
-    <section>
-        <ul>
-            <li class="active">全部 <i class="iconfont icon-gou tf-180 jian-top" style="color: red;font-size: 2.8rem;"></i></li>
-            <li>赠送</li>
-            <li>预约</li>
-            <li>兑换</li>
-            <li>秒杀</li>
-        </ul>
-    </section>
-</div>
 <script>
     $(function () {
         var currYear = (new Date()).getFullYear();
@@ -159,54 +125,24 @@
         $("#appDate").mobiscroll($.extend(opt['date'], opt['default']));
         $("#appDate1").mobiscroll($.extend(opt['date'], opt['default']));
     });
-    $(".manage_sty").click(function () {
-        $(".hidden_mian").css("display","block");
-        $(".manage_select").css("display","block");
-    })
-    $(".hidden_mian,.cancel_manage").click(function () {
-        $(".hidden_mian").css("display","none");
-        $(".manage_select").css("display","none");
-    })
-    $(".manage_select>section>ul>li").click(function () {
-        var i=$(this).index();
-        $(".manage_select>section>ul>li").eq(i).addClass("active");
-        $(".manage_select>section>ul>li:gt("+i+")").removeClass("active");
-        $(".manage_select>section>ul>li:lt("+i+")").removeClass("active");
 
-       var text=$(".manage_select>section>ul>li").eq(i).text();
-       text1=text+"<i class=\"iconfont icon-gou tf-180 jian-top\" style=\"color: red;font-size: 2.8rem;\"></i>"
-        $(".manage_select>section>ul>li").eq(i).html(text1);
-        $(".manage_select>section>ul>li:gt("+i+")").children().remove();
-        $(".manage_select>section>ul>li:lt("+i+")").children().remove();
-        $(".hidden_mian").css("display","none");
-        $(".manage_select").css("display","none");
-
-        sum();
-    })
+    //分润总计
     window.onload=function () {
         console.log("1")
         sum();
     }
     function sum(){
-        console.log("1")
         var sum1=0;
         var sum2=0;
         var length=$(".give_detail ul li div:odd").size();
         for(var i=0;i<length;i++){
             var lang=$(".give_detail>ul>li>div:odd").eq(i).html().length;
-            console.log(lang)
             if($(".give_detail>ul>li>div:odd").eq(i).html().substring(0,1)=="+"){
                 sum1+=parseInt($(".give_detail>ul>li>div:odd").eq(i).html().substring(1,(lang-1)));
             }
-
-            if($(".give_detail>ul>li>div:odd").eq(i).html().substring(0,1)=="-"){
-                sum2+=parseInt($(".give_detail>ul>li>div:odd").eq(i).html().substring(1,(lang-1)));
-            }
         }
-        console.log(sum1)
-        console.log(sum2)
-        var html1="获得:"+sum1;
-        var html2="消耗:"+sum2;
+        var html1="累计分润:"+sum1;
+        var html2="本月分润:"+sum2;
         $(".saixuan>div:last>span").html(html1);
         $(".saixuan>div:last>p").html(html2);
     }

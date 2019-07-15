@@ -1,0 +1,208 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="/mobile/public/css/app.min.css">
+    <link rel="stylesheet" href="/mobile/public/css/my_sell.css">
+    <script src="/mobile/public/js/jquery-1.12.4.js"></script>
+    <title>我的售卖</title>
+</head>
+<style>
+    .jiaotou_left{width: 15%;float: left;
+        height: 4rem;padding-left: 1rem;
+        line-height: 4rem;}
+    .content_text{width: 50%;margin: 0 auto;
+        line-height: 4rem;
+        font-size: 1.5rem;text-align: center;font-weight: 600;}
+    header{
+        height: 4rem;
+        line-height: 4rem;
+        background: #ffffff;
+    }
+</style>
+<body>
+<header>
+    <a href="/mobile/index.php?m=user" class="jiaotou_left"><i class="iconfont icon-jiantou tf-180 jian-top" style="font-size: 1.5rem;"></i></a>
+    <div class="content_text">我的售卖</div>
+</header>
+<nav>
+    <div>本月</div>
+    <div class="nav_content">
+        <span class="nav_content_active">售卖中</span>
+        <span>已售出</span>
+    </div>
+    <div>共卖出:150.00元</div>
+</nav>
+<section class="content1">
+    <ul>
+        <li>
+            <div class="section_top">
+                <div><img src="/mobile/public/img/index_brand_23.png" alt=""></div>
+                <div class="product_xinxi">
+                    <div class="product_name"><span>商品名称</span><span style=" color:#ec5151;">数量X1</span></div>
+                    <p>2016-06-12 20:12:30</p>
+                    <p>售卖价: <span>￥80.90</span></p>
+                </div>
+            </div>
+            <div class="time_over">
+                <!--倒计时-->
+                <div>2019-7-16 17:00:00</div>
+                <div>
+                    <button>查看详情</button>
+                </div>
+            </div>
+        </li>
+        <li>
+            <div class="section_top">
+                <div><img src="/mobile/public/img/index_brand_23.png" alt=""></div>
+                <div class="product_xinxi">
+                    <div class="product_name"><span>商品名称</span><span style=" color:#ec5151;">数量X1</span></div>
+                    <p>2016-06-12 20:12:30</p>
+                    <p>售卖价: <span>￥80.90</span></p>
+                </div>
+            </div>
+            <div class="time_over">
+                <!--倒计时-->
+                <div>2019-8-28 12:00:00</div>
+                <div>
+                    <button>查看详情</button>
+                </div>
+            </div>
+        </li>
+        <li>
+            <div class="section_top">
+                <div><img src="/mobile/public/img/index_brand_23.png" alt=""></div>
+                <div class="product_xinxi">
+                    <div class="product_name"><span>商品名称</span><span style=" color:#ec5151;">数量X1</span></div>
+                    <p>2016-06-12 20:12:30</p>
+                    <p>售卖价: <span>￥80.90</span></p>
+                </div>
+            </div>
+            <div class="time_over">
+                <!--倒计时-->
+                <div>2019-8-28 12:00:00</div>
+                <div>
+                    <button>查看详情</button>
+                </div>
+            </div>
+        </li>
+    </ul>
+</section>
+<section class="content2">
+    <ul>
+        <li>
+            <div class="section_top">
+                <div><img src="/mobile/public/img/index_brand_23.png" alt=""></div>
+                <div class="product_xinxi">
+                    <div class="product_name"><span>商品名称</span><span style=" color:#ec5151;">数量X1</span></div>
+                    <p>2016-06-12 20:12:30</p>
+                    <p>售卖价: <span>￥80.90</span></p>
+                </div>
+            </div>
+            <div class="time_over">
+                <div>已售出</div>
+                <div>
+                    <button>查看详情</button>
+                </div>
+            </div>
+        </li>
+        <li>
+            <div class="section_top">
+                <div><img src="/mobile/public/img/index_brand_23.png" alt=""></div>
+                <div class="product_xinxi">
+                    <div class="product_name"><span>商品名称</span><span style=" color:#ec5151;">数量X1</span></div>
+                    <p>2016-06-12 20:12:30</p>
+                    <p>售卖价: <span>￥80.90</span></p>
+                </div>
+            </div>
+            <div class="time_over">
+                <div>已售出</div>
+                <div>
+                    <button>查看详情</button>
+                </div>
+            </div>
+        </li>
+        <li>
+            <div class="section_top">
+                <div><img src="/mobile/public/img/index_brand_23.png" alt=""></div>
+                <div class="product_xinxi">
+                    <div class="product_name"><span>商品名称</span><span style=" color:#ec5151;">数量X1</span></div>
+                    <p>2016-06-12 20:12:30</p>
+                    <p>售卖价: <span>￥80.90</span></p>
+                </div>
+            </div>
+            <div class="time_over">
+                <div>已售出</div>
+                <div>
+                    <button>查看详情</button>
+                </div>
+            </div>
+        </li>
+    </ul>
+</section>
+<script>
+    $(".nav_content>span").click(function () {
+        var index=$(this).index();
+        if(index==0){
+            $(".content1").css("left","0%");
+            $(".content2").css("left","100%");
+            $(".nav_content>span").eq(0).addClass("nav_content_active");
+            $(".nav_content>span").eq(1).removeClass("nav_content_active");
+        }
+        else{
+            $(".content1").css("left","-100%");
+            $(".content2").css("left","0%");
+            $(".nav_content>span").eq(1).addClass("nav_content_active");
+            $(".nav_content>span").eq(0).removeClass("nav_content_active");
+        }
+    }); 
+    window.onload=function () {
+        var size=$(".content1 .time_over div:even").size();
+        for(var i=0;i<size;i++){
+            var text=$(".content1 .time_over div:even").eq(i).html();
+            var time0=new Date();
+            var time=new Date(text);
+            var time1=time0.getTime();
+            var time2=time.getTime();
+            var timecha=time2-time1;
+            var shi=Math.floor(timecha/1000/60/60);
+            var fen=Math.floor(timecha/1000/60-shi*60);
+            var miao=Math.floor(timecha/1000-shi*60*60-fen*60);
+            $(".content1 .time_over div:even").eq(i).html("倒计时:<span>"+shi+"</span>:<span>"+fen+"</span>:<span>"+miao+"</span>");
+        }
+    }
+
+    setInterval(function () {
+        var size=$(".content1 .time_over div:even").size();
+        for(var i=0;i<size;i++){
+            var text=$(".content1 .time_over div:even").eq(i).html();
+            var reg = new RegExp("<span>|</span>","g");//g,表示全部替换。
+            var html=text.replace(reg,"");
+              html=html.substring(4,html.length);
+            var time=html.split(":");
+
+                var miao=parseInt(time[2]);
+                var fen=parseInt(time[1]);
+                var shi=parseInt(time[0]);
+                miao=parseInt(miao)-1;
+                if(miao==0){
+                    miao=60;
+                    fen=parseInt(fen)-1;
+                    if(fen==0){
+                        fen=60;
+                        shi=parseInt(shi)-1;
+                    }
+                }
+                miao=miao<10 ? "0"+miao:miao;
+                fen=fen<10 ? "0"+fen:fen;
+                shi=shi<10 ? "0"+shi:shi;
+                $(".content1 .time_over div:even").eq(i).html("倒计时:<span>"+shi+"</span>:<span>"+fen+"</span>:<span>"+miao+"</span>");
+        }
+    },1000)
+
+</script>
+</body>
+</html>
