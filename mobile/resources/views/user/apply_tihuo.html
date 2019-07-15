@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>申请提货</title>
+    <link rel="stylesheet" href="/mobile/public/css/app.min.css">
+</head>
+<style>
+    .jiaotou_left{width: 15%;float: left;
+        height: 2.5rem;padding-left: 1rem;
+        line-height: 2.5rem;}
+    .content_text{width: 50%;margin: 0 auto;
+        line-height: 2.5rem;
+        font-size: 1.5rem;text-align: center;font-weight: 600;}
+    header{
+        height: 2.5rem;
+        line-height: 2.5rem;
+        background: #ffffff;
+    }
+    *{
+        margin:0;
+        padding:0;
+    }
+    ul,li,ol{
+        list-style:none;
+    }
+    body{
+        background:  #f2f2f2;
+    }
+
+    a{
+        text-decoration:none;
+    }
+    img{border:0;}
+    .clear{
+        height:0;
+        overflow:hidden;
+        clear:both;
+        line-height:0;
+        font-size:0;
+    }
+    .jiaotou_left>a{
+        display: block;
+        line-height: 2.5rem;
+        height: 2.5rem;
+        font-size: 1.3rem;
+        color:#000000;
+    }
+    select{
+        width: 96px;
+        margin-left: 2%;
+        border-radius: 1rem;
+
+    }
+    section>ul>li{
+        width: 96%;
+        margin-left: 2%;
+        border-bottom: 1px solid #cccccc;
+        float: left;
+        background: #ffffff;
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+
+    }
+    section>ul>li:first-child{
+        background: #cccccc;
+        margin-top: 1.5rem;
+        font-size: 1.3rem;
+        text-align: center;
+        border-radius: 1rem 1rem 0 0;
+    }
+    section>ul>li:last-child{
+        padding-left: 0.5rem;
+    }
+    section>ul>li:last-child>input{
+        margin-right: 0.5rem;
+    }
+    section>ul>li>span:first-child{
+        float: left;
+        font-size: 1.2rem;
+        display: inline-block;
+        padding-left: 0.5rem;
+    }
+    section>ul>li>span:last-child{
+        float: right;
+        display: inline-block;
+        font-size: 1.2rem;
+        color:#808080;
+        padding-right: 0.5rem;
+    }
+    button{
+        width: 96%;
+        margin-left: 2%;
+        background: #ec5151;
+        color: #ffffff;
+        border:none;
+        border-radius: 0.7rem;
+        padding-top: 0.5rem;
+        font-size: 1.2rem;
+        padding-bottom: 0.5rem;
+        margin-top: 1rem;
+    }
+</style>
+<body>
+<header>
+    <div class="jiaotou_left"><a href="/mobile/resources/views/user/yuyue.html ">取消</a></div>
+    <div class="content_text">申请提货</div>
+</header>
+<section>
+    <ul>
+        <li>提货详情</li>
+        <li>
+            <span>商品名称</span>
+            <span>商品名称</span>
+        </li>
+        <li>
+            <span>收货地址</span>
+            <span>重庆市渝中区大坪<i class="iconfont icon-youjiantou" style="font-size: 2rem;"></i></span>
+        </li>
+        <li>
+            <span>售卖数量</span>
+            <span>X1</span>
+        </li>
+    </ul>
+    <button>确认提货</button>
+</section>
+</body>
+</html>

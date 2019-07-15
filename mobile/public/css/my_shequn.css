@@ -1,0 +1,56 @@
+.title_total{
+    width: 100%;
+    height: 3rem;
+    line-height: 3rem;
+    padding-left: 1rem;
+}
+.title_total>div{
+    float: left;
+    font-size:1.5rem ;
+}
+.title_total>div:first-child{
+    margin-right: 2rem;
+
+}
+.sheyuan_info{
+    background: #fff;
+}
+.sheyuan_info>ul>li{
+    padding-top: 0.6rem;
+    padding-bottom: 0.6rem;
+    padding-left: 0.6rem;
+    width: 100%;
+    height: 5.2rem;
+    border-bottom: 1px solid #cccccc;
+}
+.sheyuan_info>ul>li:last-child{
+    border-bottom:none
+}
+.sheyuan_info>ul>li>div{
+    height: 4rem;
+    float: left;
+    line-height: 4rem;
+
+}
+.sheyuan_info>ul>li>div:first-child>img{
+    height: 3rem;
+    width: 3rem;
+    background-size: cover;
+    border-radius: 1.5rem;
+}
+.sheyuan_info>ul>li>div:nth-child(2){
+    margin-left: 1rem;
+    font-size: 1.5rem;
+
+}
+.sheyuan_info>ul>li>div:last-child{
+    font-size: 1.25rem;
+    float: right;
+}
+.sheyuan_info>ul>li>div:nth-child(3){
+     margin-left: 1.5rem;
+     float: right;
+     padding-right: 1.5rem;
+     color:#808080;
+     font-size: 1.25rem;
+ }

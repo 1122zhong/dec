@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="/mobile/public/css/app.min.css">
+    <link rel="stylesheet" href="/mobile/public/css/yuyue.css">
+    <script src="/mobile/public/js/jquery-1.12.4.js"></script>
+    <style>
+        .jiaotou_left{width: 15%;float: left;padding-left: 1rem;padding-bottom: 0.3rem;}
+        .manage_sty{width: 9%;float:right;padding-right: 1rem;position: absolute;top:0rem;right: 0;}
+        .content_text{width: 50%;margin: 0 auto;text-align: center;font-weight: 600;}
+        header{
+            height: 4rem;
+            line-height: 4rem;
+            background: #ffffff;
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+<header>
+    <div class="jiaotou_left"><i class="iconfont icon-jiantou" style="font-size: 2rem;"></i></div>
+    <div class="content_text">我的预约</div>
+    <div class="manage_sty"><i class="iconfont icon-sousuo" style="font-size: 2rem;"></i></div>
+</header>
+<section class="yuyue_list">
+    <ul>
+        <li>
+            <div>
+                <div><img src="/mobile/public/img/index_brand_23.png" alt=""></div>
+                <div class=" product_xinxi">
+                    <div><span>商品名称</span><span style=" color:#ec5151;">抢购成功</span></div>
+                    <div>零售价<span>￥80.90</span>售卖价<span>￥80.90</span></div>
+                    <div>数量X<span>1</span></div>
+                </div>
+                <div style="clear: both"></div>
+            </div>
+            <div class="yuyue_list_bottom">
+                <div>2019-06-15 12:20:35</div>
+                <div>
+                    <button>申请提货</button>
+                    <button>申请售卖</button>
+                </div>
+            </div>
+        </li>
+        <li>
+            <div>
+                <div><img src="/mobile/public/img/index_brand_23.png" alt=""></div>
+                <div class=" product_xinxi">
+                    <div><span>商品名称</span><span style="color:#808080">失败</span></div>
+                    <div>零售价<span>￥80.90</span>售卖价<span>￥80.90</span></div>
+                    <div>数量X<span>1</span></div>
+                </div>
+                <div style="clear: both"></div>
+            </div>
+            <div class="yuyue_list_bottom">
+                <div>2019-06-15 12:20:35</div>
+            </div>
+        </li>
+        <li>
+            <div>
+                <div><img src="/mobile/public/img/index_brand_23.png" alt=""></div>
+                <div class=" product_xinxi">
+                    <div><span>商品名称</span><span style="color:#ffae62">进行中</span></div>
+                    <div>零售价<span>￥80.90</span>售卖价<span>￥80.90</span></div>
+                    <div>数量X<span>1</span></div>
+                </div>
+                <div style="clear: both"></div>
+            </div>
+            <div class="yuyue_list_bottom">
+                <div>2019-06-15 12:20:35</div>
+                <div>
+                   倒计时:<span>07</span>:<span>15</span>:<span>30</span>
+                </div>
+            </div>
+        </li>
+        <li>
+            <div>
+                <div><img src="/mobile/public/img/index_brand_23.png" alt=""></div>
+                <div class=" product_xinxi">
+                    <div><span>商品名称</span><span>售卖中</span></div>
+                    <div>零售价<span>￥80.90</span>售卖价<span>￥80.90</span></div>
+                    <div>数量X<span>1</span></div>
+                </div>
+                <div style="clear: both"></div>
+            </div>
+            <div class="yuyue_list_bottom">
+                <div>2019-06-15 12:20:35</div>
+                <div>
+                    倒计时:<span>07</span>:<span>15</span>:<span>30</span>
+                </div>
+            </div>
+        </li>
+        <li>
+            <div>
+                <div><img src="/mobile/public/img/index_brand_23.png" alt=""></div>
+                <div class=" product_xinxi">
+                    <div><span>商品名称</span><span>已提货</span></div>
+                    <div>零售价<span>￥80.90</span>售卖价<span>￥80.90</span></div>
+                    <div>数量X<span>1</span></div>
+                </div>
+                <div style="clear: both"></div>
+            </div>
+            <div class="yuyue_list_bottom">
+                <div>2019-06-15 12:20:35</div>
+            </div>
+        </li>
+    </ul>
+</section>
+<div class="hidden_mian"></div>
+<div class="manage_select">
+    <div class="manage_select_header">
+        <div class="cancel_manage"><i class="iconfont icon-jiantou tf-180 jian-top"></i></div>
+        <div>分类</div>
+    </div>
+    <section>
+        <ul>
+            <li class="active">全部<i class="iconfont icon-gou tf-180 jian-top" style="color: red;font-size: 2.8rem;"></i></li>
+            <li>成功</li>
+            <li>失败</li>
+            <li>进行中</li>
+            <li>售卖中</li>
+            <li>以提货</li>
+        </ul>
+    </section>
+</div>
+
+<script>
+    $(".manage_sty").click(function () {
+        $(".hidden_mian").css("display","block");
+        $(".manage_select").css("display","block");
+    })
+    $(".hidden_mian,.cancel_manage").click(function () {
+        $(".hidden_mian").css("display","none");
+        $(".manage_select").css("display","none");
+    })
+    $(".manage_select>section>ul>li").click(function () {
+        var i=$(this).index();
+        $(".manage_select>section>ul>li").eq(i).addClass("active");
+        $(".manage_select>section>ul>li:gt("+i+")").removeClass("active");
+        $(".manage_select>section>ul>li:lt("+i+")").removeClass("active");
+
+        var text=$(".manage_select>section>ul>li").eq(i).text();
+        text1=text+"<i class=\"iconfont icon-gou tf-180 jian-top\" style=\"color: red;font-size: 2.8rem;\"></i>"
+        $(".manage_select>section>ul>li").eq(i).html(text1);
+        $(".manage_select>section>ul>li:gt("+i+")").children().remove();
+        $(".manage_select>section>ul>li:lt("+i+")").children().remove();
+        $(".hidden_mian").css("display","none");
+        $(".manage_select").css("display","none");
+    })
+
+    $(".yuyue_list_bottom>div>button:last").click(function () {
+        location.href = "/mobile/resources/views/user/apply_sell.html";
+    })
+    $(".yuyue_list_bottom>div>button:first").click(function () {
+        location.href = "/mobile/resources/views/user/apply_tihuo.html";
+    })
+</script>
+</body>
+</html>
