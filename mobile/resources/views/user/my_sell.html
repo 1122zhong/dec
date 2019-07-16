@@ -49,7 +49,8 @@
             </div>
             <div class="time_over">
                 <!--倒计时-->
-                <div>2019-7-16 17:00:00</div>
+                <!--格式必须位 yy-mm-dd hh:mm:ss-->
+                <div>2019-7-19 10:04:00</div>
                 <div>
                     <button>查看详情</button>
                 </div>
@@ -171,10 +172,14 @@
             var shi=Math.floor(timecha/1000/60/60);
             var fen=Math.floor(timecha/1000/60-shi*60);
             var miao=Math.floor(timecha/1000-shi*60*60-fen*60);
+            miao=miao<10 ? "0"+miao:miao;
+            fen=fen<10 ? "0"+fen:fen;
+            shi=shi<10 ? "0"+shi:shi;
             $(".content1 .time_over div:even").eq(i).html("倒计时:<span>"+shi+"</span>:<span>"+fen+"</span>:<span>"+miao+"</span>");
         }
     }
 
+    //时间倒计时
     setInterval(function () {
         var size=$(".content1 .time_over div:even").size();
         for(var i=0;i<size;i++){
@@ -183,18 +188,25 @@
             var html=text.replace(reg,"");
               html=html.substring(4,html.length);
             var time=html.split(":");
-
                 var miao=parseInt(time[2]);
                 var fen=parseInt(time[1]);
                 var shi=parseInt(time[0]);
                 miao=parseInt(miao)-1;
-                if(miao==0){
-                    miao=60;
-                    fen=parseInt(fen)-1;
-                    if(fen==0){
-                        fen=60;
-                        shi=parseInt(shi)-1;
+                if(miao<0){
+                    if(fen==0&&shi==0){
+                        miao=0;
+                        fen=0;
+                        shi=0;
+                        //倒计时结束，触发事件
+                    }else{
+                        miao=59;
+                        fen=parseInt(fen)-1;
+                        if(fen==0){
+                            fen=59;
+                            shi=parseInt(shi)-1;
+                        }
                     }
+
                 }
                 miao=miao<10 ? "0"+miao:miao;
                 fen=fen<10 ? "0"+fen:fen;

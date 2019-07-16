@@ -2,30 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5d1e67ba-15f5-4899-8a1d-58859f74f975" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/mobile/public/css/my_sell.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mobile/resources/views/user/hehuoren.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mobile/resources/views/user/my_sell.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mobile/resources/views/user/transfer.accounts.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile/public/css/zhifu.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile/public/css/zhuanzhang.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile/public/img/dd_03.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mobile/public/css/bank/bind_bank_cart.css" beforeDir="false" afterPath="$PROJECT_DIR$/mobile/public/css/bank/bind_bank_cart.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mobile/public/css/yuyue.css" beforeDir="false" afterPath="$PROJECT_DIR$/mobile/public/css/yuyue.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mobile/resources/views/brand/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/mobile/resources/views/brand/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mobile/resources/views/crowd_funding/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/mobile/resources/views/crowd_funding/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mobile/resources/views/exchange/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/mobile/resources/views/exchange/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mobile/resources/views/store/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/mobile/resources/views/store/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mobile/public/css/book.css" beforeDir="false" afterPath="$PROJECT_DIR$/mobile/public/css/book.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mobile/resources/views/user/account.deposit.html" beforeDir="false" afterPath="$PROJECT_DIR$/mobile/resources/views/user/account.deposit.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mobile/resources/views/user/account.detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/mobile/resources/views/user/account.detail.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mobile/resources/views/user/account.index.html" beforeDir="false" afterPath="$PROJECT_DIR$/mobile/resources/views/user/account.index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mobile/resources/views/user/apply_sell.html" beforeDir="false" afterPath="$PROJECT_DIR$/mobile/resources/views/user/apply_sell.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mobile/resources/views/user/apply_tihuo.html" beforeDir="false" afterPath="$PROJECT_DIR$/mobile/resources/views/user/apply_tihuo.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mobile/resources/views/user/bank_cart_manage.html" beforeDir="false" afterPath="$PROJECT_DIR$/mobile/resources/views/user/bank_cart_manage.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mobile/resources/views/user/bind_bank_cart.html" beforeDir="false" afterPath="$PROJECT_DIR$/mobile/resources/views/user/bind_bank_cart.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mobile/resources/views/user/fenrun.html" beforeDir="false" afterPath="$PROJECT_DIR$/mobile/resources/views/user/fenrun.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mobile/resources/views/user/index.affiliate.html" beforeDir="false" afterPath="$PROJECT_DIR$/mobile/resources/views/user/index.affiliate.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mobile/resources/views/user/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/mobile/resources/views/user/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mobile/resources/views/user/my_shequn.html" beforeDir="false" afterPath="$PROJECT_DIR$/mobile/resources/views/user/my_shequn.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mobile/resources/views/user/order.index.html" beforeDir="false" afterPath="$PROJECT_DIR$/mobile/resources/views/user/order.index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mobile/resources/views/user/uu.detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/mobile/resources/views/user/uu.detail.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mobile/resources/views/user/yundou.detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/mobile/resources/views/user/yundou.detail.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mobile/resources/views/user/my_sell.html" beforeDir="false" afterPath="$PROJECT_DIR$/mobile/resources/views/user/my_sell.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mobile/resources/views/user/profile.bookmark.html" beforeDir="false" afterPath="$PROJECT_DIR$/mobile/resources/views/user/profile.bookmark.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mobile/resources/views/user/transfer.accounts.html" beforeDir="false" afterPath="$PROJECT_DIR$/mobile/resources/views/user/transfer.accounts.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mobile/resources/views/user/yuyue.html" beforeDir="false" afterPath="$PROJECT_DIR$/mobile/resources/views/user/yuyue.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/temp/caches/1/homeindex_A7CD55E8.php" beforeDir="false" afterPath="$PROJECT_DIR$/temp/caches/1/homeindex_A7CD55E8.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/temp/compiled/category_tree_nav.lbi.php" beforeDir="false" afterPath="$PROJECT_DIR$/temp/compiled/category_tree_nav.lbi.php" afterDir="false" />
@@ -42,20 +31,35 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/mobile/resources/views/user/my_sell.html">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mobile/public/css/zhuanzhang.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="551">
-              <caret line="196" column="21" lean-forward="true" selection-start-line="196" selection-start-column="21" selection-end-line="196" selection-end-column="21" />
+            <state relative-caret-position="406">
+              <caret line="14" column="29" lean-forward="true" selection-start-line="14" selection-start-column="29" selection-end-line="14" selection-end-column="29" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/mobile/resources/views/user/transfer.accounts.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="348">
+              <caret line="45" column="41" lean-forward="true" selection-start-line="45" selection-start-column="41" selection-end-line="45" selection-end-column="41" />
               <folding>
-                <element signature="n#style#0;n#span#1;n#div#0;n#div#1;n#div#0;n#li#0;n#ul#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#span#1;n#div#0;n#div#1;n#div#0;n#li#1;n#ul#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#span#1;n#div#0;n#div#1;n#div#0;n#li#2;n#ul#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#section#1;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#style#0;n#span#1;n#div#0;n#div#1;n#div#0;n#li#0;n#ul#0;n#section#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#span#1;n#div#0;n#div#1;n#div#0;n#li#1;n#ul#0;n#section#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#span#1;n#div#0;n#div#1;n#div#0;n#li#2;n#ul#0;n#section#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#i#0;n#a#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#1;n#li#2;n#ul#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#i#0;n#span#1;n#li#2;n#ul#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#i#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mobile/public/css/zhifu.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="642">
+              <caret line="53" column="34" selection-start-line="53" selection-start-column="34" selection-end-line="53" selection-end-column="34" />
             </state>
           </provider>
         </entry>
@@ -65,8 +69,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="CSS File" />
         <option value="HTML File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -75,6 +79,13 @@
       <find>br_alert_del</find>
       <find>header&gt;div:first-child&gt;img</find>
       <find>raise-list-default</find>
+      <find>.describe&gt;ul&gt;li</find>
+      <find>book_content&gt;ul&gt;l</find>
+      <find>.book_search&gt;img</find>
+      <find>.book_search&gt;div</find>
+      <find>select_content</find>
+      <find>.describe_checkbox</find>
+      <find>.ftc_wzsf</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -83,21 +94,17 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/mobile/resources/views/user/my_follow.html" />
-        <option value="$PROJECT_DIR$/mobile/public/css/browse_records.css" />
         <option value="$PROJECT_DIR$/mobile/resources/views/user/browse_records.html" />
         <option value="$PROJECT_DIR$/mobile/resources/views/user/resemble.html" />
         <option value="$PROJECT_DIR$/mobile/public/css/resemble.css" />
         <option value="$PROJECT_DIR$/mobile/resources/views/user/order.detail.html" />
         <option value="$PROJECT_DIR$/mobile/public/css/yundou_detail.css" />
         <option value="$PROJECT_DIR$/mobile/public/css/my_follow.css" />
-        <option value="$PROJECT_DIR$/mobile/resources/views/user/profile.bookmark.html" />
         <option value="$PROJECT_DIR$/mobile/public/js/ladingPasswordConfirm.js" />
         <option value="$PROJECT_DIR$/mobile/public/css/bank/bank.css" />
         <option value="$PROJECT_DIR$/mobile/public/css/detail-style.css" />
         <option value="$PROJECT_DIR$/mobile/resources/views/index/index.html" />
         <option value="$PROJECT_DIR$/mobile/resources/views/brand/index.nav.html" />
-        <option value="$PROJECT_DIR$/mobile/public/css/book.css" />
         <option value="$PROJECT_DIR$/mobile/resources/views/user/login.index.html" />
         <option value="$PROJECT_DIR$/mobile/resources/views/user/login.register.html" />
         <option value="$PROJECT_DIR$/mobile/resources/views/crowd_funding/index.properties.html" />
@@ -107,23 +114,17 @@
         <option value="$PROJECT_DIR$/mobile/public/css/ectouch.css" />
         <option value="$PROJECT_DIR$/mobile/public/css/my_shequn.css" />
         <option value="$PROJECT_DIR$/mobile/resources/views/user/fenrui.html" />
-        <option value="$PROJECT_DIR$/mobile/resources/views/user/apply_tihuo.html" />
         <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/mobile/resources/views/user/apply_sell.html" />
         <option value="$PROJECT_DIR$/mobile/public/css/me_sell.css" />
         <option value="$PROJECT_DIR$/mobile/resources/views/user/account.detail.html" />
-        <option value="$PROJECT_DIR$/mobile/resources/views/user/bank_cart_manage.html" />
         <option value="$PROJECT_DIR$/mobile/resources/views/user/order.index.html" />
         <option value="$PROJECT_DIR$/mobile/resources/views/user/index.affiliate.html" />
         <option value="$PROJECT_DIR$/mobile/resources/views/user/my_shequn.html" />
         <option value="$PROJECT_DIR$/mobile/resources/views/user/fenrun.html" />
         <option value="$PROJECT_DIR$/mobile/resources/views/user/hehuoren.html" />
-        <option value="$PROJECT_DIR$/mobile/resources/views/user/yuyue.html" />
         <option value="$PROJECT_DIR$/mobile/public/css/my_sell.css" />
-        <option value="$PROJECT_DIR$/mobile/resources/views/user/index.html" />
         <option value="$PROJECT_DIR$/mobile/resources/views/user/yundou.detail.html" />
         <option value="$PROJECT_DIR$/mobile/resources/views/user/uu.detail.html" />
-        <option value="$PROJECT_DIR$/mobile/resources/views/user/account.deposit.html" />
         <option value="$PROJECT_DIR$/mobile/resources/views/user/bind_bank_cart.html" />
         <option value="$PROJECT_DIR$/mobile/public/css/bank/bind_bank_cart.css" />
         <option value="$PROJECT_DIR$/mobile/resources/views/store/index.html" />
@@ -131,9 +132,19 @@
         <option value="$PROJECT_DIR$/mobile/resources/views/exchange/index.html" />
         <option value="$PROJECT_DIR$/mobile/resources/views/crowd_funding/index.html" />
         <option value="$PROJECT_DIR$/mobile/resources/views/user/account.index.html" />
-        <option value="$PROJECT_DIR$/mobile/resources/views/user/transfer.accounts.html" />
         <option value="$PROJECT_DIR$/mobile/public/css/yuyue.css" />
         <option value="$PROJECT_DIR$/mobile/resources/views/user/my_sell.html" />
+        <option value="$PROJECT_DIR$/mobile/resources/views/user/yuyue.html" />
+        <option value="$PROJECT_DIR$/mobile/resources/views/user/apply_tihuo.html" />
+        <option value="$PROJECT_DIR$/mobile/resources/views/user/apply_sell.html" />
+        <option value="$PROJECT_DIR$/mobile/resources/views/user/profile.bookmark.html" />
+        <option value="$PROJECT_DIR$/mobile/public/css/book.css" />
+        <option value="$PROJECT_DIR$/mobile/resources/views/user/index.html" />
+        <option value="$PROJECT_DIR$/mobile/resources/views/user/account.deposit.html" />
+        <option value="$PROJECT_DIR$/mobile/public/css/zhuanzhang.css" />
+        <option value="$PROJECT_DIR$/mobile/resources/views/user/bank_cart_manage.html" />
+        <option value="$PROJECT_DIR$/mobile/public/css/zhifu.css" />
+        <option value="$PROJECT_DIR$/mobile/resources/views/user/transfer.accounts.html" />
       </list>
     </option>
   </component>
@@ -228,7 +239,7 @@
       <path value="$PROJECT_DIR$/vendor/illuminate/pagination" />
     </include_path>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="161" />
     <option name="y" value="154" />
     <option name="width" value="1458" />
@@ -264,29 +275,7 @@
               <item name="dec" type="b2602c69:ProjectViewProjectNode" />
               <item name="dec" type="462c0819:PsiDirectoryNode" />
               <item name="mobile" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dec" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dec" type="462c0819:PsiDirectoryNode" />
-              <item name="mobile" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dec" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dec" type="462c0819:PsiDirectoryNode" />
-              <item name="mobile" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dec" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dec" type="462c0819:PsiDirectoryNode" />
-              <item name="mobile" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="user" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -305,11 +294,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="F:\dec\mobile\resources\views\user" />
       <recent name="F:\dec\mobile\public\img" />
+      <recent name="F:\dec\mobile\public\css" />
+      <recent name="F:\dec\mobile\resources\views\user" />
       <recent name="F:\dec\mobile\public\img\prolie_img" />
       <recent name="F:\dec\mobile\public\img\peolie_img" />
-      <recent name="F:\dec\mobile\public\js\setPassword" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -349,18 +338,19 @@
       <workItem from="1562999636039" duration="9533000" />
       <workItem from="1563009216544" duration="2991000" />
       <workItem from="1563081801048" duration="22797000" />
-      <workItem from="1563154974645" duration="19921000" />
+      <workItem from="1563154974645" duration="21328000" />
+      <workItem from="1563241068262" duration="20995000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="191248000" />
+    <option name="totallyTimeSpent" value="213650000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1066" extended-state="7" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18176973" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18336888" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -373,7 +363,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" />
       <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" weight="0.6223176" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.37660944" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" weight="0.32939914" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -385,18 +375,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/mobile/public/img/category_top_42.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mobile/public/img/category_top_32.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mobile/public/img/category_top_34.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mobile/public/img/default-img.fe203b8.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/mobile/public/img/default-img.59f999d.jpg">
       <provider selected="true" editor-type-id="images" />
     </entry>
@@ -452,13 +430,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mobile/resources/views/user/profile.bookmark.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="232">
-          <caret line="8" column="56" lean-forward="true" selection-start-line="8" selection-start-column="56" selection-end-line="8" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="116">
@@ -482,30 +453,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="244">
           <caret line="121" column="29" selection-start-line="121" selection-start-column="29" selection-end-line="121" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mobile/resources/views/user/apply_sell.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="116">
-          <caret line="10" column="3" selection-start-line="10" selection-start-column="3" selection-end-line="20" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mobile/public/css/book.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="21" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mobile/resources/views/user/apply_tihuo.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2784">
-          <caret line="96" column="28" lean-forward="true" selection-start-line="96" selection-start-column="28" selection-end-line="96" selection-end-column="28" />
-          <folding>
-            <element signature="n#style#0;n#i#0;n#span#1;n#li#2;n#ul#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -650,32 +597,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mobile/resources/views/user/account.deposit.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1071">
-          <caret line="37" column="16" lean-forward="true" selection-start-line="37" selection-start-column="16" selection-end-line="37" selection-end-column="16" />
-          <folding>
-            <element signature="n#style#0;n#label#0;n#div#0;n#section#0;n#div#0;n#form#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#i#0;n#span#0;n#div#0;n#section#0;n#div#0;n#form#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#section#1;n#div#0;n#form#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#div#0;n#section#1;n#div#0;n#form#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#div#1;n#div#0;n#section#1;n#div#0;n#form#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#input#0;n#span#0;n#div#1;n#div#0;n#section#1;n#div#0;n#form#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#label#0;n#div#0;n#section#2;n#div#0;n#form#0;n#div#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mobile/resources/views/user/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="529">
-          <caret line="175" column="21" selection-start-line="175" selection-start-column="21" selection-end-line="175" selection-end-column="21" />
-          <folding>
-            <element signature="n#div#0;n#section#2;n#div#0;n#!!top" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/mobile/resources/views/user/account.index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="4176">
@@ -689,27 +610,81 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mobile/resources/views/user/bank_cart_manage.html">
+    <entry file="file://$PROJECT_DIR$/mobile/resources/views/user/apply_tihuo.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="203">
-          <caret line="8" column="2" selection-start-line="8" selection-start-column="2" selection-end-line="8" selection-end-column="65" />
+        <state relative-caret-position="882">
+          <caret line="109" column="24" selection-start-line="109" selection-start-column="24" selection-end-line="109" selection-end-column="24" />
           <folding>
-            <element signature="n#style#0;n#i#0;n#a#0;n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#i#0;n#span#1;n#li#2;n#ul#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mobile/public/css/yuyue.css">
+    <entry file="file://$PROJECT_DIR$/mobile/resources/views/user/apply_sell.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="534">
-          <caret line="148" column="4" selection-start-line="148" selection-start-column="4" selection-end-line="148" selection-end-column="4" />
+        <state relative-caret-position="360">
+          <caret line="112" column="49" selection-start-line="112" selection-start-column="49" selection-end-line="112" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mobile/public/img/jiantou.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mobile/resources/views/user/profile.bookmark.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="29">
+          <caret line="178" column="23" selection-start-line="178" selection-start-column="23" selection-end-line="178" selection-end-column="23" />
+          <folding>
+            <element signature="n#style#0;n#i#0;n#a#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#div#2;n#header#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#style#0;n#i#0;n#div#1;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#div#0;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#div#3;n#section#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#4;n#section#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#style#0;n#div#4;n#div#0;n#div#2;n#div#4;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#0;n#div#5;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="e#13229#14513#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mobile/public/css/book.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="486">
+          <caret line="431" column="1" lean-forward="true" selection-start-line="431" selection-start-column="1" selection-end-line="431" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mobile/resources/views/user/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="348">
+          <caret line="21" column="47" lean-forward="true" selection-start-line="21" selection-start-column="47" selection-end-line="21" selection-end-column="47" />
+          <folding>
+            <element signature="n#div#0;n#section#2;n#div#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mobile/resources/views/user/account.deposit.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="174">
+          <caret line="6" column="44" lean-forward="true" selection-start-line="6" selection-start-column="44" selection-end-line="6" selection-end-column="44" />
+          <folding>
+            <element signature="n#style#0;n#label#0;n#div#0;n#section#0;n#div#0;n#form#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#i#0;n#span#0;n#div#0;n#section#0;n#div#0;n#form#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#section#1;n#div#0;n#form#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#0;n#section#1;n#div#0;n#form#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#div#1;n#div#0;n#section#1;n#div#0;n#form#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#0;n#span#0;n#div#1;n#div#0;n#section#1;n#div#0;n#form#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#label#0;n#div#0;n#section#2;n#div#0;n#form#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/mobile/resources/views/user/yuyue.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1769">
-          <caret line="8" column="54" selection-start-line="8" selection-start-column="54" selection-end-line="8" selection-end-column="54" />
+        <state relative-caret-position="232">
+          <caret line="8" column="55" selection-start-line="8" selection-start-column="55" selection-end-line="8" selection-end-column="55" />
           <folding>
             <element signature="n#style#0;n#span#1;n#div#0;n#div#1;n#div#0;n#li#0;n#ul#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#2;n#div#0;n#li#0;n#ul#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -725,20 +700,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mobile/resources/views/user/transfer.accounts.html">
+    <entry file="file://$PROJECT_DIR$/mobile/public/css/yuyue.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="302">
-          <caret line="21" column="6" selection-start-line="21" selection-start-column="6" selection-end-line="21" selection-end-column="6" />
-          <folding>
-            <element signature="n#style#0;n#i#0;n#a#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
+        <state relative-caret-position="4292">
+          <caret line="148" column="4" selection-start-line="148" selection-start-column="4" selection-end-line="148" selection-end-column="4" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/mobile/resources/views/user/my_sell.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="551">
-          <caret line="196" column="21" lean-forward="true" selection-start-line="196" selection-start-column="21" selection-end-line="196" selection-end-column="21" />
+        <state relative-caret-position="174">
+          <caret line="57" column="13" lean-forward="true" selection-start-line="57" selection-start-column="13" selection-end-line="57" selection-end-column="13" />
           <folding>
             <element signature="n#style#0;n#span#1;n#div#0;n#div#1;n#div#0;n#li#0;n#ul#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#span#1;n#div#0;n#div#1;n#div#0;n#li#1;n#ul#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -747,6 +719,50 @@
             <element signature="n#style#0;n#span#1;n#div#0;n#div#1;n#div#0;n#li#0;n#ul#0;n#section#1;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#span#1;n#div#0;n#div#1;n#div#0;n#li#1;n#ul#0;n#section#1;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#span#1;n#div#0;n#div#1;n#div#0;n#li#2;n#ul#0;n#section#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mobile/public/css/ectouch.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="505">
+          <caret line="170" column="25" lean-forward="true" selection-start-line="170" selection-start-column="25" selection-end-line="170" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mobile/resources/views/user/bank_cart_manage.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1042">
+          <caret line="100" column="67" lean-forward="true" selection-start-line="100" selection-start-column="67" selection-end-line="100" selection-end-column="67" />
+          <folding>
+            <element signature="n#style#0;n#i#0;n#a#0;n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mobile/public/css/zhifu.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="642">
+          <caret line="53" column="34" selection-start-line="53" selection-start-column="34" selection-end-line="53" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mobile/public/css/zhuanzhang.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="406">
+          <caret line="14" column="29" lean-forward="true" selection-start-line="14" selection-start-column="29" selection-end-line="14" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mobile/resources/views/user/transfer.accounts.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="348">
+          <caret line="45" column="41" lean-forward="true" selection-start-line="45" selection-start-column="41" selection-end-line="45" selection-end-column="41" />
+          <folding>
+            <element signature="n#style#0;n#i#0;n#a#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#1;n#li#2;n#ul#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#i#0;n#span#1;n#li#2;n#ul#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#i#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>

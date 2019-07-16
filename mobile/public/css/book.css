@@ -42,11 +42,11 @@ img{border:0;}
 }
 .book_manage{
     width:17%;
-    font-size:1rem;
     height:2rem;
+    margin-top: 1.5rem;
     line-height:2rem;
-    padding-right:0.2rem;
-    padding-top: 0.8rem;
+    padding-right:1rem;
+    text-align: right;
 }
 .book_manage>img{
     width:25%;
@@ -54,7 +54,8 @@ img{border:0;}
 }
 header{
     width: 100%;
-    height: 3rem;
+    height: 5rem;
+    display: inline-block;
     border-bottom:1px solid #cccccc;
 }
 
@@ -68,16 +69,20 @@ header>div:last-child{
     width:33%;
     float: left;
     text-align: center;
-    font-size:1rem;
+    font-size:2rem;
     padding-bottom: 0.2rem;
     padding-top:1rem;
 }
 .book_content_section{
     position: relative;
     width: 100%;
+
 }
 .search_color{
     color:red;
+}
+.search_color>span{
+    font-size: 1.75rem;
 }
 .select_hidden{
     display: none;
@@ -89,37 +94,47 @@ header>div:last-child{
     background-color: rgba(0, 0, 0, .5);
 }
 .book_search{
-    height: 3rem;
-    line-height:3rem;
+    height: 4.3rem;
+    line-height:4rem;
 
 }
 .book_search>div{
+    display: inline-block;
     float: left;
-    width: 6rem;
-    height: 2rem;
-    font-size:1rem;
     margin-left:2rem;
 }
-.img_change{
-    width: 5%;
+.search_stu{
+    font-size: 1.75rem;
+}
+.img_change>img{
+    width: 32px;
+    height: 32px;
 }
 header,.describe>ul>li,.book_search{
     background: #ffffff;
 }
+.jiaotou_left{
+    margin-top: 1.5rem;
+    width: 10%;
+    padding-left: 1rem;
+    float: left;
+}
 .book_search>img{
     float: right;
+    width: 32px;
+    height: 32px;
     margin-right:1rem;
     margin-top:1rem;
 }
 .select_content_one{
     width: 100%;
-    height: 0;
+    height:0rem;
     overflow: hidden;
     background: #ffffff;
     position: absolute;
-    top: 2.4rem;
+    top: 4.3rem;
     left:0;
-    z-index: 15;
+    z-index: 255;
     margin:0;
     padding:0;
     opacity: 1;
@@ -127,8 +142,10 @@ header,.describe>ul>li,.book_search{
 
 .select_content_one>ul>li{
     height:0rem;
-    font-size:1rem;
-    line-height:2rem;
+    font-size:1.5rem;
+    line-height:4rem;
+    padding: 0;
+    margin: 0;
     border-top:1px solid #cccccc;
 }
 .select_content_one>ul>li>div{
@@ -138,31 +155,33 @@ header,.describe>ul>li,.book_search{
     margin-left:2rem;
     line-height:3rem;
 }
-
 .describe>ul>li{
-    width: 98%;
-    height: 7rem;
+    width: 100%;
     float: left;
 }
 .describe_checkbox{
     width:0%;
     overflow: hidden;
     transition: all 0.3s;
-    height: 8rem;
+    margin-top: 3rem;
     float: left;
+}
+.product_describe_info{
+    display: inline-block;
+    margin-top: 5rem;
+    width: 100%;
 }
 .describe_checkbox>input{
     display: none;
 }
 input[type="checkbox"]{
-    width:20px;
-    height:20px;
-    margin-top:2rem;
+    width:2rem;
+    height:2rem;
     margin-left:0.5rem;
     display: inline-block;
     text-align: center;
     vertical-align: middle;
-    line-height: 18px;
+    line-height: 1.5rem;
     position: relative;
 
 }
@@ -181,8 +200,10 @@ input[type="checkbox"]:checked::before{
     top: 0;
     left: 0;
     width:100%;
-    color:#ffffff;font-size: 20px;
-    font-weight: bold;}
+    color:#ffffff;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
 
 .describe_img{
     width: 30%;
@@ -198,49 +219,38 @@ input[type="checkbox"]:checked::before{
     position: relative;
     width: 68%;
     float: left;
-    height: 7rem;
 }
 
 .describe_text{
-    font-size:0.9rem;
+    font-size:1.3rem;
     margin-top:0.5rem;
-    line-height:1rem;
+    line-height:1.4rem;
     margin-left:0.5rem;
-    width:92%;
-    height: 2rem;
+    width:98%;
+    height: 2.8rem;
     overflow:hidden;
     text-overflow: ellipsis;
 }
 .describe_price{
-    position: absolute;
-    bottom: 0.5rem;
-    left:0.2rem;
-    font-size:0.8rem;
+    font-size:1.2rem;
     color:#d95c58;
+    margin-left: 0.5rem;
 }
 .describe_collect{
-    position: absolute;
-    bottom: 0.5rem;
-    left:31%;
-    font-size:0.6rem;
+    font-size:1rem;
+    margin-left: 0.5rem;
     color: #808080;
 }
 .describe_like{
-    position: absolute;
-    bottom: 0.4rem;
-    right:0.5rem;
-    font-size:0.7rem;
-    width: 2.5rem;
-    height: 1rem;
+    font-size:1.2rem;
+    padding-left: 0.3rem;
+    padding-right: 0.5rem;
+    margin-right: 0.5rem;
+    float: right;
     border:1px solid #cccccc;
-    line-height:1rem;
-    text-align: center;
-    border-radius: 0.5rem;
+    border-radius: 1rem;
 }
 .describe_like>a{
-    display: block;
-    width: 100%;
-    height: 100%;
     color: #808080;
 }
 .describe_li_sty1{
@@ -250,7 +260,7 @@ input[type="checkbox"]:checked::before{
     float: left;
 }
 .describe_li_sty2{
-    margin-top:1rem;
+    margin-top:0.3rem;
     margin-left:2%;
     padding: 0;
     width:99%;
@@ -259,6 +269,7 @@ input[type="checkbox"]:checked::before{
 }
 .describe>ul>li{
     transition: all 0.3s;
+    padding-bottom: 0.5rem;
 }
 .describe>ul>li:not(:last-child){
     border-bottom:1px solid #cccccc;
@@ -317,7 +328,7 @@ input[type="checkbox"]:checked::before{
 
 .tuijian_describe_price{
     position: absolute;
-    bottom: 0.6rem;
+    top: 0.6rem;
     left:0.1rem;
     font-size:0.8rem;
     color:#d95c58;
@@ -361,21 +372,21 @@ input[type="checkbox"]:checked::before{
     overflow: hidden;
     background: #ffffff;
     position: absolute;
-    top: 2.4rem;
+    top: 4.3rem;
     left:0;
-    z-index: 15;
+    z-index: 201;
     margin:0;
     padding:0;
     opacity: 1;
 }
 .select_content_one1>ul>li{
     height:0rem;
-    font-size:1rem;
-    line-height:2rem;
+    line-height:4rem;
     border-top:1px solid #cccccc;
 }
 .select_content_one1>ul>li>span{
-    line-height:3rem;
+    line-height:4rem;
+    font-size:1.5rem;
     margin-left:2rem;
 }
 .sc_shop_detail{
@@ -386,6 +397,7 @@ input[type="checkbox"]:checked::before{
     width: 20%;
     margin-left:0.6rem;
     border-radius: 50%;
+    margin-bottom: 0.5rem;
 }
 .sc_shop_detail>ul>li:not(:last-child){
     width: 100%;
@@ -395,12 +407,13 @@ input[type="checkbox"]:checked::before{
     border-bottom: 1px solid #cccccc;
 }
 .sc_shop_detail>ul>li>div{
+    font-size: 2rem;
     float: right;
     width:74%;
-    height: 5rem;
 }
 .sc_shop_detail>ul>li>div>div:first-child{
     height: 100%;
+    margin-top: 1rem;
     line-height:4rem;
     float: left;
 }
@@ -414,6 +427,9 @@ input[type="checkbox"]:checked::before{
     font-size:0.5rem;
     color: #d95c58;
 }
+.sc_shop_detail>ul>li>div>div:last-child{
+    font-size: 1.25rem;
+}
 .checkbox_sty{
     display: block;
     width:1.5rem;
@@ -421,9 +437,9 @@ input[type="checkbox"]:checked::before{
 }
 .manage_del{
     position: fixed;
-    height: 10%;
+    height: 8rem;
     width: 100%;
-    bottom: -10%;
+    bottom: -8rem;
     left:0;
     background: #ffffff;
     border-top:1px solid #cccccc;
@@ -437,33 +453,26 @@ input[type="checkbox"]:checked::before{
     height: 100%;
     width: 10%;
     float: left;
-    margin-top:1.9rem;
+    font-size: 1.75rem;
+    line-height: 8rem;
     margin-left:0.5rem;
 }
 .manage_del_sty{
-    height: 60%;
-    width:30%;
     float: right;
     position: relative;
-    border-radius: 2rem;
-    margin-top:5%;
-    margin-right:5%;
-    overflow: hidden;
+    margin-right:2rem;
     background-color: #F65419;
 }
 .manage_del_btn{
-    font-size:1.2rem;
-    text-align: center;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    left: 50%;
+    font-size:1.75rem;
+    height: 3rem;
     background-color: #F65419;
-    border-radius: 2rem;
+    border-radius: 1.5rem;
     border: 0;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
     color: #ffffff;
-    top: 50%;
-    transform: translateX(-50%)  translateY(-50%);
+    top: 2.5rem;
 }
 .no_more{
     width: 100%;

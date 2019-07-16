@@ -97,7 +97,6 @@
 <script src="/mobile/public/js/ladingPasswordConfirm.js"></script>
 <script>
     var length=$(".bank_cart_list>div>div>span").size();
-    console.log(length)
     for(var i=0;i<length;i++){
        var html=$(".bank_cart_list>div:nth-child(2)").eq(i).html();
        html="**** **** ****"+" "+html.substring(html.length-4,html.length);

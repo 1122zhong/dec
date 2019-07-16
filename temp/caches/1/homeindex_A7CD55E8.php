@@ -1,4 +1,4 @@
-<?php exit;?>a:3:{s:8:"template";a:4:{i:0;s:43:"F:/dec/themes/ecmoban_dsc2017/homeindex.dwt";i:1;s:58:"F:/dec/themes/ecmoban_dsc2017/library/js_languages_new.lbi";i:2;s:60:"F:/dec/themes/ecmoban_dsc2017/library/page_header_common.lbi";i:3;s:53:"F:/dec/themes/ecmoban_dsc2017/library/page_footer.lbi";}s:7:"expires";i:1563180464;s:8:"maketime";i:1563176864;}<!doctype html>
+<?php exit;?>a:3:{s:8:"template";a:4:{i:0;s:43:"F:/dec/themes/ecmoban_dsc2017/homeindex.dwt";i:1;s:58:"F:/dec/themes/ecmoban_dsc2017/library/js_languages_new.lbi";i:2;s:60:"F:/dec/themes/ecmoban_dsc2017/library/page_header_common.lbi";i:3;s:53:"F:/dec/themes/ecmoban_dsc2017/library/page_footer.lbi";}s:7:"expires";i:1563244841;s:8:"maketime";i:1563241241;}<!doctype html>
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -24,10 +24,10 @@ var load_icon = '<img src="themes/ecmoban_dsc2017/images/load/load.gif" width="2
         <div class="top-banner" style="background: rgb(255, 40, 125) none repeat scroll 0% 0%;">
             <div class="module w1200" data-type="range">
  
-	    <a href="#" target="_blank"><img src="http://127.0.0.1/data/gallery_album/2/original_img/1494985021864887905.jpg" width="1200" height="80"></a>
+	    <a href="#" target="_blank"><img src="http://localhost/data/gallery_album/2/original_img/1494985021864887905.jpg" width="1200" height="80"></a>
     <i class="iconfont icon-cha" ectype="close"></i>
     
-</div><div class="spec" data-spec="{&quot;picHeight&quot;:&quot;500&quot;,&quot;target&quot;:&quot;_blank&quot;,&quot;navColor&quot;:&quot;#ff287d&quot;,&quot;is_li&quot;:0,&quot;bg_color&quot;:[],&quot;pic_src&quot;:[&quot;http://127.0.0.1/data/gallery_album/2/original_img/1494985021864887905.jpg&quot;],&quot;link&quot;:&quot;&quot;,&quot;sort&quot;:[&quot;1&quot;]}"></div>
+</div><div class="spec" data-spec="{&quot;picHeight&quot;:&quot;500&quot;,&quot;target&quot;:&quot;_blank&quot;,&quot;navColor&quot;:&quot;#ff287d&quot;,&quot;is_li&quot;:0,&quot;bg_color&quot;:[],&quot;pic_src&quot;:[&quot;http://localhost/data/gallery_album/2/original_img/1494985021864887905.jpg&quot;],&quot;link&quot;:&quot;&quot;,&quot;sort&quot;:[&quot;1&quot;]}"></div>
         </div>
         
     <div class="site-nav" id="site-nav">

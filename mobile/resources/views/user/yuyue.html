@@ -27,7 +27,7 @@
     <div class="content_text">我的预约</div>
     <div class="manage_sty"><i class="iconfont icon-sousuo" style="font-size: 2rem;"></i></div>
 </header>
-<section class="yuyue_list">
+<section class="yuyue_list content1">
     <ul>
         <li>
             <div>
@@ -73,8 +73,8 @@
             </div>
             <div class="yuyue_list_bottom">
                 <div>2019-06-15 12:20:35</div>
-                <div>
-                   倒计时:<span>07</span>:<span>15</span>:<span>30</span>
+                <div class="time_over">
+                   2019-7-20 17:00:00
                 </div>
             </div>
         </li>
@@ -90,8 +90,8 @@
             </div>
             <div class="yuyue_list_bottom">
                 <div>2019-06-15 12:20:35</div>
-                <div>
-                    倒计时:<span>07</span>:<span>15</span>:<span>30</span>
+                <div class="time_over">
+                    2019-7-30 17:00:00
                 </div>
             </div>
         </li>
@@ -159,6 +159,62 @@
     $(".yuyue_list_bottom>div>button:first").click(function () {
         location.href = "/mobile/resources/views/user/apply_tihuo.html";
     })
+
+
+    window.onload=function () {
+        var size=$(".content1 .time_over").size();
+        for(var i=0;i<size;i++){
+            var text=$(".content1 .time_over").eq(i).html();
+            var time0=new Date();
+            var time=new Date(text);
+            var time1=time0.getTime();
+            var time2=time.getTime();
+            var timecha=time2-time1;
+            var shi=Math.floor(timecha/1000/60/60);
+            var fen=Math.floor(timecha/1000/60-shi*60);
+            var miao=Math.floor(timecha/1000-shi*60*60-fen*60);
+            miao=miao<10 ? "0"+miao:miao;
+            fen=fen<10 ? "0"+fen:fen;
+            shi=shi<10 ? "0"+shi:shi;
+            $(".content1 .time_over").eq(i).html("倒计时:<span>"+shi+"</span>:<span>"+fen+"</span>:<span>"+miao+"</span>");
+        }
+    }
+
+    //时间倒计时
+    setInterval(function () {
+        var size=$(".content1 .time_over").size();
+        for(var i=0;i<size;i++){
+            var text=$(".content1 .time_over").eq(i).html();
+            var reg = new RegExp("<span>|</span>","g");//g,表示全部替换。
+            var html=text.replace(reg,"");
+            html=html.substring(4,html.length);
+            var time=html.split(":");
+            var miao=parseInt(time[2]);
+            var fen=parseInt(time[1]);
+            var shi=parseInt(time[0]);
+            miao=parseInt(miao)-1;
+            if(miao<0){
+                if(fen==0&&shi==0){
+                    miao=0;
+                    fen=0;
+                    shi=0;
+                    //倒计时结束，触发事件
+                }else{
+                    miao=59;
+                    fen=parseInt(fen)-1;
+                    if(fen==0){
+                        fen=59;
+                        shi=parseInt(shi)-1;
+                    }
+                }
+
+            }
+            miao=miao<10 ? "0"+miao:miao;
+            fen=fen<10 ? "0"+fen:fen;
+            shi=shi<10 ? "0"+shi:shi;
+            $(".content1 .time_over").eq(i).html("倒计时:<span>"+shi+"</span>:<span>"+fen+"</span>:<span>"+miao+"</span>");
+        }
+    },1000)
 </script>
 </body>
 </html>
