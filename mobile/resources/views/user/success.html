@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>成功</title>
+    <link rel="stylesheet" href="/mobile/public/css/success.css">
+    <link rel="stylesheet" href="/mobile/public/css/app.min.css">
+    <script src="/mobile/public/js/jquery-1.12.4.js"></script>
+</head>
+<body>
+<section class="success_content">
+    <div class="success_pg">
+        <img src="/mobile/public/img/success_pg.png" alt="">
+    </div>
+    <p>转账成功</p>
+    <div class="dec_info">
+        <div><span>储蓄卡</span><span>中国银行&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;尾号8888</span><span style="clear: both"></span></div>
+        <div><span>充值金额</span><span>￥88.00</span></div>
+    </div>
+    <button id="finish">完成</button>
+</section>
+
+<script>
+    $("#finish").click(function () {
+        location.href="/mobile/index.php?m=user&c=account";
+    })
+</script>
+</body>
+</html>

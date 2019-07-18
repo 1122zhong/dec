@@ -38,7 +38,7 @@ img{border:0;}
 }
 .book_content{
     margin: 0 auto;
-    width: 34%;
+    width: 50%;
 }
 .book_manage{
     width:17%;
@@ -128,7 +128,7 @@ header,.describe>ul>li,.book_search{
 }
 .select_content_one{
     width: 100%;
-    height:0rem;
+    display: none;
     overflow: hidden;
     background: #ffffff;
     position: absolute;
@@ -368,7 +368,7 @@ input[type="checkbox"]:checked::before{
 }
 .select_content_one1{
     width: 100%;
-    height: 0;
+    display: none;
     overflow: hidden;
     background: #ffffff;
     position: absolute;

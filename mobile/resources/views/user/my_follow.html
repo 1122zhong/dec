@@ -6,17 +6,18 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="../../../public/css/my_follow.css">
+    <link rel="stylesheet" href="/mobile/public/css/app.min.css">
     <script src="../../../public/js/jquery-1.12.4.js"></script>
     <title>我的关注</title>
 </head>
 <body>
 <header>
-    <div class="my_follow_header_img"><img src="../../../public/img/book_left.png" alt=""></div>
+    <a href="/mobile/index.php?m=user" class="my_follow_header_img"><i class="iconfont icon-jiantou tf-180 jian-top" style="font-size: 2rem;"></i></a>
     <div class="my_follow_header_content">
         我的关注
     </div>
     <div class="my_follow_header_search">
-        <img src="../../../public/img/book_manage.png" alt="">
+        <i class="iconfont icon-sousuo tf-180 jian-top" style="font-size: 2rem;"></i>
     </div>
     <div style="clear: both"></div>
 </header>
@@ -30,6 +31,7 @@
     </div>
     <div class="my_follow_select" id="my_follow_select">
         <ul>
+            <li><span>全部</span></li>
             <li><span>美食店</span></li>
             <li><span>手机店</span></li>
             <li><span>电脑专卖店</span></li>
@@ -38,7 +40,7 @@
     </div>
     <div class="my_follow_hidden"></div>
     <div class="my_follow_content">
-        <ul>
+        <ul style="min-height: 0">
             <li>
                 <div>
                     <img src="../../../public/img/sc_shop1.png" alt="">
@@ -85,8 +87,8 @@
 </section>
 <script>
     $("#my_follow_search_type").click(function () {
-        $("#my_follow_select").animate({"height":"12rem"},300);
-        $("#my_follow_select>ul>li").animate({"height":"3rem"},300);
+        $("#my_follow_select>ul>li").animate({"height":"4rem"},300);
+        $(".my_follow_select>ul").css("display","block");
         $(".my_follow_hidden").css("display","block");
         $("#my_follow_search_type>img").removeClass("xuanzhuan");
 
@@ -102,8 +104,8 @@
     })
     <!--点击遮罩层-->
     $(".my_follow_hidden").click(function () {
-        $("#my_follow_select").animate({"height":"0rem"},300);
         $("#my_follow_select>ul>li").animate({"height":"0rem"},300);
+        $(".my_follow_select>ul").css("display","none");
         $(".my_follow_hidden").css("display","none");
         $("#my_follow_search_type>img").addClass("xuanzhuan");
     })
@@ -115,16 +117,16 @@
         $("#my_follow_search_type>span").html(text);
         $("#my_follow_search_type>img").addClass("xuanzhuan");
         $(".my_follow_hidden").css("display","none");
-        $("#my_follow_select").animate({"height":"0rem"},300);
+        $(".my_follow_select>ul").css("display","none");
         $("#my_follow_select>ul>li").animate({"height":"0rem"},300);
     })
     <!--点击其他搜索条件-->
     $(".my_follow_search_stu").click(function () {
         var i=$(this).index();
         console.log(i);
-        $("#my_follow_select").animate({"height":"0rem"},300);
         $("#my_follow_select>ul>li").animate({"height":"0rem"},300);
         $(".my_follow_hidden").css("display","none");
+        $(".my_follow_select>ul").css("display","none");
         $("#my_follow_search_type>img").addClass("xuanzhuan");
         $(".my_follow_search_stu").eq(i-1).css("color","green");
         $(".my_follow_search_stu:gt("+(i-1)+")").css("color","#000000");

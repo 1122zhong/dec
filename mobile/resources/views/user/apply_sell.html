@@ -5,18 +5,19 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="/mobile/public/css/app.min.css">
     <title>申请售卖</title>
 </head>
 <style>
     .jiaotou_left{width: 15%;float: left;
-        height: 3rem;padding-left: 1rem;
-        line-height:3rem;}
+        height: 4rem;padding-left: 1rem;
+        line-height:4rem;}
     .content_text{width: 50%;margin: 0 auto;
-        line-height: 3rem;
-        font-size: 1.5rem;text-align: center;font-weight: 600;}
+        line-height: 4rem;
+        font-size: 2rem;text-align: center;font-weight: 600;}
     header{
-        height: 3rem;
-        line-height: 3rem;
+        height: 4rem;
+        line-height: 4rem;
         background: #ffffff;
     }
     *{
@@ -43,9 +44,9 @@
     }
     .jiaotou_left>a{
         display: block;
-        line-height: 3rem;
-        height: 3rem;
-        font-size: 1.2rem;
+        line-height: 4rem;
+        height: 4rem;
+        font-size: 1.5rem;
         color:#000000;
     }
     select{
@@ -60,39 +61,41 @@
         border-bottom: 1px solid #cccccc;
         float: left;
         background: #ffffff;
-        padding-top: 0.5rem;
-        padding-bottom: 0.5rem;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
 
     }
     section>ul>li:first-child{
         background: #cccccc;
         margin-top: 1.5rem;
-        font-size: 1.3rem;
+        font-size: 1.5rem;
         text-align: center;
         border-radius: 1rem 1rem 0 0;
     }
     section>ul>li:last-child{
         padding-left: 0.5rem;
+        font-size: 1.3rem;
     }
     section>ul>li:last-child>input{
         margin-right: 0.5rem;
     }
     section>ul>li>span:first-child{
         float: left;
-        font-size: 1.2rem;
+        font-size: 1.4rem;
         display: inline-block;
         padding-left: 0.5rem;
     }
     section>ul>li>span:last-child{
         float: right;
         display: inline-block;
-        font-size: 1.2rem;
+        font-size: 1.4rem;
         color:#808080;
         padding-right: 0.5rem;
     }
-    section>ul>li:last-child>span:last-child{
+    section>ul>li:last-child>a:last-child{
         float: none;
         color:#ec5151;
+        font-size: 1.3rem;
     }
     button{
         width: 96%;
@@ -101,16 +104,16 @@
         color: #ffffff;
         border:none;
         border-radius: 0.7rem;
-        padding-top: 0.5rem;
-        font-size: 1.2rem;
-        padding-bottom: 0.5rem;
+        padding-top: 1rem;
+        font-size: 1.5rem;
+        padding-bottom: 1rem;
         margin-top: 1rem;
     }
 </style>
 <body>
 <header>
     <div class="jiaotou_left"><a href="/mobile/resources/views/user/yuyue.html ">取消</a></div>
-    <div class="content_text" style="font-size: 1rem!important;">申请售卖</div>
+    <div class="content_text">申请售卖</div>
 </header>
 <section>
     <ul>
@@ -128,7 +131,7 @@
             <span>X1</span>
         </li>
         <li>
-            <input type="checkbox">查看<span>《售卖商品合约》</span>
+            <input type="checkbox">查看<a>《售卖商品合约》</a>
         </li>
     </ul>
     <button>确认售卖</button>

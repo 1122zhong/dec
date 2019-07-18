@@ -38,6 +38,7 @@
             <li><span>保健产品</span></li>
             <li><span>娱乐项目</span></li>
             <li><span>电子产品</span></li>
+            <li><span>食物产品</span></li>
         </ul>
     </div>
     <div class="select_hidden"></div>
@@ -213,15 +214,14 @@
 </section>
 
 <script>
-
+    //点击收藏商品选择类型
     $("#search_type").click(function () {
         $("#search_type").addClass("search_color");
         $("#search_type>img").removeClass("xuanzhuan");
         $(".search_stu").removeClass("search_color");
         $(".select_hidden").css("display","block");
-        $(".select_content_one").animate({"height":"16rem"},300);
+        $(".select_content_one").css("display","block");
         $(".select_content_one>ul>li").animate({"height":"4rem"},300);
-        $(".select_content_one1>ul>li").animate({"height":"4rem"},300);
 
         <!--收藏的商品分类-->
         var num=$("#select_content_one>ul>li").size();
@@ -233,15 +233,14 @@
             }
         }
     })
+    //点击收藏店铺选择类型
     $("#search_type1").click(function () {
         $(".search_type").addClass("search_color");
         $(".search_type>img").removeClass("xuanzhuan");
         $(".search_stu").removeClass("search_color");
         $(".select_hidden").css("display","block");
-       // $(".select_content_one").animate({"height":"12rem"},300);
-        $(".select_content_one>ul>li").animate({"height":"4rem"},300);
         $(".select_content_one1>ul>li").animate({"height":"4rem"},300);
-        $(".select_content_one1").animate({"height":"16rem"},300);
+        $(".select_content_one1").css("display","block");
 
         <!--收藏的店铺分类-->
         var num1=$("#select_content_one1>ul>li").size();
@@ -260,10 +259,10 @@
         $(".search_type").removeClass("search_color");
         $(".select_hidden").css("display","none");
         $(".select_content_one>ul>li").animate({"height":"0rem"},300);
-        $(".select_content_one").animate({"height":"0rem"},300);
-        $(".select_content_one1").animate({"height":"0rem"},300);
+        $(".select_content_one").css("display","none");
+        $(".select_content_one1").css("display","none");
     })
-    <!--收藏商品选择类型-->
+    <!--点击收藏商品选中类型-->
     $("#select_content_one>ul>li").on("click",function(){
         var index = $(this).index();
         var text=$("#select_content_one>ul>li").eq(index).text();
@@ -272,8 +271,7 @@
         $("#search_type>img").addClass("xuanzhuan");
         $(".select_hidden").css("display","none");
         $("#select_content_one>ul>li").animate({"height":"0rem"},300);
-        $(".select_content_one").animate({"height":"0rem"},300);
-
+        $(".select_content_one").css("display","none");
     })
     <!--收藏商铺选择类型-->
     $("#select_content_one1>ul>li").on("click",function(){
@@ -284,7 +282,7 @@
         $("#search_type1>img").addClass("xuanzhuan");
         $(".select_hidden").css("display","none");
         $("#select_content_one1>ul>li").animate({"height":"0rem"},300);
-        $(".select_content_one1").animate({"height":"0rem"},300);
+        $(".select_content_one1").css("display","none");
     })
     <!--点击遮罩层-->
     $(".select_hidden").click(function () {
@@ -292,7 +290,7 @@
         console.log("13");
         $(".select_hidden").css("display","none");
         $(".select_content_one>ul>li").animate({"height":"0em"},300);
-        $(".select_content_one").animate({"height":"0rem"},300);
+        $(".select_content_one").css("display","none");
     })
     <!--切换商品列表排列方式-->
     var clicknum=0;
@@ -329,7 +327,7 @@
     $(".book_content>ul>li").on("click",function () {
         var index = $(this).index();
         console.log(index);
-        $(".select_content").animate({"height":"0rem"},0);
+        $(".select_content_one").css("display","none");
         $("#select_content>ul>li").animate({"height":"0rem"},0);
         $("section").eq(index).removeClass("display_none").addClass("display_block");
         $("section:gt("+index+")").removeClass("display_block").addClass("display_none");
@@ -350,7 +348,7 @@
             $(".book_manage").css("display","block");
         }
     })
-    <!--收藏商品管理-->
+    <!--收藏商品管理 删除-->
     var manage_num=0;
     $(".book_manage").click(function () {
         manage()
@@ -367,7 +365,7 @@
             $(".describe_checkbox").css("width","0%");
             $(".product_describe ").css("width","68%");
             $(".img_change").css("display","block")
-            $(".manage_del").css("bottom","-10%");
+            $(".manage_del").css("bottom","-8rem");
             manage_num++;
             $(".describe_checkbox>input[type='checkbox']").prop("checked",false);
         }

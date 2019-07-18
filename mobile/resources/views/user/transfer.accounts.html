@@ -27,7 +27,7 @@
 </head>
 <body>
 <header>
-    <a href="/mobile/index.php?m=user&c=account" class="jiaotou_left"><i class="iconfont icon-jiantou tf-180 jian-top" style="font-size: 1.5rem;"></i></a>
+    <a href="/mobile/index.php?m=user&c=account" class="jiaotou_left"><i class="iconfont icon-jiantou tf-180 jian-top" style="font-size: 2rem;"></i></a>
     <div class="content_text">转账</div>
 </header>
 <section class="zhuanzhang">
@@ -115,6 +115,7 @@
                             $(".mm_box li").removeClass("mmdd");
                             $(".mm_box li").attr("data","");
                             i = 0;
+                            location.href="/mobile/resources/views/user/success.html"
                         }else{
                             alert("支付失败"+data);
                             $(".ftc_wzsf").hide();
@@ -122,12 +123,10 @@
                             $(".mm_box li").attr("data","");
                             i = 0;
                         }
-
                     },100);
                 };
             }
         });
-
         $(".nub_ggg li .zf_del").click(function(){
             if(i>0){
                 i--;
@@ -135,13 +134,11 @@
                 $(".mm_box li").eq(i).attr("data","");
             }
         });
-
         $(".nub_ggg li .zf_empty").click(function(){
             $(".mm_box li").removeClass("mmdd");
             $(".mm_box li").attr("data","");
             i = 0;
         });
-
     });
 </script>
 </body>

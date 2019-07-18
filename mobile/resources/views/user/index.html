@@ -9,14 +9,14 @@
 	.xiaoxi_sty{
 		height: 1.4rem;
 		width: 1.4rem;}
-	.user-header-box{height: 11.5rem !important;}
-	.proli_top_cart{position: relative;width: 90%;background: #ffffff;border-radius: 1rem;margin-left: 5%;top: 2.5rem;}
-	.user-header-box .shezhi{left:1.3rem;border-radius:100%;padding:0 .4rem;height:2.6rem;width:2.6rem}
-	.user-header-box  .shezhi {left: 1rem;border-radius: 100%;padding: 0 .4rem;height: 2.6rem;width: 2.6rem;}
+	.proli_top_cart{position: relative;width: 96%;background: #ffffff;border-radius: 1rem;margin-left:2%;top: 2.5rem;}
+	.user-header-box  .shezhi {left: 1rem;border-radius: 100%;padding: 0 .4rem;height: 2.6rem;width: 2.6rem;
+		margin-top: 0.5rem;}
 	.position-rel>a:first-child {position: absolute;top:0.3rem;}
 	.position-rel>a{color: #fff;}
 	.fla-right{display: block;float: right;}
-	.shousuo{margin-right: 1.5rem;}
+	.shousuo{margin-right: 1.5rem;
+		margin-top: 0.5rem;}
 	.user-img-style{height: 4rem !important;}
 	.user_position{position: relative;}
 	.user-header{overflow: visible !important;}
@@ -34,6 +34,11 @@
 	}
 	.user-nav-box .ul-4 a{
 		border:none;
+	}
+	.section{
+		width: 96%;
+		margin-left: 2%;
+		border-radius: 1rem;
 	}
 </style>
 {if $auction}
@@ -57,12 +62,12 @@
 <div class="con mb-7">
 	<header class="user-header-box position-rel">
 		<a class="shezhi" href="{url('profile/index')}">
-			<i class="iconfont icon-shezhi"></i>
+			<i class="iconfont icon-shezhi" style="font-size: 2rem;"></i>
 		</a>
-        <a class="fla-right shousuo " href="#">
-			<img class="xiaoxi_sty" src="/mobile/public/img/xiaoxi.png" alt="">
+        <a class="fla-right shousuo" href="#">
+			<i class="iconfont icon-xiaoxi" style="font-size: 2rem;"></i>
         </a>
-        <span style="display:block;color: #f0f0f0;width:6rem;margin-left: auto;margin-right: auto;text-align: center;height:1rem;padding-top: 0.2rem;">个人中心</span>
+        <span style="display:block;color: #f0f0f0;margin-left: auto;font-size: 2rem;margin-right: auto;text-align: center;height:1rem;padding-top: 0.2rem;">个人中心</span>
 		<div class="padding-all proli_top_cart">
 				<div class="user-header user_position">
 						{if $info.user_picture !=='' }
@@ -97,7 +102,7 @@
 		</div>
 	</header>
 	<!--order-list-->
-	<section class="b-color-f user-function-list">
+	<section class="b-color-f user-function-list section">
 		<a href="{url('order/index',array('status'=>0))}">
 			<div class="dis-box padding-all wallet-bt">
 				<h3 class="box-flex"><i class="iconfont icon-iconfontquanbudingdan color-red"></i>我的订单</h3>
@@ -157,7 +162,7 @@
 		</ul>
 	</section>
 	<!--money-list-->
-	<section class="m-top08 user-function-list b-color-f">
+	<section class="m-top08 user-function-list b-color-f section">
 		<a href="{url('user/account/index')}">
 			<div class="dis-box padding-all wallet-bt">
 				<h3 class="box-flex"><i class="iconfont icon-qianbao  color-fe"></i>我的钱包</h3>
@@ -198,7 +203,7 @@
 			</a>
 		</ul>
 	</section>
-	<section class="m-top06" style="display: none">
+	<section class="m-top06 section" style="display: none">
 		1234
 		<div class="index-banner swiper-container box mb-1 banner-second">
 				<div class="swiper-wrapper">
@@ -209,13 +214,13 @@
 			</div>
 	</section>
 	<!--function-nav-list-->
-	<nav class="b-color-f user-nav-box m-top08  user-function-list">
+	<nav class="b-color-f user-nav-box m-top08  user-function-list section" style="border-radius: 1rem">
 		<a href="">
 			<div class="dis-box padding-all wallet-bt">
 				<h3 class="box-flex">我的工具</h3>
 			</div>
 		</a>
-		<div class="box ul-4 text-c b-color-f">
+		<div class="box ul-4 text-c b-color-f" style="border-radius: 0rem 0rem 1rem 1rem">
 			{if $share}
 			<a href="{url('user/index/affiliate')}">
 				<label><img class="user-prolie-list-img" src="/mobile/public/img/prolie_img/yaoqingma.png" alt=""></label>
@@ -252,7 +257,7 @@
 				<label><img class="user-prolie-list-img" src="/mobile/public/img/prolie_img/hehuoren.png" alt=""></label>
 				<p class="f-02 col-7">合伙人</p>
 			</a>
-			<a href="#">
+			<a href="/mobile/resources/views/user/my_warrant.html">
 				<label><img class="user-prolie-list-img" src="/mobile/public/img/prolie_img/chaka.png" alt=""></label>
 				<p class="f-02 col-7">我的茶咖</p>
 			</a>

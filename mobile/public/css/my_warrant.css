@@ -1,0 +1,215 @@
+.jiaotou_left{width: 25%;float: left;padding-bottom: 0.3rem;}
+.content_text{width: 50%;margin: 0 auto;text-align: center;font-weight: 600;
+    font-size: 2rem;
+    display: inline-block;}
+header{
+    width: 100%;
+    padding: 1rem;
+    background: #ffffff;
+    position: relative;
+}
+body{
+    font-family:"PingFang SC" ;
+}
+.my_follow_header_search{
+    padding-left: 1rem;
+    float: right;
+}
+.my_follow_header_search>img{
+    height:1.5rem;
+}
+.warrant_content1>p{
+     background: #FFFFff;
+     height: 1rem;
+     border-radius:1rem 1rem 0 0;
+     margin: 0 auto;
+}
+.warrant_content1>p:first-child{
+    width: 70%;
+    margin-top: 2rem;
+}
+.warrant_content1>p:nth-child(2){
+    width: 78%;
+}
+.warrant_content1>p:nth-child(3){
+    width: 86%;
+}
+.warrant_top{
+    width: 94%;
+    margin-left: 3%;
+    background: #FFFFff;
+    display: block;
+    border-radius:1rem 1rem 0 0;
+    padding-top: 2.5rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid #cccccc;
+}
+.warrant_top>span:first-child{
+    font-size: 2rem;
+    margin-left: 1rem;
+}
+.warrant_top>span:last-child{
+    font-size:1.75rem;
+    margin-right: 1rem;
+    float: right;
+    color:#808080;
+}
+.shuzi_warrant{
+    width: 94%;
+    margin-left: 3%;
+    height: 4rem;
+    background: #FFFFff;
+    display: flex;
+    justify-content: space-around;
+}
+.shuzi_warrant>span{
+    text-align: center;
+    height: 4rem;
+    line-height: 4rem;
+}
+
+.shuzi_warrant>span:nth-child(1){
+    display:block;
+    font-size: 2rem;
+}
+.shuzi_warrant>span:nth-child(2){
+    display:block;
+    color: #808080;
+    font-size: 1.75rem;
+}
+.shuzi_warrant>span:nth-child(3){
+    display:block;
+    color: #808080;
+    font-size: 1.75rem;
+}
+.highcharts-credits{
+    display: none;
+}
+.highcharts-title>tspan{
+    font-size: 1.5rem;
+}
+.fenrun_count{
+    width: 94%;
+    margin-left: 3%;
+    background: #FFFFff;
+    display: flex;
+    justify-content: space-around;
+}
+.fenrun_count>span{
+    width: 33%;
+    text-align: center;
+    font-size: 1.75rem;
+}
+.fenrun_count>span>p{
+    text-align: center;
+    font-size: 1.5rem;
+}
+.look_warrant{
+    display: inline-block;
+    font-size: 1.5rem;
+    width: 94%;
+    margin-left: 3%;
+    background: #FFFFff;
+    padding-left: 2rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    border-radius: 0 0 1rem 1rem;
+}
+.look_warrant>a{
+    font-size: 1.5rem;
+    color:#ec5151;
+}
+.look_baobiao{
+    margin-top: 1rem;
+    border-radius: 1rem;
+    width: 94%;
+    margin-left: 3%;
+    background: #FFFFff;
+    overflow: hidden;
+    border-bottom: 0;
+}
+.look_baobiao div{
+    width: 100%;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+.chengben{
+    margin-top: 1rem;
+    border-radius: 1rem;
+    width: 94%;
+    overflow: hidden;
+    margin-left: 3%;
+    background: #FFFFff;
+}
+.chengben div{
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    width: 100%;
+}
+.look_baobiao>div:first-child{
+    padding-left: 1rem;
+    font-size: 2rem;
+    border-bottom: 1px solid #cccccc;
+}
+.look_baobiao>div>div:nth-child(4){
+    border-bottom: 1px solid #cccccc;
+}
+.look_baobiao>div>div>span:first-child{
+    font-size: 2rem;
+    padding-left: 1rem;
+}
+.look_baobiao>div>div:nth-child(2)>span:first-child{
+    text-align: left;
+    font-size: 2rem;
+}
+.look_baobiao>div>div:nth-child(5)>span:first-child{
+    text-align: left;
+    font-size: 2rem;
+}
+.look_baobiao>div>div:nth-child(2)>span:last-child{
+    float: right;
+    color:#808080;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin-right: 1rem;
+    font-size: 1.75rem;
+    border-radius: 1rem;
+    border: 1px solid;
+}
+.look_baobiao>div>div:nth-child(5)>span:last-child{
+    float: right;
+    color:#808080;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    border: 1px solid;
+    margin-right: 1rem;
+    font-size: 1.75rem;
+    border-radius: 1rem;
+}
+.look_baobiao div>span:last-child{
+    font-size: 1.5rem;
+    color:#808080;
+    margin-left: 3rem;
+}
+.chengben>div:first-child{
+    padding-left: 1rem;
+    font-size: 2rem;
+    border-bottom: 1px solid #cccccc;
+}
+.chengben div>span:first-child{
+    font-size: 2rem;
+    margin-left: 1rem;
+}
+.chengben div>span:last-child{
+    font-size: 1.5rem;
+    margin-left: 5rem;
+    color:#808080;
+}
+.query_hidden{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: #000000;
+    opacity: 0.6;
+    z-index: 10;
+}

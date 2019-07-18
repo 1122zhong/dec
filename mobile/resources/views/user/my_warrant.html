@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="/mobile/public/css/app.min.css">
+    <link rel="stylesheet" href="/mobile/public/css/public.css">
+    <link rel="stylesheet" href="/mobile/public/css/my_warrant.css">
+    <link rel="stylesheet" href="/mobile/public/css/public_select.css">
+    <link rel="stylesheet" href="/mobile/public/css/swiper.min.css">
+
+    <script src="/mobile/public/js/jquery-1.12.4.js"></script>
+
+    <script src="/mobile/public/js/dyselect.js"></script>
+    <script src="/mobile/public/js/swiper.min.js"></script>
+    <title>我的权证</title>
+    <style>
+        html,body{
+            font-size: 16px !important;
+        }
+        .swiper-slide-prev, .swiper-slide-next{
+            font-size: 1.75rem;
+        }
+        .select_box .select{
+            height:18rem;
+        }
+        .select_box.yes .select .cloth{
+            height: 0;
+        }
+        .swiper-slide{
+            height: 3rem !important;
+            line-height: 3rem;
+        }
+
+        .swiper-container, .selectData{
+            height: 15rem;
+        }
+        .selectData{
+            margin-top: 2rem;
+        }
+        .swiper-slide-prev, .swiper-slide-next{
+            font-size: 1.3rem;
+        }
+        .select_box.yes .select .close, .select_box.yes .select .ok{
+            font-size: 2rem;
+        }
+    </style>
+</head>
+<body>
+<div class="select_box select_box1" style="z-index: 20"></div>
+<header>
+    <a href="/mobile/index.php?m=user" class="jiaotou_left"><i class="iconfont icon-jiantou tf-180 jian-top" style="font-size: 2rem;"></i></a>
+    <div class="content_text">我的权证</div>
+    <div class="my_follow_header_search btn1">
+        <i class="iconfont icon-13caidan tf-180" style="font-size: 2rem;"></i>
+    </div>
+</header>
+<section class="warrant_content1">
+    <p></p>
+    <p></p>
+    <p></p>
+    <span class="warrant_top">
+        <span>U客茶咖</span>
+        <span>重庆市渝北区化龙桥企业天地<i class="iconfont icon-dingwei2 tf-180" style="font-size: 2rem;color: #ec5151"></i></span>
+    </span>
+    <div class="shuzi_warrant">
+        <span>数字权证</span><span>UK2019017001</span><span>1000UK</span>
+    </div>
+    <div id="container" style="width: 94%;margin-left: 3%;height:450px"></div>
+    <div class="fenrun_count">
+        <span>1份 <p>份数</p></span>
+        <span>￥10000.00 <p>累计分红</p></span>
+        <span>￥1000.00 <p>本期分红</p></span>
+    </div>
+    <span class="look_warrant">查看 <a href="#">《权证协议》</a></span>
+    <!--查看报表-->
+    <div class="look_baobiao">
+            <div>查看报表 <i class="iconfont icon-xiajiantou " style="font-size: 2rem;color: #cccccc;float: right;margin-right: 1rem;transition: all 0.5s"></i></div>
+            <div class="look_baobiao_info">
+                <div><span>每日报表</span><span>今日</span></div>
+                <div><span>日订单量</span><span>58单</span></div>
+                <div><span>日营业额</span><span>￥15210.00</span></div>
+
+                <div><span>每月报表</span><span>本月</span></div>
+                <div><span>月订单量</span><span>58单</span></div>
+                <div><span>月营业额</span><span>￥15210.00</span></div>
+            </div>
+    </div>
+    <!--成本计算-->
+    <div class="chengben">
+            <div>成本计算 <i class="iconfont icon-xiajiantou" style="font-size: 2rem;color: #cccccc;float: right;margin-right: 1rem;transition: all 0.5s"></i></div>
+            <div class="chengben_info">
+                <div><span>房租</span><span>￥15210.00</span></div>
+                <div><span>水电</span><span>￥15210.00</span></div>
+                <div><span>人工</span><span>￥15210.00</span></div>
+                <div><span>杂费</span><span>￥15210.00</span></div>
+                <div><span>合计</span><span>￥15210.00</span></div>
+            </div>
+        </div>
+</section>
+<script src="/mobile/public/js/highcharts.js"></script>
+
+//在index.js中插入我的权证信息
+<script src="/mobile/public/js/index.js"></script>
+<script>
+    var chart = Highcharts.chart('container', {
+        chart: {
+            type: 'line'
+        },
+        title: {
+            text: '营业额'
+        },
+        subtitle: {
+            text: ''
+        },
+        xAxis: {
+            categories: ['一月', '二月', '三月', '四月', '五月', '六月', '七月', '八月', '九月', '十月', '十一月', '十二月']
+        },
+        yAxis: {
+            title: {
+                text: '营业额（￥万元）'
+            }
+        },
+        plotOptions: {
+            line: {
+                dataLabels: {
+                    // 开启数据标签
+                    enabled: true
+                },
+                // 关闭鼠标跟踪，对应的提示框、点击事件会失效
+                enableMouseTracking: true
+            }
+        },
+
+        //读取数据赋值给data
+        series: [
+            {
+                name: '2019年',
+                color:"#ec5151",
+                data: [5, 9, 11, 8, 22, 28,15]
+            },
+        ]
+    });
+    //报表收放
+    $(".look_baobiao>div:first").click(function () {
+        $(".look_baobiao_info").slideToggle(500,change());
+    })
+    var count=0;
+    function change() {
+        if(count%2==0){
+            $(".look_baobiao div i").addClass("tf-180");
+            count++;
+        }
+        else{
+            $(".look_baobiao div i").removeClass("tf-180");
+            count++;
+        }
+    }
+    //成本收放
+    $(".chengben>div:first").click(function () {
+        $(".chengben_info").slideToggle(500,change1());
+    })
+    var num=0;
+    function change1() {
+        if(num%2==0){
+            $(".chengben>div:first i").addClass("tf-180");
+            num++;
+        }
+        else{
+            $(".chengben>div:first i").removeClass("tf-180");
+            num++;
+        }
+    }
+    $(".my_follow_header_search").click(function () {
+        
+    })
+</script>
+</body>
+</html>
